@@ -1,0 +1,20 @@
+PODS:
+  - DropDown (2.3.13)
+  - JJFloatingActionButton (2.5.0)
+
+DEPENDENCIES:
+  - DropDown
+  - JJFloatingActionButton
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - JJFloatingActionButton
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  JJFloatingActionButton: fdc3aefb0f28f04d0f988fa25d5fac97028a9ea7
+
+PODFILE CHECKSUM: 0279e14e6f1e6d91e8358ecbd28b6fade02ad909
+
+COCOAPODS: 1.11.2
