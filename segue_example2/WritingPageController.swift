@@ -72,6 +72,7 @@ class WritingPageController: UITableViewController,UITextViewDelegate {
 //            guard let _ = self else { return }
             drBtn.setTitle(item, for: .normal)
 //            print("인덱스 : \(index)")
+            //test apply
         }
     }
     
