@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController4: UIViewController {
+class HumorBoard: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

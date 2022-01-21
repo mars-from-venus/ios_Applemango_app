@@ -20,10 +20,9 @@ import JJFloatingActionButton
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         floatingBtn()
         naviTitleChange()
-        addToView(ViewController3.self)
+        addToView(FreeBoard.self)
         let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
         let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
         let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
@@ -77,24 +76,25 @@ import JJFloatingActionButton
         self.myView.addSubview(vcName!.self.view)
         myView.layer.masksToBounds = true
     }
-    
-    @IBAction func moveToView2(_ sender: UIButton){
-        addToView(ViewController2.self)
-    }
-    
-    @IBAction func moveToView3(_ sender: UIButton){
-        addToView(ViewController3.self)
-        
-    }
-    
-    @IBAction func moveToView4(_ sender: UIButton){
-        addToView(ViewController4.self)
-    }
-     @IBAction func moveToView5(_ sender:UIButton){
-         addToView(ViewController5.self)
+     
+     @IBAction func moveToView2(_ sender: UIButton){
+         addToView(HotBoard.self)
      }
+     
+     @IBAction func moveToView3(_ sender: UIButton){
+         addToView(FreeBoard.self)
+     }
+     
+     @IBAction func moveToView4(_ sender: UIButton){
+         addToView(HumorBoard.self)
+     }
+     
+     @IBAction func moveToView5(_ sender:UIButton){
+         addToView(QABoard.self)
+     }
+     
      @IBAction func moveToView6(_ sender:UIButton){
-         addToView(ViewController6.self)
+         addToView(ChartBoard.self)
      }
 }
 

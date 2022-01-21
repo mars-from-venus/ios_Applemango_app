@@ -25,13 +25,12 @@ class WritingPageController: UITableViewController,UITextViewDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //        myView.layer.borderWidth = 0.5
         //        myView.layer.borderColor = UIColor.gray.cgColor
-                placeholderSetting()
-                textViewDidBeginEditing(myTextView)
-                textViewDidEndEditing(myTextView)
+        placeholderSetting()
+        textViewDidBeginEditing(myTextView)
+        textViewDidEndEditing(myTextView)
         myTableView.dataSource = self
         myTableView.delegate = self
     }
-    
     
     func placeholderSetting() {
         myTextView.delegate = self // txtvReview가 유저가 선언한 outlet
@@ -54,18 +53,11 @@ class WritingPageController: UITableViewController,UITextViewDelegate {
     func makeDropDown(){
         let dropDown = DropDown()
         dropDown.dataSource = ["인기게시물","자유게시판","유머게시판","질문/답변","차트분석"]
-//        dropDown.cellNib = UINib(nibName: "DropCell", bundle: nil)
         dropDown.show()
         dropDown.anchorView = drBtn
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
         dropDown.textFont = UIFont.systemFont(ofSize: 15)
         dropDown.cornerRadius = 15
-//        dropDown.cellNib = UINib(nibName: "DropCell", bundle: nil)
-//        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
-//           guard let cell = cell as? DropCell else { return }
-//           // Setup your custom UI components
-//           cell.logoImageView.image = UIImage(named: "arrowIcon")
-//        }
         dropDown.selectedTextColor = .white
         dropDown.selectionBackgroundColor = UIColor(red: 255, green: 120, blue: 75, alpha: 1)
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -96,7 +88,6 @@ class WritingPageController: UITableViewController,UITextViewDelegate {
         return 3
     }
 
-    
 //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 //        let background = UIView()

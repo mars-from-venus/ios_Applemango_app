@@ -8,7 +8,7 @@
 import UIKit
 import JJFloatingActionButton
 
-class ViewController2: UIViewController {
+class HotBoard: UIViewController {
 
     @IBOutlet weak var myTv : UITableView!
     override func viewDidLoad() {
@@ -17,17 +17,6 @@ class ViewController2: UIViewController {
         // Do any additional setup after loading the view.
         myTv.delegate = self
         myTv.dataSource = self
-        floatingBtn()
-    }
-    func floatingBtn(){
-        let actionButton = JJFloatingActionButton()
-        actionButton.addItem(title: "item 1", image: UIImage(named: "writeImage")?.withRenderingMode(.alwaysTemplate)) { item in
-          // do something
-        }
-        view.addSubview(actionButton)
-        actionButton.translatesAutoresizingMaskIntoConstraints = false
-        actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
     }
 
     /*
@@ -42,12 +31,11 @@ class ViewController2: UIViewController {
 
 }
 
-extension ViewController2: UITableViewDelegate, UITableViewDataSource {
-    
-
+extension HotBoard: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -59,7 +47,5 @@ extension ViewController2: UITableViewDelegate, UITableViewDataSource {
         cell.clipsToBounds = true
         return cell
     }
-
-
 }
 

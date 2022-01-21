@@ -13,23 +13,19 @@
 		411F650B275D9AF2002AFF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411F6509275D9AF2002AFF9F /* Main.storyboard */; };
 		411F650D275D9AF4002AFF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411F650C275D9AF4002AFF9F /* Assets.xcassets */; };
 		411F6510275D9AF4002AFF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411F650E275D9AF4002AFF9F /* LaunchScreen.storyboard */; };
-		411F6518275D9B20002AFF9F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6517275D9B20002AFF9F /* ViewController2.swift */; };
-		411F651A275D9B2C002AFF9F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6519275D9B2C002AFF9F /* ViewController3.swift */; };
-		415B62C6275DE78B004A9632 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C5275DE78B004A9632 /* ViewController4.swift */; };
-		415B62CA275F30FB004A9632 /* PriceCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C9275F30FB004A9632 /* PriceCustom.swift */; };
-		415B62CC275F3E5C004A9632 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62CB275F3E5B004A9632 /* PriceCell.swift */; };
-		4194EC98277F6A9B00AC473B /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC97277F6A9B00AC473B /* ViewController5.swift */; };
-		4194EC9A277F6C9300AC473B /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC99277F6C9300AC473B /* ViewController6.swift */; };
+		411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6517275D9B20002AFF9F /* HotBoard.swift */; };
+		411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6519275D9B2C002AFF9F /* FreeBoard.swift */; };
+		415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C5275DE78B004A9632 /* HumorBoard.swift */; };
+		4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC97277F6A9B00AC473B /* QABoard.swift */; };
+		4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC99277F6C9300AC473B /* ChartBoard.swift */; };
 		4194EC9E278175CA00AC473B /* FreeBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC9D278175CA00AC473B /* FreeBoardTableViewCell.swift */; };
 		41D41177278B2378003F46EE /* FirstTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41176278B2378003F46EE /* FirstTapViewController.swift */; };
 		41D41179278B250A003F46EE /* ThirdTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41178278B250A003F46EE /* ThirdTapViewController.swift */; };
 		41D4117B278B251C003F46EE /* FourthTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117A278B251C003F46EE /* FourthTapViewController.swift */; };
 		41D4117D278B2530003F46EE /* FifthTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117C278B2530003F46EE /* FifthTapViewController.swift */; };
-		41D41181278C75C1003F46EE /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41D41180278C75C1003F46EE /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
-		41D411862795BA82003F46EE /* DropCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D411842795BA82003F46EE /* DropCell.swift */; };
-		41D411872795BA82003F46EE /* DropCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D411852795BA82003F46EE /* DropCell.xib */; };
 		41E5719D2798535800B76E37 /* WritingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719C2798535800B76E37 /* WritingPageController.swift */; };
 		41E5719F279862E600B76E37 /* BoardDetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */; };
+		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,23 +39,19 @@
 		411F650C275D9AF4002AFF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411F650F275D9AF4002AFF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		411F6511275D9AF4002AFF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		411F6517275D9B20002AFF9F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		411F6519275D9B2C002AFF9F /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		415B62C5275DE78B004A9632 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
-		415B62C9275F30FB004A9632 /* PriceCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCustom.swift; sourceTree = "<group>"; };
-		415B62CB275F3E5B004A9632 /* PriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
-		4194EC97277F6A9B00AC473B /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
-		4194EC99277F6C9300AC473B /* ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
+		411F6517275D9B20002AFF9F /* HotBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoard.swift; sourceTree = "<group>"; };
+		411F6519275D9B2C002AFF9F /* FreeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoard.swift; sourceTree = "<group>"; };
+		415B62C5275DE78B004A9632 /* HumorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorBoard.swift; sourceTree = "<group>"; };
+		4194EC97277F6A9B00AC473B /* QABoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QABoard.swift; sourceTree = "<group>"; };
+		4194EC99277F6C9300AC473B /* ChartBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBoard.swift; sourceTree = "<group>"; };
 		4194EC9D278175CA00AC473B /* FreeBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableViewCell.swift; sourceTree = "<group>"; };
 		41D41176278B2378003F46EE /* FirstTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTapViewController.swift; sourceTree = "<group>"; };
 		41D41178278B250A003F46EE /* ThirdTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTapViewController.swift; sourceTree = "<group>"; };
 		41D4117A278B251C003F46EE /* FourthTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTapViewController.swift; sourceTree = "<group>"; };
 		41D4117C278B2530003F46EE /* FifthTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTapViewController.swift; sourceTree = "<group>"; };
-		41D41180278C75C1003F46EE /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; path = "../../../Downloads/FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
-		41D411842795BA82003F46EE /* DropCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropCell.swift; sourceTree = "<group>"; };
-		41D411852795BA82003F46EE /* DropCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropCell.xib; sourceTree = "<group>"; };
 		41E5719C2798535800B76E37 /* WritingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPageController.swift; sourceTree = "<group>"; };
 		41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewViewController.swift; sourceTree = "<group>"; };
+		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,31 +90,67 @@
 			isa = PBXGroup;
 			children = (
 				411F6503275D9AF2002AFF9F /* AppDelegate.swift */,
-				411F6519275D9B2C002AFF9F /* ViewController3.swift */,
-				4194EC97277F6A9B00AC473B /* ViewController5.swift */,
 				411F6505275D9AF2002AFF9F /* SceneDelegate.swift */,
-				415B62C5275DE78B004A9632 /* ViewController4.swift */,
-				41D41176278B2378003F46EE /* FirstTapViewController.swift */,
-				411F6517275D9B20002AFF9F /* ViewController2.swift */,
-				4194EC9D278175CA00AC473B /* FreeBoardTableViewCell.swift */,
-				41D4117A278B251C003F46EE /* FourthTapViewController.swift */,
-				4194EC99277F6C9300AC473B /* ViewController6.swift */,
-				41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */,
-				41D411842795BA82003F46EE /* DropCell.swift */,
-				41D411852795BA82003F46EE /* DropCell.xib */,
-				41D4117C278B2530003F46EE /* FifthTapViewController.swift */,
-				41E5719C2798535800B76E37 /* WritingPageController.swift */,
-				41D41178278B250A003F46EE /* ThirdTapViewController.swift */,
-				41D41180278C75C1003F46EE /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */,
-				411F6507275D9AF2002AFF9F /* SecondTapViewController.swift */,
+				4532B981279A4CDB00D405B2 /* SecondTapSupport */,
+				4532B97F279A4CA100D405B2 /* SupportFile */,
+				4532B97E279A4C6C00D405B2 /* TapController */,
 				411F6509275D9AF2002AFF9F /* Main.storyboard */,
-				415B62C9275F30FB004A9632 /* PriceCustom.swift */,
-				415B62CB275F3E5B004A9632 /* PriceCell.swift */,
 				411F650C275D9AF4002AFF9F /* Assets.xcassets */,
 				411F650E275D9AF4002AFF9F /* LaunchScreen.storyboard */,
 				411F6511275D9AF4002AFF9F /* Info.plist */,
 			);
 			path = segue_example2;
+			sourceTree = "<group>";
+		};
+		4532B97E279A4C6C00D405B2 /* TapController */ = {
+			isa = PBXGroup;
+			children = (
+				41D41176278B2378003F46EE /* FirstTapViewController.swift */,
+				411F6507275D9AF2002AFF9F /* SecondTapViewController.swift */,
+				41D41178278B250A003F46EE /* ThirdTapViewController.swift */,
+				41D4117A278B251C003F46EE /* FourthTapViewController.swift */,
+				41D4117C278B2530003F46EE /* FifthTapViewController.swift */,
+			);
+			path = TapController;
+			sourceTree = "<group>";
+		};
+		4532B97F279A4CA100D405B2 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				4532B980279A4CAC00D405B2 /* Font */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		4532B980279A4CAC00D405B2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		4532B981279A4CDB00D405B2 /* SecondTapSupport */ = {
+			isa = PBXGroup;
+			children = (
+				4194EC9D278175CA00AC473B /* FreeBoardTableViewCell.swift */,
+				41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */,
+				41E5719C2798535800B76E37 /* WritingPageController.swift */,
+				4532B982279A522A00D405B2 /* BoardType */,
+			);
+			path = SecondTapSupport;
+			sourceTree = "<group>";
+		};
+		4532B982279A522A00D405B2 /* BoardType */ = {
+			isa = PBXGroup;
+			children = (
+				411F6517275D9B20002AFF9F /* HotBoard.swift */,
+				411F6519275D9B2C002AFF9F /* FreeBoard.swift */,
+				415B62C5275DE78B004A9632 /* HumorBoard.swift */,
+				4194EC97277F6A9B00AC473B /* QABoard.swift */,
+				4194EC99277F6C9300AC473B /* ChartBoard.swift */,
+			);
+			path = BoardType;
 			sourceTree = "<group>";
 		};
 		582122561C0DC36600D86B0D /* Frameworks */ = {
@@ -203,8 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411F6510275D9AF4002AFF9F /* LaunchScreen.storyboard in Resources */,
-				41D41181278C75C1003F46EE /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */,
-				41D411872795BA82003F46EE /* DropCell.xib in Resources */,
+				4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */,
 				411F650D275D9AF4002AFF9F /* Assets.xcassets in Resources */,
 				411F650B275D9AF2002AFF9F /* Main.storyboard in Resources */,
 			);
@@ -259,18 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411F651A275D9B2C002AFF9F /* ViewController3.swift in Sources */,
-				415B62C6275DE78B004A9632 /* ViewController4.swift in Sources */,
-				415B62CA275F30FB004A9632 /* PriceCustom.swift in Sources */,
-				4194EC9A277F6C9300AC473B /* ViewController6.swift in Sources */,
+				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
+				415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */,
+				4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */,
 				411F6508275D9AF2002AFF9F /* SecondTapViewController.swift in Sources */,
 				41E5719F279862E600B76E37 /* BoardDetailViewViewController.swift in Sources */,
 				41D41179278B250A003F46EE /* ThirdTapViewController.swift in Sources */,
-				4194EC98277F6A9B00AC473B /* ViewController5.swift in Sources */,
+				4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */,
 				41E5719D2798535800B76E37 /* WritingPageController.swift in Sources */,
-				41D411862795BA82003F46EE /* DropCell.swift in Sources */,
-				411F6518275D9B20002AFF9F /* ViewController2.swift in Sources */,
-				415B62CC275F3E5C004A9632 /* PriceCell.swift in Sources */,
+				411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */,
 				411F6504275D9AF2002AFF9F /* AppDelegate.swift in Sources */,
 				41D4117B278B251C003F46EE /* FourthTapViewController.swift in Sources */,
 				411F6506275D9AF2002AFF9F /* SceneDelegate.swift in Sources */,

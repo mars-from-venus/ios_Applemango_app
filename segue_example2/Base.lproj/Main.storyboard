@@ -175,10 +175,10 @@
             </objects>
             <point key="canvasLocation" x="-1759.4202898550725" y="-1129.0178571428571"/>
         </scene>
-        <!--View Controller5-->
+        <!--Board-->
         <scene sceneID="ble-sF-Woc">
             <objects>
-                <viewController storyboardIdentifier="ViewController5" id="aVQ-0J-gpE" customClass="ViewController5" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QABoard" id="aVQ-0J-gpE" customClass="QABoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fRZ-6g-92P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,12 +197,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG4-BD-pKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3744.9275362318845" y="482.8125"/>
+            <point key="canvasLocation" x="3220" y="483"/>
         </scene>
-        <!--View Controller6-->
+        <!--Chart Board-->
         <scene sceneID="MOB-gA-MLn">
             <objects>
-                <viewController storyboardIdentifier="ViewController6" id="YTc-F6-Fiu" customClass="ViewController6" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartBoard" id="YTc-F6-Fiu" customClass="ChartBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="af4-29-4qf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,12 +221,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vI-Cl-ksf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4436.231884057971" y="482.8125"/>
+            <point key="canvasLocation" x="4013" y="483"/>
         </scene>
-        <!--View Controller2-->
+        <!--Hot Board-->
         <scene sceneID="SgI-wF-9rf">
             <objects>
-                <viewController storyboardIdentifier="ViewController2" id="E81-Tu-XHg" customClass="ViewController2" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HotBoard" id="E81-Tu-XHg" customClass="HotBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="IoK-4l-Ea1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -392,25 +392,10 @@
             </objects>
             <point key="canvasLocation" x="5959.420289855073" y="1189.9553571428571"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="U4r-WY-Bd4">
-            <objects>
-                <viewController id="AXE-t6-Ps1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AMT-xu-C8a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="USk-fn-OJo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o5A-7c-fHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6907.2463768115949" y="-231.02678571428569"/>
-        </scene>
-        <!--View Controller3-->
+        <!--Free Board-->
         <scene sceneID="HsL-h3-May">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" id="OUN-wC-bh4" customClass="ViewController3" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreeBoard" id="OUN-wC-bh4" customClass="FreeBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="kaC-eA-bmh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,12 +529,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLk-3O-yiu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3019" y="1158"/>
+            <point key="canvasLocation" x="1623" y="1158"/>
         </scene>
         <!--Board Detail View Controller-->
         <scene sceneID="E5h-xq-A5j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7EV-OL-voc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Kpd-iC-Fxl" customClass="BoardDetailViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LmY-Ab-TFD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -559,28 +543,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Iwd-Mh-D9A"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EV-OL-voc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3701" y="1158"/>
+            <point key="canvasLocation" x="2420" y="1158"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="c3c-S1-RIc">
-            <objects>
-                <viewController id="JgA-z3-UzY" customClass="ViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YzE-RN-DR7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="j5E-fr-guj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6bt-E6-0hi" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7698.5507246376819" y="-231.02678571428569"/>
-        </scene>
-        <!--View Controller4-->
+        <!--Humor Board-->
         <scene sceneID="nqH-N8-wT2">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="32I-nY-Pgg" customClass="ViewController4" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HumorBoard" id="32I-nY-Pgg" customClass="HumorBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="viZ-Lt-foH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -590,215 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpz-ht-aIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3745" y="-159"/>
-        </scene>
-        <!--Price Custom-->
-        <scene sceneID="Ste-og-wL4">
-            <objects>
-                <viewController id="TPq-nt-54m" customClass="PriceCustom" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1bY-se-5nB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xme-Zp-Onr">
-                                <rect key="frame" x="0.0" y="119" width="414" height="262.5"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-kg-aWm">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
-                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.66704865539965985" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="QR9-lb-Pzq"/>
-                                            <constraint firstAttribute="width" constant="414" id="cbG-WN-3z9"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="BTC"/>
-                                            <segment title="ETH"/>
-                                            <segment title="LTC"/>
-                                            <segment title="XRP"/>
-                                            <segment title="XLM"/>
-                                            <segment title="EOS"/>
-                                            <segment title="ADA"/>
-                                            <segment title="DOT"/>
-                                        </segments>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="selectedSegmentTintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.68780465677481928" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </segmentedControl>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hqi-5I-Dna">
-                                        <rect key="frame" x="0.0" y="31" width="414" height="25"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khg-ON-BVx">
-                                                <rect key="frame" x="0.0" y="0.0" width="61" height="25"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="거래소">
-                                                        <attributes>
-                                                            <font key="NSFont" size="13" name="AppleSDGothicNeo-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbs-0T-vZd">
-                                                <rect key="frame" x="61" y="0.0" width="106.5" height="25"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="시세(KRW)">
-                                                        <attributes>
-                                                            <font key="NSFont" size="13" name="AppleSDGothicNeo-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ska-lh-Woz">
-                                                <rect key="frame" x="167.5" y="0.0" width="119.5" height="25"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="변동률(24H)">
-                                                        <attributes>
-                                                            <font key="NSFont" size="13" name="AppleSDGothicNeo-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-ED-82k">
-                                                <rect key="frame" x="287" y="0.0" width="127" height="25"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="한국 프리미엄">
-                                                        <attributes>
-                                                            <font key="NSFont" size="13" name="AppleSDGothicNeo-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="122-rT-Lnw"/>
-                                            <constraint firstAttribute="height" constant="25" id="F2G-JM-INq"/>
-                                        </constraints>
-                                    </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-Kg-5W2">
-                                        <rect key="frame" x="0.0" y="56" width="414" height="178"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="178" id="fuV-iv-wKB"/>
-                                            <constraint firstAttribute="width" constant="414" id="qwy-hU-FLe"/>
-                                        </constraints>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="cell" rowHeight="35" id="Zrt-oj-Plv" customClass="PriceCell" customModule="segue_example2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="35"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zrt-oj-Plv" id="ebe-Ee-d6f">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBo-fc-loJ">
-                                                            <rect key="frame" x="0.0" y="10" width="64" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Label">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-v0-Wre">
-                                                            <rect key="frame" x="64" y="10" width="105" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Label">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRv-ae-cfj">
-                                                            <rect key="frame" x="169" y="10" width="118" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Label">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-Ix-T4d">
-                                                            <rect key="frame" x="286" y="10" width="128" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Label">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="lblChange" destination="IRv-ae-cfj" id="1SF-3a-D8M"/>
-                                                    <outlet property="lblName" destination="uBo-fc-loJ" id="uxQ-Wd-aZX"/>
-                                                    <outlet property="lblPrice" destination="oc3-v0-Wre" id="Yvr-w2-9EE"/>
-                                                    <outlet property="lblpremium" destination="KNE-Ix-T4d" id="kgJ-XX-jVu"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-gs-obM">
-                                        <rect key="frame" x="0.0" y="234" width="414" height="28.5"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="접기">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="AppleSDGothicNeo-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="Aqo-6w-dbr"/>
-                                    <constraint firstItem="hqi-5I-Dna" firstAttribute="top" secondItem="JuX-kg-aWm" secondAttribute="bottom" id="Umt-p9-S33"/>
-                                    <constraint firstItem="tY8-Kg-5W2" firstAttribute="top" secondItem="hqi-5I-Dna" secondAttribute="bottom" id="lEi-pj-lLq"/>
-                                    <constraint firstAttribute="height" constant="262.5" id="obq-dt-gX8"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="p2T-EE-KP3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xme-Zp-Onr" firstAttribute="trailing" secondItem="p2T-EE-KP3" secondAttribute="trailing" id="3Ho-AW-RYh"/>
-                            <constraint firstItem="p2T-EE-KP3" firstAttribute="bottom" secondItem="xme-Zp-Onr" secondAttribute="bottom" constant="480.5" id="8LZ-zT-1WG"/>
-                            <constraint firstItem="xme-Zp-Onr" firstAttribute="leading" secondItem="p2T-EE-KP3" secondAttribute="leading" id="kk8-h4-xgc"/>
-                            <constraint firstItem="xme-Zp-Onr" firstAttribute="top" secondItem="p2T-EE-KP3" secondAttribute="top" constant="75" id="pjw-3f-HTi"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="tvView" destination="tY8-Kg-5W2" id="x1k-IY-yNP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HJR-Qu-hbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6907.2463768115949" y="-231.02678571428569"/>
+            <point key="canvasLocation" x="2419" y="483"/>
         </scene>
         <!--First Tap View Controller-->
         <scene sceneID="FpY-pq-gHh">
@@ -1018,7 +780,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So8-ju-r17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2318.840579710145" y="1158.4821428571429"/>
+            <point key="canvasLocation" x="812" y="1158"/>
         </scene>
     </scenes>
     <resources>

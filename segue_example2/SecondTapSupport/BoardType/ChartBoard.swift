@@ -1,5 +1,5 @@
 //
-//  ViewController5.swift
+//  ViewController6.swift
 //  segue_example2
 //
 //  Created by mars on 2022/01/01.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController5: UIViewController {
+class ChartBoard: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

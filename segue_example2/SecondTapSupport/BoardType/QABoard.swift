@@ -1,5 +1,5 @@
 //
-//  ViewController6.swift
+//  ViewController5.swift
 //  segue_example2
 //
 //  Created by mars on 2022/01/01.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController6: UIViewController {
+class QABoard: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

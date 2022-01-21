@@ -9,7 +9,7 @@ import UIKit
 
 let item = ["1", "2", "3", "4", "5"]
 
-class ViewController3: UIViewController,YourCellDelegate{
+class FreeBoard: UIViewController,YourCellDelegate{
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: (tag)")
     }
@@ -22,11 +22,9 @@ class ViewController3: UIViewController,YourCellDelegate{
         self.myTableView.rowHeight = 240
         self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0);
     }
-    
-    
 }
 
-extension ViewController3: UITableViewDelegate, UITableViewDataSource{
+extension FreeBoard: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -58,10 +56,4 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource{
         maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
         cell.layer.mask = maskLayer
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          // Get the new view controller using segue.destination.
-          // Pass the selected object to the new view controller.
-          if segue.identifier == "sgdetail" {
-              (segue.destination as! BoardDetailViewController) = item[(self.myTableView.indexPathForSelectedRow)!.row]
-          }
 }
