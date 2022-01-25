@@ -25,6 +25,10 @@
 		41D4117D278B2530003F46EE /* FifthTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117C278B2530003F46EE /* FifthTapViewController.swift */; };
 		41E5719D2798535800B76E37 /* WritingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719C2798535800B76E37 /* WritingPageController.swift */; };
 		41E5719F279862E600B76E37 /* BoardDetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */; };
+		41E571A1279C026000B76E37 /* SecondTapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A0279C026000B76E37 /* SecondTapTableViewCell.swift */; };
+		41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A2279C053A00B76E37 /* EntireBoardDetail.swift */; };
+		41E571A527A04DEC00B76E37 /* EntireDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A427A04DEC00B76E37 /* EntireDetailCell.swift */; };
+		41E571A727A0508300B76E37 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A627A0508300B76E37 /* UIColor.swift */; };
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +55,10 @@
 		41D4117C278B2530003F46EE /* FifthTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTapViewController.swift; sourceTree = "<group>"; };
 		41E5719C2798535800B76E37 /* WritingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPageController.swift; sourceTree = "<group>"; };
 		41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewViewController.swift; sourceTree = "<group>"; };
+		41E571A0279C026000B76E37 /* SecondTapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTapTableViewCell.swift; sourceTree = "<group>"; };
+		41E571A2279C053A00B76E37 /* EntireBoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntireBoardDetail.swift; sourceTree = "<group>"; };
+		41E571A427A04DEC00B76E37 /* EntireDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntireDetailCell.swift; sourceTree = "<group>"; };
+		41E571A627A0508300B76E37 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				4532B980279A4CAC00D405B2 /* Font */,
+				41E571A627A0508300B76E37 /* UIColor.swift */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -134,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				4194EC9D278175CA00AC473B /* FreeBoardTableViewCell.swift */,
+				41E571A0279C026000B76E37 /* SecondTapTableViewCell.swift */,
+				41E571A2279C053A00B76E37 /* EntireBoardDetail.swift */,
+				41E571A427A04DEC00B76E37 /* EntireDetailCell.swift */,
 				41E5719E279862E600B76E37 /* BoardDetailViewViewController.swift */,
 				41E5719C2798535800B76E37 /* WritingPageController.swift */,
 				4532B982279A522A00D405B2 /* BoardType */,
@@ -287,17 +299,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
+				41E571A527A04DEC00B76E37 /* EntireDetailCell.swift in Sources */,
 				415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */,
 				4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */,
 				411F6508275D9AF2002AFF9F /* SecondTapViewController.swift in Sources */,
 				41E5719F279862E600B76E37 /* BoardDetailViewViewController.swift in Sources */,
 				41D41179278B250A003F46EE /* ThirdTapViewController.swift in Sources */,
 				4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */,
+				41E571A727A0508300B76E37 /* UIColor.swift in Sources */,
 				41E5719D2798535800B76E37 /* WritingPageController.swift in Sources */,
 				411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */,
 				411F6504275D9AF2002AFF9F /* AppDelegate.swift in Sources */,
 				41D4117B278B251C003F46EE /* FourthTapViewController.swift in Sources */,
+				41E571A1279C026000B76E37 /* SecondTapTableViewCell.swift in Sources */,
 				411F6506275D9AF2002AFF9F /* SceneDelegate.swift in Sources */,
+				41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */,
 				4194EC9E278175CA00AC473B /* FreeBoardTableViewCell.swift in Sources */,
 				41D41177278B2378003F46EE /* FirstTapViewController.swift in Sources */,
 				41D4117D278B2530003F46EE /* FifthTapViewController.swift in Sources */,

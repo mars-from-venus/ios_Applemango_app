@@ -22,6 +22,9 @@ class FreeBoard: UIViewController,YourCellDelegate{
         self.myTableView.rowHeight = 240
         self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0);
     }
+    @IBAction func modalDismiss(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
 }
 
 extension FreeBoard: UITableViewDelegate, UITableViewDataSource{

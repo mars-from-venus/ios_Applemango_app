@@ -8,10 +8,13 @@
 import UIKit
 import JJFloatingActionButton
 
- class SecondTapViewController: UIViewController {
+class SecondTapViewController: UIViewController, YourCellDelegate2 {
+    func didPressButton(_ tag: Int) {
+        print("I have pressed a button with a tag: (tag)")
+    }
     
      @IBOutlet var buttonView: UIView!
-     @IBOutlet var myView : UIView!
+    @IBOutlet var myTableView: UITableView!
      @IBOutlet var button1 : UIButton!
      @IBOutlet var button2 : UIButton!
      @IBOutlet var button3 : UIButton!
@@ -21,15 +24,19 @@ import JJFloatingActionButton
     override func viewDidLoad() {
         super.viewDidLoad()
         floatingBtn()
-        naviTitleChange()
-        addToView(FreeBoard.self)
+        naviTitleChange(name: "커뮤니티")
         let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
         let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
         let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
         self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.backgroundColor = UIColor.appColor(.backGray)
+        self.myTableView.rowHeight = 240
+//        self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
+        
     }
-
-     
+         
      func floatingBtn(){
          let actionButton = JJFloatingActionButton()
          actionButton.buttonImage = UIImage(named: "pencileImage")
@@ -60,21 +67,22 @@ import JJFloatingActionButton
      }
      
      
-     func naviTitleChange(){
+    func naviTitleChange(name:String){
          if let navigationBar = self.navigationController?.navigationBar {
-             let firstFrame = CGRect(x: 25, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+             let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.6, height: navigationBar.frame.height)
              let firstLabel = UILabel(frame: firstFrame)
-             firstLabel.text = "커뮤니티"
+             firstLabel.text = "\(name)"
              firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
              firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
-             navigationBar.addSubview(firstLabel)
+             //이 페이지만 적용할땐 navigationItem 사용, 전체 네비에 적용할땐 navigationBar 사용
+             self.navigationItem.titleView = firstLabel
          }
      }
      
     func addToView(_ withIdentifier:UIViewController.Type){
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "\(withIdentifier)")
-        self.myView.addSubview(vcName!.self.view)
-        myView.layer.masksToBounds = true
+//        self.myView.addSubview(vcName!.self.view)
+//        myView.layer.masksToBounds = true
     }
      
      @IBAction func moveToView2(_ sender: UIButton){
@@ -98,3 +106,37 @@ import JJFloatingActionButton
      }
 }
 
+extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return item.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SecondTapTableViewCell
+        cell.cellDelegate = self
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.white
+        cell.clipsToBounds = true
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        //셀 구분선 처음부터 끝까지
+        cell.separatorInset = UIEdgeInsets.zero
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(item[indexPath.row])")
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
+        let verticalPadding: CGFloat = 10
+        let maskLayer = CALayer()
+//        maskLayer.cornerRadius = 10    //if you want round edges
+        maskLayer.backgroundColor = UIColor.black.cgColor
+        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+        cell.layer.mask = maskLayer
+    }
+
+}

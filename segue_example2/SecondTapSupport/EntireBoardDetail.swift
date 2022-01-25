@@ -1,21 +1,22 @@
 //
-//  BoardDetailViewViewController.swift
+//  EntireBoardDetail.swift
 //  segue_example2
 //
-//  Created by mars on 2022/01/20.
+//  Created by mars on 2022/01/22.
 //
 
 import UIKit
 
-class BoardDetailViewController: UIViewController {
+class EntireBoardDetail: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
     
+    }
+    
+ 
 
     /*
     // MARK: - Navigation
