@@ -25,16 +25,20 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
         super.viewDidLoad()
         floatingBtn()
         naviTitleChange(name: "커뮤니티")
-        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
-        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
-        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
-        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+        rightBarBtnGroup()
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.backgroundColor = UIColor.appColor(.backGray)
         self.myTableView.rowHeight = 240
 //        self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
         
+    }
+    
+    func rightBarBtnGroup(){
+        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
     }
          
      func floatingBtn(){
