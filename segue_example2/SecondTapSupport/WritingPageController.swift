@@ -59,7 +59,7 @@ class WritingPageController: UITableViewController,UITextViewDelegate {
         dropDown.textFont = UIFont.systemFont(ofSize: 15)
         dropDown.cornerRadius = 15
         dropDown.selectedTextColor = .white
-        dropDown.selectionBackgroundColor = UIColor(red: 255, green: 120, blue: 75, alpha: 1)
+        dropDown.selectionBackgroundColor = UIColor.appColor(.mainColor)
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
 //            guard let _ = self else { return }
             drBtn.setTitle(item, for: .normal)

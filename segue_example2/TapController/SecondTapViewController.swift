@@ -33,13 +33,6 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
 //        self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
         
     }
-    
-    func rightBarBtnGroup(){
-        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
-        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
-        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
-        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
-    }
          
      func floatingBtn(){
          let actionButton = JJFloatingActionButton()
@@ -57,18 +50,22 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
          actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
          actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
      }
-     
-
-     func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
-         let image = UIImage(named: imageName)!
-         let btn: UIButton = UIButton(type: UIButton.ButtonType.custom)
-         btn.setImage(image, for: .normal)
-         //     btn.addTarget(self, action: action, for: .touchUpInside)
-         btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-         let barBtn = UIBarButtonItem(customView: btn)
-         
-         return barBtn
-     }
+    
+    func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
+        let image = UIImage(named: imageName)!
+        let btn: UIButton = UIButton(type: UIButton.ButtonType.custom)
+        btn.setImage(image, for: .normal)     //     btn.addTarget(self, action: action, for: .touchUpInside)
+        btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        let barBtn = UIBarButtonItem(customView: btn)
+        return barBtn
+    }
+    
+    func rightBarBtnGroup(){
+        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+    }
      
      
     func naviTitleChange(name:String){
