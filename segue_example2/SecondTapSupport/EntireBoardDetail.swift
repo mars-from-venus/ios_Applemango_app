@@ -7,12 +7,30 @@
 
 import UIKit
 
-class EntireBoardDetail: UIViewController {
+class EntireBoardDetail: UIViewController,YourCellDelegate3, YourCellDelegate {
+    func didPressButton(_ tag: Int) {
+        print("123")
+    }
     
+    @IBOutlet weak var boardView : UIView!
+    @IBOutlet weak var mytable : UITableView!
+    @IBOutlet weak var shareBtn : UIButton!
+    @IBOutlet weak var commentBtn : UIButton!
+    @IBOutlet weak var dividerView : UIView!
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         rightBarBtnGroup()
+        self.boardView.layer.borderWidth = 1
+        self.boardView.layer.borderColor = UIColor.appColor(.backGray).cgColor
+        self.dividerView.layer.borderColor = UIColor.appColor(.backGray).cgColor
+        self.dividerView.layer.borderWidth = 1
+        self.mytable.dataSource = self
+        self.mytable.delegate = self
+        self.mytable.rowHeight = 101
+        self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
+        self.mytable.layer.borderWidth = 1
     }
     
     func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
@@ -31,8 +49,40 @@ class EntireBoardDetail: UIViewController {
         self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
     }
     
- 
-
+    @IBAction func kebabBtn(_ sender:UIButton){
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
+        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
+        let banBtn = UIAlertAction(title: "게시물 신고", style: .destructive, handler: {(_) in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: true)
+        })
+        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
+        alert.addAction(friendBtn)
+        alert.addAction(chatBtn)
+        alert.addAction(banBtn)
+        alert.addAction(cancelBtn)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func kebabBtn2(_ sender:UIButton){
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
+        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
+        let banBtn = UIAlertAction(title: "댓글 신고", style: .destructive, handler: {(_) in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage2")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: true)
+        })
+        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
+        alert.addAction(friendBtn)
+        alert.addAction(chatBtn)
+        alert.addAction(banBtn)
+        alert.addAction(cancelBtn)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -42,5 +92,27 @@ class EntireBoardDetail: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return item.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! CommentCell
+        cell.cellDelegate = self
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.white
+        cell.clipsToBounds = true
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(item[indexPath.row])")
+    }
 
 }
