@@ -8,10 +8,10 @@
 import UIKit
 
 class FifthTapViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
        naviTitleChange()
     }
     

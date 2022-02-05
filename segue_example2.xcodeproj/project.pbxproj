@@ -41,6 +41,7 @@
 		41E571C427AEBEB500B76E37 /* HumorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C327AEBEB500B76E37 /* HumorDetailView.swift */; };
 		41E571C627AEBEF500B76E37 /* HumorCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C527AEBEF500B76E37 /* HumorCommentCell.swift */; };
 		41E571C827AEC3A400B76E37 /* HotCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C727AEC3A400B76E37 /* HotCommentCell.swift */; };
+		41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571D027AECBF600B76E37 /* SettingTableView.swift */; };
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		41E571C327AEBEB500B76E37 /* HumorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorDetailView.swift; sourceTree = "<group>"; };
 		41E571C527AEBEF500B76E37 /* HumorCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorCommentCell.swift; sourceTree = "<group>"; };
 		41E571C727AEC3A400B76E37 /* HotCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCommentCell.swift; sourceTree = "<group>"; };
+		41E571D027AECBF600B76E37 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		411F6502275D9AF2002AFF9F /* segue_example2 */ = {
 			isa = PBXGroup;
 			children = (
+				41E571CF27AECA0C00B76E37 /* FifthTapSupport */,
 				411F6503275D9AF2002AFF9F /* AppDelegate.swift */,
 				411F6505275D9AF2002AFF9F /* SceneDelegate.swift */,
 				4532B981279A4CDB00D405B2 /* SecondTapSupport */,
@@ -254,6 +257,14 @@
 				41E571BD27AEBDB300B76E37 /* ChartBoardDetailView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		41E571CF27AECA0C00B76E37 /* FifthTapSupport */ = {
+			isa = PBXGroup;
+			children = (
+				41E571D027AECBF600B76E37 /* SettingTableView.swift */,
+			);
+			path = FifthTapSupport;
 			sourceTree = "<group>";
 		};
 		4532B97E279A4C6C00D405B2 /* TapController */ = {
@@ -448,6 +459,7 @@
 				41E571A727A0508300B76E37 /* UIColor.swift in Sources */,
 				41E5719D2798535800B76E37 /* WritingPageController.swift in Sources */,
 				411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */,
+				41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */,
 				411F6504275D9AF2002AFF9F /* AppDelegate.swift in Sources */,
 				41D4117B278B251C003F46EE /* FourthTapViewController.swift in Sources */,
 				41E571A1279C026000B76E37 /* SecondTapTableViewCell.swift in Sources */,
@@ -610,6 +622,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C23Z6FC8YS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = segue_example2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -638,6 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C23Z6FC8YS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = segue_example2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
