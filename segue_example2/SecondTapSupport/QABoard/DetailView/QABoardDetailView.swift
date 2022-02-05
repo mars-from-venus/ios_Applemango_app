@@ -1,23 +1,23 @@
 //
-//  EntireBoardDetail.swift
+//  QABoardDetailView.swift
 //  segue_example2
 //
-//  Created by mars on 2022/01/22.
+//  Created by mars on 2022/02/05.
 //
 
 import UIKit
 
-class EntireBoardDetail: UIViewController,YourCellDelegate3, YourCellDelegate {
+class QABoardDetailView: UIViewController, YourCellDelegate5 {
     func didPressButton(_ tag: Int) {
         print("123")
     }
     
+    @IBOutlet weak var myTableView : UITableView!
     @IBOutlet weak var boardView : UIView!
-    @IBOutlet weak var mytable : UITableView!
     @IBOutlet weak var shareBtn : UIButton!
     @IBOutlet weak var commentBtn : UIButton!
     @IBOutlet weak var dividerView : UIView!
- 
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +26,13 @@ class EntireBoardDetail: UIViewController,YourCellDelegate3, YourCellDelegate {
         self.boardView.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.dividerView.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.dividerView.layer.borderWidth = 1
-        self.mytable.dataSource = self
-        self.mytable.delegate = self
-        self.mytable.rowHeight = 101
-        self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
-        self.mytable.layer.borderWidth = 1
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
+        self.myTableView.rowHeight = 101
+        self.myTableView.layer.borderColor = UIColor.appColor(.backGray).cgColor
+        self.myTableView.layer.borderWidth = 1
     }
-    
+
     func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
         let image = UIImage(named: imageName)!
         let btn: UIButton = UIButton(type: UIButton.ButtonType.custom)
@@ -83,6 +83,7 @@ class EntireBoardDetail: UIViewController,YourCellDelegate3, YourCellDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -95,7 +96,7 @@ class EntireBoardDetail: UIViewController,YourCellDelegate3, YourCellDelegate {
 
 }
 
-extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
+extension QABoardDetailView: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -103,7 +104,7 @@ extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
         return item.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! CommentCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! HumorCommentCell
         cell.cellDelegate = self
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
@@ -114,5 +115,4 @@ extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(item[indexPath.row])")
     }
-
 }
