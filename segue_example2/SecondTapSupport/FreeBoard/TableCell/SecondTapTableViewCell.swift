@@ -22,6 +22,8 @@ class SecondTapTableViewCell: UITableViewCell {
         // Initialization code
         myView.layer.borderWidth = 0.5
         myView.layer.borderColor = UIColor.lightGray.cgColor
+        lblContent.numberOfLines = 8
+        lblContent.frame = CGRect(x: 10, y: 20, width: myView.frame.width - 50, height: 200)
 
     }
 
