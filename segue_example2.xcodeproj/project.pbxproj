@@ -43,6 +43,8 @@
 		41E571C827AEC3A400B76E37 /* HotCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C727AEC3A400B76E37 /* HotCommentCell.swift */; };
 		41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571D027AECBF600B76E37 /* SettingTableView.swift */; };
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
+		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
+		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		41E571C727AEC3A400B76E37 /* HotCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCommentCell.swift; sourceTree = "<group>"; };
 		41E571D027AECBF600B76E37 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
+		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,6 +288,8 @@
 			children = (
 				4532B980279A4CAC00D405B2 /* Font */,
 				41E571A627A0508300B76E37 /* UIColor.swift */,
+				45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */,
+				45E5260927B1188200F75319 /* BorderSelect.swift */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
+				45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetailView.swift in Sources */,
 				41E571AD27AC1A2F00B76E37 /* ReportPage2.swift in Sources */,
 				41E571BC27AEBDA000B76E37 /* QABoardDetailView.swift in Sources */,
@@ -465,6 +472,7 @@
 				41E571A1279C026000B76E37 /* SecondTapTableViewCell.swift in Sources */,
 				411F6506275D9AF2002AFF9F /* SceneDelegate.swift in Sources */,
 				41E571A927ABD82300B76E37 /* EnCommentCell.swift in Sources */,
+				45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */,
 				41E571C427AEBEB500B76E37 /* HumorDetailView.swift in Sources */,
 				41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */,
 				4194EC9E278175CA00AC473B /* FreeBoardTableViewCell.swift in Sources */,

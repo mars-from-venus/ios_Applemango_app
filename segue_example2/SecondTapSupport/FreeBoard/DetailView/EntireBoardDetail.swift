@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DLRadioButton
 
 class EntireBoardDetail: UIViewController,YourCellDelegate3 {
     func didPressButton(_ tag: Int) {
@@ -14,9 +15,10 @@ class EntireBoardDetail: UIViewController,YourCellDelegate3 {
     
     @IBOutlet weak var boardView : UIView!
     @IBOutlet weak var mytable : UITableView!
-    @IBOutlet weak var shareBtn : UIButton!
-    @IBOutlet weak var commentBtn : UIButton!
+    @IBOutlet weak var registBtn : UIButton!
+    @IBOutlet weak var recommendBtn : UIButton!
     @IBOutlet weak var dividerView : UIView!
+    @IBOutlet weak var lblType: UILabel!
  
 
     override func viewDidLoad() {
@@ -31,6 +33,14 @@ class EntireBoardDetail: UIViewController,YourCellDelegate3 {
         self.mytable.rowHeight = 101
         self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.mytable.layer.borderWidth = 1
+        lblType.layer.borderWidth = 1
+        lblType.layer.borderColor = UIColor.appColor(.borderColor).cgColor
+        lblType.layer.cornerRadius = 5
+        recommendBtn.isSelected = true
+    }
+    
+    @IBAction func asd(_ sender: UIButton){
+        print(sender)
     }
     
     func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{

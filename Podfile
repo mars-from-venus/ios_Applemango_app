@@ -8,5 +8,6 @@ target 'segue_example2' do
   # Pods for segue_example2
 pod 'JJFloatingActionButton'
 pod 'DropDown'
+pod 'DLRadioButton', '~> 1.4'
 
 end

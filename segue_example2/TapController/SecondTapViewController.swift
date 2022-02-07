@@ -13,13 +13,13 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
         print("I have pressed a button with a tag: (tag)")
     }
     
-     @IBOutlet var buttonView: UIView!
+    @IBOutlet var buttonView: UIView!
     @IBOutlet var myTableView: UITableView!
-     @IBOutlet var button1 : UIButton!
-     @IBOutlet var button2 : UIButton!
-     @IBOutlet var button3 : UIButton!
-     @IBOutlet var button4 : UIButton!
-     @IBOutlet var button5 : UIButton!
+    @IBOutlet var button1 : UIButton!
+    @IBOutlet var button2 : UIButton!
+    @IBOutlet var button3 : UIButton!
+    @IBOutlet var button4 : UIButton!
+    @IBOutlet var button5 : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +31,8 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
         myTableView.backgroundColor = UIColor.appColor(.backGray)
         self.myTableView.rowHeight = 240
 //        self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
-        
     }
-         
+    
      func floatingBtn(){
          let actionButton = JJFloatingActionButton()
          actionButton.buttonImage = UIImage(named: "pencileImage")
@@ -82,6 +81,7 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
      
     func addToView(_ withIdentifier:UIViewController.Type){
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "\(withIdentifier)")
+        print(vcName)
 //        self.myView.addSubview(vcName!.self.view)
 //        myView.layer.masksToBounds = true
     }
@@ -109,10 +109,10 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
 
 extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return item.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return item.count
+        return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SecondTapTableViewCell
@@ -120,24 +120,37 @@ extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
-        cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        //셀 구분선 처음부터 끝까지
-        cell.separatorInset = UIEdgeInsets.zero
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        let cellSpacingHeight: CGFloat = 15
+        return cellSpacingHeight
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+            footerView.backgroundColor = UIColor.clear
+            return footerView
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(item[indexPath.row])")
     }
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        let verticalPadding: CGFloat = 10
-        let maskLayer = CALayer()
-//        maskLayer.cornerRadius = 10    //if you want round edges
-        maskLayer.backgroundColor = UIColor.black.cgColor
-        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        cell.layer.mask = maskLayer
-    }
-
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+//        if(indexPath.row >= 1) {
+//        let verticalPadding: CGFloat = 14
+//        let maskLayer = CALayer()
+////        maskLayer.cornerRadius = 10    //if you want round edges
+//        maskLayer.backgroundColor = UIColor.black.cgColor
+//        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+//        cell.layer.mask = maskLayer
+//        }else{
+//            let verticalPadding: CGFloat = 14
+//            let maskLayer = CALayer()
+//            maskLayer.backgroundColor = UIColor.white.cgColor
+//            maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+//            cell.layer.mask = maskLayer
+//        }
+//    }
 }

@@ -7,121 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		090FBCA561789B75B826FFFC94C03AB1 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9ABA0E7254708A16ADC7CBE484E0 /* UIColor+JJFloatingActionButton.swift */; };
-		218B031B308E23DF06342A3ADC99ACD4 /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65413C3DFA7CD0990EF2E67738D6F6E1 /* JJFloatingActionButton+Animation.swift */; };
-		2E07C000289E337DB1B97E8505D12BA5 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F667B23E63825580AFE3F907EA27A0E8 /* Styles.swift */; };
+		090FBCA561789B75B826FFFC94C03AB1 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F26F06E4FD87221763BBBA7117BEF /* UIColor+JJFloatingActionButton.swift */; };
+		1B2A3E1D8488055BCB009636F113B7C9 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81E4823706102E05016B948B512F4E /* DLRadioButton.m */; };
+		218B031B308E23DF06342A3ADC99ACD4 /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE751E933E3400F0A6F5C73802CF8F6 /* JJFloatingActionButton+Animation.swift */; };
+		2E07C000289E337DB1B97E8505D12BA5 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A5D3824197D8DB3E20444FE41E083 /* Styles.swift */; };
 		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		36289433628FB2CA6DEF27BF2B5847C4 /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99676E5C07CC5311C163EE4327280C1F /* JJActionItemTitlePosition.swift */; };
+		36289433628FB2CA6DEF27BF2B5847C4 /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D222E4FFFC6C2008BBEF3A4E4D9CAC /* JJActionItemTitlePosition.swift */; };
 		36693CAF0907FE54A26A00E6D6426F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		3725B2585381FF107D74C3E7F21776A6 /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3E981E8958665B4C0D2C3735D0BB2D /* JJFloatingActionButton+Placement.swift */; };
-		3C7FD7AD0ADB1AA3239424C3832D701C /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E19A22971DACBBFF2A12273EC36E39 /* JJFloatingActionButtonDelegate.swift */; };
-		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B97F81D5437A16A47344E78E488AB1 /* DropDown+Appearance.swift */; };
-		59BD16B62DAE64C9B2C38847D2A48296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		5A0587DFE74F8A4B9CED626CD4123F21 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AAC5572681FDA3B474E499D7A68B9 /* JJFloatingActionButtonState.swift */; };
-		5D692279C64E05AFEEA5AC02C0108559 /* Pods-segue_example2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA918BF4ADBCD919C79ADCBA6D72F827 /* Pods-segue_example2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6343C77428051A8EC2D6609A24203C93 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DE7D6020FC9FEC080B45FE1A9F1D6 /* AnimationConfiguration.swift */; };
-		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64565757D3CF5CC08423724DC21070FC /* DropDownCell.xib */; };
-		6BBB7985493757F02F6B6AFCBC3E00D1 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9C5E8EF12EA3EA59FAD6C5129B7B6 /* UIView+JJFloatingActionButton.swift */; };
-		6E452BF6685F0F514F49EA42E0E959E2 /* Pods-segue_example2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02697819E8AD41AE802793E96FF2E130 /* Pods-segue_example2-dummy.m */; };
-		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085C24D006E072AC1B615FFBBA9DF38B /* DPDConstants.swift */; };
-		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8B06D7BEBA9369BA3A461863064F3 /* DropDown.swift */; };
-		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6546E85B0F1F21DD32AB2FA53ED8B2C /* DPDKeyboardListener.swift */; };
-		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5A7A82C0DD90D279B4FF1E1BF2449 /* DropDown-dummy.m */; };
-		9CC6DE9AC8F5CA511AC07B78DFE50F80 /* JJFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF7CBFAD32004747A099240D126B5C2 /* JJFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC53EA492E31D0C0B33D6A6426615C2F /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADB038F4BC3C0403B3A481AA8097BB /* LayerProperties.swift */; };
-		B6F0DD05C99A1930B4AEBEE1FB1D116C /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC86077BA5ED093A7E390884272707C /* JJFloatingActionButton.swift */; };
-		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9FD41E9D70F05F9CF405C20EAEBE8B /* DPDUIView+Extension.swift */; };
-		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD08272D5890A6EF88ED3006C382021 /* DropDownCell.swift */; };
-		D078E2C36C31A2509B8016C0AA8D3E6C /* JJFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0738433DC392312AD4C1D5E64987FC3 /* JJFloatingActionButton-dummy.m */; };
+		3725B2585381FF107D74C3E7F21776A6 /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13EA27EE4BE4B4660A4655618AA88E0 /* JJFloatingActionButton+Placement.swift */; };
+		3C7FD7AD0ADB1AA3239424C3832D701C /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907536C3F91E4692D1F888683D13F9F /* JJFloatingActionButtonDelegate.swift */; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA2450D58D59DB2910606176DF69FA /* DropDown+Appearance.swift */; };
+		5A0587DFE74F8A4B9CED626CD4123F21 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60189C39A678998D1A3BE0EAA3A2AE9F /* JJFloatingActionButtonState.swift */; };
+		6343C77428051A8EC2D6609A24203C93 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3DE3F639C7F4FB1A2FDBE33FCFA38 /* AnimationConfiguration.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4049693E6BBAFEE039425624250145C4 /* DropDownCell.xib */; };
+		6BBB7985493757F02F6B6AFCBC3E00D1 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51EF63527C279FB39C74757CACAB36 /* UIView+JJFloatingActionButton.swift */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D33A101A43E33D1FF9B0D41111CFB8 /* DPDConstants.swift */; };
+		78953B88386EB2E7A3B1878537851318 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3275492206C41EDFDD703647747AB89 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C264B7A6FA3462CF8300226FE9FF6 /* DropDown.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30284184F36455081431136E768834A /* DPDKeyboardListener.swift */; };
+		8DC27195BA1C54FC949AD1AB3D66B226 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD65FF081CE82BE18ABB7552CCA9F75B /* DLRadioButton-dummy.m */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E49CE0276E3803EBE92D6071CFEBF12 /* DropDown-dummy.m */; };
+		9CC6DE9AC8F5CA511AC07B78DFE50F80 /* JJFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5161D79E91198E65441D96161A60ACB /* JJFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A14CA14D8C9EFD9612EF710A1547DF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		AC53EA492E31D0C0B33D6A6426615C2F /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401203A1F60EA9D8E1E538DAD5B1AC28 /* LayerProperties.swift */; };
+		AED1D2FD03EC3E8611BCC5CB4D8E56DA /* Pods-segue_example2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02697819E8AD41AE802793E96FF2E130 /* Pods-segue_example2-dummy.m */; };
+		B6F0DD05C99A1930B4AEBEE1FB1D116C /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17463CFD1D5FA814F48355D85864DBCB /* JJFloatingActionButton.swift */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC15CC100D283B5D322E99DF55EF8A9 /* DPDUIView+Extension.swift */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9974254669A983FBE9C428AA7C32EE0E /* DropDownCell.swift */; };
+		D078E2C36C31A2509B8016C0AA8D3E6C /* JJFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B4772FE09820AF2F44C3C786D08AD /* JJFloatingActionButton-dummy.m */; };
 		D266B2714905A48BC05A2BE0E6E3BE9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		D2AB8E83D8639BB3462EE9B2F1117AB8 /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCCCD0671725198E1BED27605581CD /* JJCircleView.swift */; };
-		E0A28DBA54B65A8254EB463671762D9C /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59BED5E52F98004B789DB042D07805 /* JJActionItem.swift */; };
-		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AACB1151164E1939A9B42F8C669273F /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2AB8E83D8639BB3462EE9B2F1117AB8 /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C66E9B9B69E8A674CE4A6735335E1 /* JJCircleView.swift */; };
+		E0A28DBA54B65A8254EB463671762D9C /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674DFFAC789DDABEE837063F4FC9BB3 /* JJActionItem.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C67FEE69A818F724DC32A587EF8360 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E617A782E1278AAC59FD5C5CD3AE9943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F3579B030CCB270667A0390E7D9CF30A /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7129B614A388005D9B74A25E64F2664C /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7E888B9826F4D02D0BB4840B6312638 /* Pods-segue_example2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA918BF4ADBCD919C79ADCBA6D72F827 /* Pods-segue_example2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		801ADB0A7FE32E0D552C9A7BAA442B54 /* PBXContainerItemProxy */ = {
+		04DC8FA6D7FCC590452ACCCD4E58E029 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
-			remoteInfo = DropDown;
+			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
+			remoteInfo = DLRadioButton;
 		};
-		B7F03ED7384223B414F07BA74F4445C7 /* PBXContainerItemProxy */ = {
+		097E380C2710EBC8FC34353AC5D8584F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E109C6B6B466F202BA0B94E76B45D72B;
 			remoteInfo = JJFloatingActionButton;
 		};
+		E2CE9A4134475A03A03F29E07711E6D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01A8420648682CE6A8FFDD1EF65F11C3 /* Pods-segue_example2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-segue_example2.modulemap"; sourceTree = "<group>"; };
+		01D222E4FFFC6C2008BBEF3A4E4D9CAC /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItemTitlePosition.swift; path = Sources/JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
 		02697819E8AD41AE802793E96FF2E130 /* Pods-segue_example2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-segue_example2-dummy.m"; sourceTree = "<group>"; };
-		03466A62D33F60CDE1A88FAA7EE202E3 /* JJFloatingActionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJFloatingActionButton.release.xcconfig; sourceTree = "<group>"; };
-		085C24D006E072AC1B615FFBBA9DF38B /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		099E835630B2972D701B7FFCFA76874C /* JJFloatingActionButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JJFloatingActionButton-Info.plist"; sourceTree = "<group>"; };
 		105D12419A4E0C155F34916F570744FB /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
-		1AA5A7A82C0DD90D279B4FF1E1BF2449 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		2EC1EADA03811FDEF2B53C583085611E /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		17403693ACF835F82018622CF9475CA1 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		17463CFD1D5FA814F48355D85864DBCB /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButton.swift; path = Sources/JJFloatingActionButton.swift; sourceTree = "<group>"; };
+		260A5D1A06C3B47DD8A77E649FDBB33D /* JJFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JJFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		326A5D3824197D8DB3E20444FE41E083 /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = Sources/Styles.swift; sourceTree = "<group>"; };
+		3AE751E933E3400F0A6F5C73802CF8F6 /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Animation.swift"; path = "Sources/JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
 		3DEA237B3ACBC7F3124FE7AE101B9519 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
-		41F8B06D7BEBA9369BA3A461863064F3 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		4AC86077BA5ED093A7E390884272707C /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButton.swift; path = Sources/JJFloatingActionButton.swift; sourceTree = "<group>"; };
-		51CCCCD0671725198E1BED27605581CD /* JJCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJCircleView.swift; path = Sources/JJCircleView.swift; sourceTree = "<group>"; };
-		546A11C1FBA0F74EE4BA8F567C846F8B /* JJFloatingActionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJFloatingActionButton.debug.xcconfig; sourceTree = "<group>"; };
-		56CC8E389239046C90B911C13FEF1773 /* JJFloatingActionButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JJFloatingActionButton-Info.plist"; sourceTree = "<group>"; };
-		5AACB1151164E1939A9B42F8C669273F /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
-		5C59BED5E52F98004B789DB042D07805 /* JJActionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItem.swift; path = Sources/JJActionItem.swift; sourceTree = "<group>"; };
+		3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7F725F35920DCDABD6477B8084FCD4 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		401203A1F60EA9D8E1E538DAD5B1AC28 /* LayerProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerProperties.swift; path = Sources/LayerProperties.swift; sourceTree = "<group>"; };
+		4049693E6BBAFEE039425624250145C4 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		4D81E4823706102E05016B948B512F4E /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		54C67FEE69A818F724DC32A587EF8360 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		560F46270BD9D61AADB05CEBA18B3741 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		5674DFFAC789DDABEE837063F4FC9BB3 /* JJActionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItem.swift; path = Sources/JJActionItem.swift; sourceTree = "<group>"; };
+		58BF94ED8011CDF2ACC98D4E93327DA6 /* JJFloatingActionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJFloatingActionButton.release.xcconfig; sourceTree = "<group>"; };
 		5E5E9C465ADDA0D5587EF2071C4D1AEE /* Pods-segue_example2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-segue_example2-acknowledgements.plist"; sourceTree = "<group>"; };
-		64565757D3CF5CC08423724DC21070FC /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
-		65413C3DFA7CD0990EF2E67738D6F6E1 /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Animation.swift"; path = "Sources/JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
+		60189C39A678998D1A3BE0EAA3A2AE9F /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonState.swift; path = Sources/JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
 		65579E22020BC05398FA974C29AD8992 /* Pods-segue_example2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-segue_example2-frameworks.sh"; sourceTree = "<group>"; };
-		6D9FD41E9D70F05F9CF405C20EAEBE8B /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		768AF37B3D9608C0C6E0ADEF5CD4A3DC /* JJFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		7129B614A388005D9B74A25E64F2664C /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
+		75D347F01B66EA43DFF1E3ADB08F40A0 /* JJFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		7606778EC6C74E3204A46CC6E1558018 /* DLRadioButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.debug.xcconfig; sourceTree = "<group>"; };
 		7B69FA4F382F882375C042BDC3E243ED /* Pods-segue_example2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-segue_example2-Info.plist"; sourceTree = "<group>"; };
-		834C9ABA0E7254708A16ADC7CBE484E0 /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+JJFloatingActionButton.swift"; path = "Sources/UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
-		83E19A22971DACBBFF2A12273EC36E39 /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonDelegate.swift; path = Sources/JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
-		8C3E981E8958665B4C0D2C3735D0BB2D /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Placement.swift"; path = "Sources/JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		8E2F26F06E4FD87221763BBBA7117BEF /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+JJFloatingActionButton.swift"; path = "Sources/UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		8E49CE0276E3803EBE92D6071CFEBF12 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
 		98184E57B1C284A4056CCA0A3A1AEF62 /* Pods-segue_example2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-segue_example2-acknowledgements.markdown"; sourceTree = "<group>"; };
-		99676E5C07CC5311C163EE4327280C1F /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItemTitlePosition.swift; path = Sources/JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
-		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF7CBFAD32004747A099240D126B5C2 /* JJFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A65AAC5572681FDA3B474E499D7A68B9 /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonState.swift; path = Sources/JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
+		9974254669A983FBE9C428AA7C32EE0E /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		9AC3DE3F639C7F4FB1A2FDBE33FCFA38 /* AnimationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationConfiguration.swift; path = Sources/AnimationConfiguration.swift; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2C824AAA8456D4DB0E88026DA824706 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		AA3FA6749474D769F57C76E521F2ACAC /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
 		AA918BF4ADBCD919C79ADCBA6D72F827 /* Pods-segue_example2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-segue_example2-umbrella.h"; sourceTree = "<group>"; };
-		B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JJFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6546E85B0F1F21DD32AB2FA53ED8B2C /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		BC9DE7D6020FC9FEC080B45FE1A9F1D6 /* AnimationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationConfiguration.swift; path = Sources/AnimationConfiguration.swift; sourceTree = "<group>"; };
-		BD30C127A538743C7D537EC565E47DCC /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
-		BFA9C5E8EF12EA3EA59FAD6C5129B7B6 /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JJFloatingActionButton.swift"; path = "Sources/UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
-		C40A49F0F1EDC11E1E729021669CD0FC /* Pods_segue_example2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_segue_example2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E87D9FF1CA54901EF7D09909BAF71A /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
-		CBD08272D5890A6EF88ED3006C382021 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
-		D2163E4BD73B07A504EC58DEB5CF0B89 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		ABC15CC100D283B5D322E99DF55EF8A9 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JJFloatingActionButton; path = JJFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13EA27EE4BE4B4660A4655618AA88E0 /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Placement.swift"; path = "Sources/JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		C40A49F0F1EDC11E1E729021669CD0FC /* Pods-segue_example2 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-segue_example2"; path = Pods_segue_example2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D33A101A43E33D1FF9B0D41111CFB8 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		C751C17A581783F545340B6873EB998B /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		CF9315886359E887467B5B3D554F38B9 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DCAE4AE9EE219FFF2A14D10B8B52A36F /* JJFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JJFloatingActionButton.modulemap; sourceTree = "<group>"; };
-		DD409A684E58BD0C89D2BCE86F9467EB /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		E0738433DC392312AD4C1D5E64987FC3 /* JJFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		D30284184F36455081431136E768834A /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		D3275492206C41EDFDD703647747AB89 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		D5161D79E91198E65441D96161A60ACB /* JJFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		DCAA2450D58D59DB2910606176DF69FA /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		DCBD2BDE52F96A9A524177FB8A2171F3 /* DLRadioButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.release.xcconfig; sourceTree = "<group>"; };
+		DD51EF63527C279FB39C74757CACAB36 /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JJFloatingActionButton.swift"; path = "Sources/UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		DD65FF081CE82BE18ABB7552CCA9F75B /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		DF6B4772FE09820AF2F44C3C786D08AD /* JJFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		DFACAC1AD58FAC0B357C6989EE065CD6 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
+		E1EEAA5AA61B410948604F7DBD17A39C /* JJFloatingActionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJFloatingActionButton.debug.xcconfig; sourceTree = "<group>"; };
+		E907536C3F91E4692D1F888683D13F9F /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonDelegate.swift; path = Sources/JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ECADB038F4BC3C0403B3A481AA8097BB /* LayerProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerProperties.swift; path = Sources/LayerProperties.swift; sourceTree = "<group>"; };
-		F667B23E63825580AFE3F907EA27A0E8 /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = Sources/Styles.swift; sourceTree = "<group>"; };
-		F9B97F81D5437A16A47344E78E488AB1 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		EF0C264B7A6FA3462CF8300226FE9FF6 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		FC5C66E9B9B69E8A674CE4A6735335E1 /* JJCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJCircleView.swift; path = Sources/JJCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B13A4A5BD6A9C73C174BB97A7E6BE0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59BD16B62DAE64C9B2C38847D2A48296 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16E5E11A310921C0EFB86BAD8AA26F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14CA14D8C9EFD9612EF710A1547DF93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C602B5D62F49EA969D9E156B025261E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E617A782E1278AAC59FD5C5CD3AE9943 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +167,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065E12F9A7E90C91CDA73CDD7E120E4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCAE4AE9EE219FFF2A14D10B8B52A36F /* JJFloatingActionButton.modulemap */,
-				E0738433DC392312AD4C1D5E64987FC3 /* JJFloatingActionButton-dummy.m */,
-				56CC8E389239046C90B911C13FEF1773 /* JJFloatingActionButton-Info.plist */,
-				768AF37B3D9608C0C6E0ADEF5CD4A3DC /* JJFloatingActionButton-prefix.pch */,
-				9CF7CBFAD32004747A099240D126B5C2 /* JJFloatingActionButton-umbrella.h */,
-				546A11C1FBA0F74EE4BA8F567C846F8B /* JJFloatingActionButton.debug.xcconfig */,
-				03466A62D33F60CDE1A88FAA7EE202E3 /* JJFloatingActionButton.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JJFloatingActionButton";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,25 +183,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		41434544B6DFF65CD925099F0BB8206D /* JJFloatingActionButton */ = {
+		1FEB37A9B3EE36BB52AFD18D628F2D1F /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
-				BC9DE7D6020FC9FEC080B45FE1A9F1D6 /* AnimationConfiguration.swift */,
-				5C59BED5E52F98004B789DB042D07805 /* JJActionItem.swift */,
-				99676E5C07CC5311C163EE4327280C1F /* JJActionItemTitlePosition.swift */,
-				51CCCCD0671725198E1BED27605581CD /* JJCircleView.swift */,
-				4AC86077BA5ED093A7E390884272707C /* JJFloatingActionButton.swift */,
-				65413C3DFA7CD0990EF2E67738D6F6E1 /* JJFloatingActionButton+Animation.swift */,
-				8C3E981E8958665B4C0D2C3735D0BB2D /* JJFloatingActionButton+Placement.swift */,
-				83E19A22971DACBBFF2A12273EC36E39 /* JJFloatingActionButtonDelegate.swift */,
-				A65AAC5572681FDA3B474E499D7A68B9 /* JJFloatingActionButtonState.swift */,
-				ECADB038F4BC3C0403B3A481AA8097BB /* LayerProperties.swift */,
-				F667B23E63825580AFE3F907EA27A0E8 /* Styles.swift */,
-				834C9ABA0E7254708A16ADC7CBE484E0 /* UIColor+JJFloatingActionButton.swift */,
-				BFA9C5E8EF12EA3EA59FAD6C5129B7B6 /* UIView+JJFloatingActionButton.swift */,
-				065E12F9A7E90C91CDA73CDD7E120E4F /* Support Files */,
+				C4D33A101A43E33D1FF9B0D41111CFB8 /* DPDConstants.swift */,
+				D30284184F36455081431136E768834A /* DPDKeyboardListener.swift */,
+				ABC15CC100D283B5D322E99DF55EF8A9 /* DPDUIView+Extension.swift */,
+				EF0C264B7A6FA3462CF8300226FE9FF6 /* DropDown.swift */,
+				DCAA2450D58D59DB2910606176DF69FA /* DropDown+Appearance.swift */,
+				9974254669A983FBE9C428AA7C32EE0E /* DropDownCell.swift */,
+				65712CCE754E1BF169471DFA9A6843D0 /* Resources */,
+				8FED59C30650FF53366AD44DBD5502B7 /* Support Files */,
 			);
-			path = JJFloatingActionButton;
+			name = DropDown;
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -198,27 +208,44 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		76ED5FFFC9A3A4FB0EE8DA7FE71BA2EB /* Resources */ = {
+		641E6D6CE233284664E907E51A776999 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64565757D3CF5CC08423724DC21070FC /* DropDownCell.xib */,
+				D65D37F403F83C31C2CE6C26FF770DEA /* DLRadioButton */,
+				1FEB37A9B3EE36BB52AFD18D628F2D1F /* DropDown */,
+				6865DC1A93FDF9FD924E83AAE9CC702F /* JJFloatingActionButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65712CCE754E1BF169471DFA9A6843D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4049693E6BBAFEE039425624250145C4 /* DropDownCell.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		79BC8F4E201DD88D6399CC72EEEB06B9 /* DropDown */ = {
+		6865DC1A93FDF9FD924E83AAE9CC702F /* JJFloatingActionButton */ = {
 			isa = PBXGroup;
 			children = (
-				085C24D006E072AC1B615FFBBA9DF38B /* DPDConstants.swift */,
-				B6546E85B0F1F21DD32AB2FA53ED8B2C /* DPDKeyboardListener.swift */,
-				6D9FD41E9D70F05F9CF405C20EAEBE8B /* DPDUIView+Extension.swift */,
-				41F8B06D7BEBA9369BA3A461863064F3 /* DropDown.swift */,
-				F9B97F81D5437A16A47344E78E488AB1 /* DropDown+Appearance.swift */,
-				CBD08272D5890A6EF88ED3006C382021 /* DropDownCell.swift */,
-				76ED5FFFC9A3A4FB0EE8DA7FE71BA2EB /* Resources */,
-				F1B86D6CFFF3ED49556D8FE7DB6DFE59 /* Support Files */,
+				9AC3DE3F639C7F4FB1A2FDBE33FCFA38 /* AnimationConfiguration.swift */,
+				5674DFFAC789DDABEE837063F4FC9BB3 /* JJActionItem.swift */,
+				01D222E4FFFC6C2008BBEF3A4E4D9CAC /* JJActionItemTitlePosition.swift */,
+				FC5C66E9B9B69E8A674CE4A6735335E1 /* JJCircleView.swift */,
+				17463CFD1D5FA814F48355D85864DBCB /* JJFloatingActionButton.swift */,
+				3AE751E933E3400F0A6F5C73802CF8F6 /* JJFloatingActionButton+Animation.swift */,
+				C13EA27EE4BE4B4660A4655618AA88E0 /* JJFloatingActionButton+Placement.swift */,
+				E907536C3F91E4692D1F888683D13F9F /* JJFloatingActionButtonDelegate.swift */,
+				60189C39A678998D1A3BE0EAA3A2AE9F /* JJFloatingActionButtonState.swift */,
+				401203A1F60EA9D8E1E538DAD5B1AC28 /* LayerProperties.swift */,
+				326A5D3824197D8DB3E20444FE41E083 /* Styles.swift */,
+				8E2F26F06E4FD87221763BBBA7117BEF /* UIColor+JJFloatingActionButton.swift */,
+				DD51EF63527C279FB39C74757CACAB36 /* UIView+JJFloatingActionButton.swift */,
+				9AFFA4F43BD92C2A2684957A94AA5843 /* Support Files */,
 			);
-			path = DropDown;
+			name = JJFloatingActionButton;
+			path = JJFloatingActionButton;
 			sourceTree = "<group>";
 		};
 		82BBEB92AAD82CE59074E8902F3E5D54 /* Pods-segue_example2 */ = {
@@ -238,23 +265,49 @@
 			path = "Target Support Files/Pods-segue_example2";
 			sourceTree = "<group>";
 		};
-		8BE5005780612575BF89E46D4E8BBC3E /* Pods */ = {
+		8FED59C30650FF53366AD44DBD5502B7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				79BC8F4E201DD88D6399CC72EEEB06B9 /* DropDown */,
-				41434544B6DFF65CD925099F0BB8206D /* JJFloatingActionButton */,
+				3E7F725F35920DCDABD6477B8084FCD4 /* DropDown.modulemap */,
+				8E49CE0276E3803EBE92D6071CFEBF12 /* DropDown-dummy.m */,
+				17403693ACF835F82018622CF9475CA1 /* DropDown-Info.plist */,
+				A2C824AAA8456D4DB0E88026DA824706 /* DropDown-prefix.pch */,
+				54C67FEE69A818F724DC32A587EF8360 /* DropDown-umbrella.h */,
+				C751C17A581783F545340B6873EB998B /* DropDown.debug.xcconfig */,
+				CF9315886359E887467B5B3D554F38B9 /* DropDown.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
-		BFD13A4E9DD7935EAC165EA897D23CC6 /* Products */ = {
+		9AFFA4F43BD92C2A2684957A94AA5843 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
-				B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton.framework */,
-				C40A49F0F1EDC11E1E729021669CD0FC /* Pods_segue_example2.framework */,
+				260A5D1A06C3B47DD8A77E649FDBB33D /* JJFloatingActionButton.modulemap */,
+				DF6B4772FE09820AF2F44C3C786D08AD /* JJFloatingActionButton-dummy.m */,
+				099E835630B2972D701B7FFCFA76874C /* JJFloatingActionButton-Info.plist */,
+				75D347F01B66EA43DFF1E3ADB08F40A0 /* JJFloatingActionButton-prefix.pch */,
+				D5161D79E91198E65441D96161A60ACB /* JJFloatingActionButton-umbrella.h */,
+				E1EEAA5AA61B410948604F7DBD17A39C /* JJFloatingActionButton.debug.xcconfig */,
+				58BF94ED8011CDF2ACC98D4E93327DA6 /* JJFloatingActionButton.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/JJFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		C760B848A20B0AA105A36F79C272E103 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA6749474D769F57C76E521F2ACAC /* DLRadioButton.modulemap */,
+				DD65FF081CE82BE18ABB7552CCA9F75B /* DLRadioButton-dummy.m */,
+				DFACAC1AD58FAC0B357C6989EE065CD6 /* DLRadioButton-Info.plist */,
+				560F46270BD9D61AADB05CEBA18B3741 /* DLRadioButton-prefix.pch */,
+				D3275492206C41EDFDD703647747AB89 /* DLRadioButton-umbrella.h */,
+				7606778EC6C74E3204A46CC6E1558018 /* DLRadioButton.debug.xcconfig */,
+				DCBD2BDE52F96A9A524177FB8A2171F3 /* DLRadioButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -262,30 +315,45 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				8BE5005780612575BF89E46D4E8BBC3E /* Pods */,
-				BFD13A4E9DD7935EAC165EA897D23CC6 /* Products */,
+				641E6D6CE233284664E907E51A776999 /* Pods */,
+				FBC664C4140F18FE53489DEC8566825B /* Products */,
 				166ECD7B0C3066E1A420FDC1930ACFEB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F1B86D6CFFF3ED49556D8FE7DB6DFE59 /* Support Files */ = {
+		D65D37F403F83C31C2CE6C26FF770DEA /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
-				2EC1EADA03811FDEF2B53C583085611E /* DropDown.modulemap */,
-				1AA5A7A82C0DD90D279B4FF1E1BF2449 /* DropDown-dummy.m */,
-				DD409A684E58BD0C89D2BCE86F9467EB /* DropDown-Info.plist */,
-				C6E87D9FF1CA54901EF7D09909BAF71A /* DropDown-prefix.pch */,
-				5AACB1151164E1939A9B42F8C669273F /* DropDown-umbrella.h */,
-				BD30C127A538743C7D537EC565E47DCC /* DropDown.debug.xcconfig */,
-				D2163E4BD73B07A504EC58DEB5CF0B89 /* DropDown.release.xcconfig */,
+				7129B614A388005D9B74A25E64F2664C /* DLRadioButton.h */,
+				4D81E4823706102E05016B948B512F4E /* DLRadioButton.m */,
+				C760B848A20B0AA105A36F79C272E103 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		FBC664C4140F18FE53489DEC8566825B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton */,
+				C40A49F0F1EDC11E1E729021669CD0FC /* Pods-segue_example2 */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3306335E9138E6F184D84FA99FDB1696 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E888B9826F4D02D0BB4840B6312638 /* Pods-segue_example2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C1C85016ED80731B19308BCDE84A650 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,11 +362,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C40C00126938D4561B66EA870D2290D /* Headers */ = {
+		3DD921E0111869872AE7B86316889FB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D692279C64E05AFEEA5AC02C0108559 /* Pods-segue_example2-umbrella.h in Headers */,
+				F3579B030CCB270667A0390E7D9CF30A /* DLRadioButton.h in Headers */,
+				78953B88386EB2E7A3B1878537851318 /* DLRadioButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,24 +382,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CE489ED82CB5235A19715F4AFC3E4951 /* Pods-segue_example2 */ = {
+		BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FE0D8D9DF177ABCEF598B55BEABB903 /* Build configuration list for PBXNativeTarget "Pods-segue_example2" */;
+			buildConfigurationList = 7874750D41DB4C79CE8774C9CCDF386E /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
 			buildPhases = (
-				3C40C00126938D4561B66EA870D2290D /* Headers */,
-				FC5D07E7386E4B438C603945364177A6 /* Sources */,
-				0B13A4A5BD6A9C73C174BB97A7E6BE0E /* Frameworks */,
-				7F16DFA4D3313305FB089028F78C2CD1 /* Resources */,
+				3DD921E0111869872AE7B86316889FB3 /* Headers */,
+				BE172C3DB2CE6966A4D532550BE47AC4 /* Sources */,
+				B16E5E11A310921C0EFB86BAD8AA26F5 /* Frameworks */,
+				E3A38AA479335008FF1F0207AA860900 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FC5D206DBA85A6DB6C43CE7B99BB65D /* PBXTargetDependency */,
-				94778F40F05A4E7BEF9C09A6696F29B4 /* PBXTargetDependency */,
+			);
+			name = DLRadioButton;
+			productName = DLRadioButton;
+			productReference = 3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE489ED82CB5235A19715F4AFC3E4951 /* Pods-segue_example2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469D68F839B36976A0DA1BCB6E5AA342 /* Build configuration list for PBXNativeTarget "Pods-segue_example2" */;
+			buildPhases = (
+				3306335E9138E6F184D84FA99FDB1696 /* Headers */,
+				8763491FA4B896CB9C31088D0FA2ADFD /* Sources */,
+				C602B5D62F49EA969D9E156B025261E3 /* Frameworks */,
+				B1F701874B33D9B111D1CBE6CE538C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15285FF4B6B3AB1BB6492D649E4E223C /* PBXTargetDependency */,
+				E11ED62F0E6C9C134B40E7E7C5A39516 /* PBXTargetDependency */,
+				DB0BA63FB66E0446D55C662CF21110D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-segue_example2";
 			productName = Pods_segue_example2;
-			productReference = C40A49F0F1EDC11E1E729021669CD0FC /* Pods_segue_example2.framework */;
+			productReference = C40A49F0F1EDC11E1E729021669CD0FC /* Pods-segue_example2 */;
 			productType = "com.apple.product-type.framework";
 		};
 		E109C6B6B466F202BA0B94E76B45D72B /* JJFloatingActionButton */ = {
@@ -348,7 +436,7 @@
 			);
 			name = JJFloatingActionButton;
 			productName = JJFloatingActionButton;
-			productReference = B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton.framework */;
+			productReference = B39ECB203814E0B477049873DBEA123C /* JJFloatingActionButton */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -366,7 +454,7 @@
 			);
 			name = DropDown;
 			productName = DropDown;
-			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +464,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -387,10 +475,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BFD13A4E9DD7935EAC165EA897D23CC6 /* Products */;
+			productRefGroup = FBC664C4140F18FE53489DEC8566825B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */,
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				E109C6B6B466F202BA0B94E76B45D72B /* JJFloatingActionButton */,
 				CE489ED82CB5235A19715F4AFC3E4951 /* Pods-segue_example2 */,
@@ -406,7 +495,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F16DFA4D3313305FB089028F78C2CD1 /* Resources */ = {
+		B1F701874B33D9B111D1CBE6CE538C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A38AA479335008FF1F0207AA860900 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,35 +555,119 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC5D07E7386E4B438C603945364177A6 /* Sources */ = {
+		8763491FA4B896CB9C31088D0FA2ADFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E452BF6685F0F514F49EA42E0E959E2 /* Pods-segue_example2-dummy.m in Sources */,
+				AED1D2FD03EC3E8611BCC5CB4D8E56DA /* Pods-segue_example2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE172C3DB2CE6966A4D532550BE47AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2A3E1D8488055BCB009636F113B7C9 /* DLRadioButton.m in Sources */,
+				8DC27195BA1C54FC949AD1AB3D66B226 /* DLRadioButton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1FC5D206DBA85A6DB6C43CE7B99BB65D /* PBXTargetDependency */ = {
+		15285FF4B6B3AB1BB6492D649E4E223C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DropDown;
-			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = 801ADB0A7FE32E0D552C9A7BAA442B54 /* PBXContainerItemProxy */;
+			name = DLRadioButton;
+			target = BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */;
+			targetProxy = 04DC8FA6D7FCC590452ACCCD4E58E029 /* PBXContainerItemProxy */;
 		};
-		94778F40F05A4E7BEF9C09A6696F29B4 /* PBXTargetDependency */ = {
+		DB0BA63FB66E0446D55C662CF21110D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JJFloatingActionButton;
 			target = E109C6B6B466F202BA0B94E76B45D72B /* JJFloatingActionButton */;
-			targetProxy = B7F03ED7384223B414F07BA74F4445C7 /* PBXContainerItemProxy */;
+			targetProxy = 097E380C2710EBC8FC34353AC5D8584F /* PBXContainerItemProxy */;
+		};
+		E11ED62F0E6C9C134B40E7E7C5A39516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = E2CE9A4134475A03A03F29E07711E6D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1AB09BC073DF050B1120B82E288A2BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBD2BDE52F96A9A524177FB8A2171F3 /* DLRadioButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DB280362A0C4923E2D4B3BD7317AC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7606778EC6C74E3204A46CC6E1558018 /* DLRadioButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5835FDE563E012CFBF1C7652011848ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03466A62D33F60CDE1A88FAA7EE202E3 /* JJFloatingActionButton.release.xcconfig */;
+			baseConfigurationReference = 58BF94ED8011CDF2ACC98D4E93327DA6 /* JJFloatingActionButton.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -500,7 +680,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,9 +700,46 @@
 			};
 			name = Release;
 		};
+		69341E6E537A006586814383CBBB7A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105D12419A4E0C155F34916F570744FB /* Pods-segue_example2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6E1A9D0160CB0D7F1288671DAD135EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 546A11C1FBA0F74EE4BA8F567C846F8B /* JJFloatingActionButton.debug.xcconfig */;
+			baseConfigurationReference = E1EEAA5AA61B410948604F7DBD17A39C /* JJFloatingActionButton.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -535,7 +752,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -682,84 +899,9 @@
 			};
 			name = Release;
 		};
-		A7C2B9EA2BA8259305AEC763AC5B4A87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 105D12419A4E0C155F34916F570744FB /* Pods-segue_example2.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C02E50050232FC966FA102EBFEB8B2D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DEA237B3ACBC7F3124FE7AE101B9519 /* Pods-segue_example2.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C24518E891FAA59668669823639498EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2163E4BD73B07A504EC58DEB5CF0B89 /* DropDown.release.xcconfig */;
+			baseConfigurationReference = CF9315886359E887467B5B3D554F38B9 /* DropDown.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -772,7 +914,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,9 +934,47 @@
 			};
 			name = Release;
 		};
+		CD5CA844BA1F97C88011CA2936FDB212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEA237B3ACBC7F3124FE7AE101B9519 /* Pods-segue_example2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-segue_example2/Pods-segue_example2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD30C127A538743C7D537EC565E47DCC /* DropDown.debug.xcconfig */;
+			baseConfigurationReference = C751C17A581783F545340B6873EB998B /* DropDown.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -807,7 +987,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,11 +1009,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FE0D8D9DF177ABCEF598B55BEABB903 /* Build configuration list for PBXNativeTarget "Pods-segue_example2" */ = {
+		469D68F839B36976A0DA1BCB6E5AA342 /* Build configuration list for PBXNativeTarget "Pods-segue_example2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7C2B9EA2BA8259305AEC763AC5B4A87 /* Debug */,
-				C02E50050232FC966FA102EBFEB8B2D8 /* Release */,
+				69341E6E537A006586814383CBBB7A11 /* Debug */,
+				CD5CA844BA1F97C88011CA2936FDB212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -852,6 +1032,15 @@
 			buildConfigurations = (
 				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
 				C24518E891FAA59668669823639498EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7874750D41DB4C79CE8774C9CCDF386E /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB280362A0C4923E2D4B3BD7317AC8E /* Debug */,
+				1AB09BC073DF050B1120B82E288A2BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
