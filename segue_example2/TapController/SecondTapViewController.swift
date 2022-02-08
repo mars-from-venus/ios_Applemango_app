@@ -137,20 +137,5 @@ extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(item[indexPath.row])")
     }
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
-//        if(indexPath.row >= 1) {
-//        let verticalPadding: CGFloat = 14
-//        let maskLayer = CALayer()
-////        maskLayer.cornerRadius = 10    //if you want round edges
-//        maskLayer.backgroundColor = UIColor.black.cgColor
-//        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-//        cell.layer.mask = maskLayer
-//        }else{
-//            let verticalPadding: CGFloat = 14
-//            let maskLayer = CALayer()
-//            maskLayer.backgroundColor = UIColor.white.cgColor
-//            maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-//            cell.layer.mask = maskLayer
-//        }
-//    }
+
 }

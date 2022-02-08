@@ -15,6 +15,8 @@
 		411F6510275D9AF4002AFF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411F650E275D9AF4002AFF9F /* LaunchScreen.storyboard */; };
 		411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6517275D9B20002AFF9F /* HotBoard.swift */; };
 		411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6519275D9B2C002AFF9F /* FreeBoard.swift */; };
+		414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6B27B2C3C500919829 /* FourthTapCell.swift */; };
+		414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6D27B2C78000919829 /* ChatPage.swift */; };
 		415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C5275DE78B004A9632 /* HumorBoard.swift */; };
 		4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC97277F6A9B00AC473B /* QABoard.swift */; };
 		4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC99277F6C9300AC473B /* ChartBoard.swift */; };
@@ -61,6 +63,8 @@
 		411F6511275D9AF4002AFF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411F6517275D9B20002AFF9F /* HotBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoard.swift; sourceTree = "<group>"; };
 		411F6519275D9B2C002AFF9F /* FreeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoard.swift; sourceTree = "<group>"; };
+		414E4E6B27B2C3C500919829 /* FourthTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTapCell.swift; sourceTree = "<group>"; };
+		414E4E6D27B2C78000919829 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		415B62C5275DE78B004A9632 /* HumorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorBoard.swift; sourceTree = "<group>"; };
 		4194EC97277F6A9B00AC473B /* QABoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QABoard.swift; sourceTree = "<group>"; };
 		4194EC99277F6C9300AC473B /* ChartBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBoard.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		411F6502275D9AF2002AFF9F /* segue_example2 */ = {
 			isa = PBXGroup;
 			children = (
+				414E4E6A27B2C3A400919829 /* FourthTapSupport */,
 				41E571CF27AECA0C00B76E37 /* FifthTapSupport */,
 				411F6503275D9AF2002AFF9F /* AppDelegate.swift */,
 				411F6505275D9AF2002AFF9F /* SceneDelegate.swift */,
@@ -141,6 +146,15 @@
 				411F6511275D9AF4002AFF9F /* Info.plist */,
 			);
 			path = segue_example2;
+			sourceTree = "<group>";
+		};
+		414E4E6A27B2C3A400919829 /* FourthTapSupport */ = {
+			isa = PBXGroup;
+			children = (
+				414E4E6B27B2C3C500919829 /* FourthTapCell.swift */,
+				414E4E6D27B2C78000919829 /* ChatPage.swift */,
+			);
+			path = FourthTapSupport;
 			sourceTree = "<group>";
 		};
 		41E571B227AEB88D00B76E37 /* FreeBoard */ = {
@@ -453,12 +467,14 @@
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
 				45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetailView.swift in Sources */,
+				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,
 				41E571AD27AC1A2F00B76E37 /* ReportPage2.swift in Sources */,
 				41E571BC27AEBDA000B76E37 /* QABoardDetailView.swift in Sources */,
 				41E571B827AEBD7000B76E37 /* HotBoardDetailView.swift in Sources */,
 				41E571C827AEC3A400B76E37 /* HotCommentCell.swift in Sources */,
 				41E571A527A04DEC00B76E37 /* EntireDetailCell.swift in Sources */,
 				415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */,
+				414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */,
 				4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */,
 				411F6508275D9AF2002AFF9F /* SecondTapViewController.swift in Sources */,
 				41E5719F279862E600B76E37 /* FreeBoardDetailView.swift in Sources */,
