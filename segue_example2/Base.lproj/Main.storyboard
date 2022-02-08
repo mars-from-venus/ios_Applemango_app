@@ -400,7 +400,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXI-1d-vnG">
-                                        <rect key="frame" x="29" y="249" width="111" height="14"/>
+                                        <rect key="frame" x="29" y="249" width="112" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="Jss-qd-ZeP"/>
                                         </constraints>
@@ -409,14 +409,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -424,14 +424,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -439,7 +439,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1450,44 +1450,47 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유저닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ9-78-mFi">
-                                                    <rect key="frame" x="106" y="32" width="138" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <rect key="frame" x="106" y="32" width="138" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유저닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2s-mi-l13">
-                                                    <rect key="frame" x="106" y="61" width="61" height="17"/>
+                                                    <rect key="frame" x="106" y="58" width="61" height="16"/>
                                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckO-VW-Iuh">
-                                                    <rect key="frame" x="60" y="109" width="294" height="87"/>
+                                                    <rect key="frame" x="50" y="109" width="314" height="87"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="emptyCircle" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-0g-Iwi">
-                                                            <rect key="frame" x="131" y="3" width="60" height="60"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="emptyCircle" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-0g-Iwi">
+                                                            <rect key="frame" x="100" y="3" width="114" height="60"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyCircle" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-Yx-gBG">
-                                                            <rect key="frame" x="234" y="3" width="60" height="60"/>
+                                                            <rect key="frame" x="250" y="3" width="60" height="60"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="댓글 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-aI-BUi">
-                                                            <rect key="frame" x="188" y="66" width="49" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="댓글 내역" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-aI-BUi">
+                                                            <rect key="frame" x="104" y="66" width="106" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="관심 게시물" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-rF-H1W">
-                                                            <rect key="frame" x="234" y="66" width="60" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관심 게시물" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-rF-H1W">
+                                                            <rect key="frame" x="250" y="66" width="60" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="emptyCircle" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-wx-k3W">
-                                                            <rect key="frame" x="0.0" y="3" width="60" height="60"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyCircle" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-wx-k3W">
+                                                            <rect key="frame" x="4" y="3" width="60" height="60"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="게시판 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X9-59-2DW">
-                                                            <rect key="frame" x="0.0" y="66" width="60" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게시판 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X9-59-2DW">
+                                                            <rect key="frame" x="4" y="66" width="60" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1495,22 +1498,24 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="g1l-Yx-gBG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hN4-0g-Iwi" secondAttribute="trailing" constant="45" id="2wM-UK-Nys"/>
-                                                        <constraint firstItem="XXR-aI-BUi" firstAttribute="leading" secondItem="9X9-59-2DW" secondAttribute="trailing" constant="55" id="3AS-ma-xde"/>
-                                                        <constraint firstItem="qKr-rF-H1W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XXR-aI-BUi" secondAttribute="trailing" constant="30" id="8wd-wc-faR"/>
+                                                        <constraint firstItem="XXR-aI-BUi" firstAttribute="leading" secondItem="9X9-59-2DW" secondAttribute="trailing" constant="40" id="0XM-fY-xqO"/>
                                                         <constraint firstItem="9X9-59-2DW" firstAttribute="top" secondItem="7l5-wx-k3W" secondAttribute="bottom" constant="3" id="Axi-Oo-cp1"/>
                                                         <constraint firstItem="XXR-aI-BUi" firstAttribute="top" secondItem="hN4-0g-Iwi" secondAttribute="bottom" constant="3" id="BI0-qk-Bwn"/>
+                                                        <constraint firstItem="g1l-Yx-gBG" firstAttribute="leading" secondItem="hN4-0g-Iwi" secondAttribute="trailing" constant="36" id="CXi-Vy-tRF"/>
                                                         <constraint firstItem="hN4-0g-Iwi" firstAttribute="top" secondItem="ckO-VW-Iuh" secondAttribute="top" constant="3" id="Gr2-UA-3gX"/>
                                                         <constraint firstItem="qKr-rF-H1W" firstAttribute="top" secondItem="g1l-Yx-gBG" secondAttribute="bottom" constant="3" id="Haj-Xb-QIv"/>
-                                                        <constraint firstAttribute="width" constant="322" id="IZB-7v-RD7"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="322" id="IZB-7v-RD7"/>
                                                         <constraint firstItem="g1l-Yx-gBG" firstAttribute="top" secondItem="ckO-VW-Iuh" secondAttribute="top" constant="3" id="LyK-LO-xZZ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="g1l-Yx-gBG" secondAttribute="trailing" id="Sa6-uO-yux"/>
-                                                        <constraint firstItem="7l5-wx-k3W" firstAttribute="leading" secondItem="9X9-59-2DW" secondAttribute="leading" id="WQo-kx-z6h"/>
+                                                        <constraint firstItem="9X9-59-2DW" firstAttribute="leading" secondItem="ckO-VW-Iuh" secondAttribute="leading" constant="4" id="Xll-bz-zem"/>
                                                         <constraint firstAttribute="bottom" secondItem="qKr-rF-H1W" secondAttribute="bottom" constant="5" id="ad2-KR-ooZ"/>
-                                                        <constraint firstItem="hN4-0g-Iwi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7l5-wx-k3W" secondAttribute="trailing" constant="45" id="hvP-Cb-Bez"/>
+                                                        <constraint firstAttribute="trailing" secondItem="g1l-Yx-gBG" secondAttribute="trailing" constant="4" id="aqH-6V-DHb"/>
+                                                        <constraint firstItem="hN4-0g-Iwi" firstAttribute="leading" secondItem="7l5-wx-k3W" secondAttribute="trailing" constant="36" id="hHz-0u-lEG"/>
                                                         <constraint firstAttribute="bottom" secondItem="9X9-59-2DW" secondAttribute="bottom" constant="5" id="qcM-Sv-IsJ"/>
+                                                        <constraint firstItem="qKr-rF-H1W" firstAttribute="leading" secondItem="XXR-aI-BUi" secondAttribute="trailing" constant="40" id="tSb-xO-nyO"/>
                                                         <constraint firstAttribute="bottom" secondItem="XXR-aI-BUi" secondAttribute="bottom" constant="5" id="uUa-JM-yKE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qKr-rF-H1W" secondAttribute="trailing" constant="4" id="wAp-6c-g6p"/>
                                                         <constraint firstItem="7l5-wx-k3W" firstAttribute="top" secondItem="ckO-VW-Iuh" secondAttribute="top" constant="3" id="wi3-FM-cMO"/>
+                                                        <constraint firstItem="7l5-wx-k3W" firstAttribute="leading" secondItem="ckO-VW-Iuh" secondAttribute="leading" constant="4" id="zCZ-3k-k2B"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -1520,12 +1525,12 @@
                                                 <constraint firstItem="NPs-2H-ps5" firstAttribute="top" secondItem="wZ4-7R-PRp" secondAttribute="topMargin" constant="11" id="CF0-SX-12d"/>
                                                 <constraint firstItem="ckO-VW-Iuh" firstAttribute="top" secondItem="NPs-2H-ps5" secondAttribute="bottom" constant="26" id="Jm9-4c-fpD"/>
                                                 <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="mZ9-78-mFi" secondAttribute="trailing" constant="150" id="Rjj-Qz-5pL"/>
-                                                <constraint firstItem="ckO-VW-Iuh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wZ4-7R-PRp" secondAttribute="leadingMargin" constant="40" id="U4f-dE-Xo1"/>
+                                                <constraint firstItem="ckO-VW-Iuh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wZ4-7R-PRp" secondAttribute="leadingMargin" constant="30" id="U4f-dE-Xo1"/>
                                                 <constraint firstItem="NPs-2H-ps5" firstAttribute="leading" secondItem="wZ4-7R-PRp" secondAttribute="leadingMargin" id="dvL-oF-uQM"/>
                                                 <constraint firstItem="mZ9-78-mFi" firstAttribute="top" secondItem="wZ4-7R-PRp" secondAttribute="topMargin" constant="21" id="gSq-cN-Mhy"/>
                                                 <constraint firstItem="mZ9-78-mFi" firstAttribute="leading" secondItem="NPs-2H-ps5" secondAttribute="trailing" constant="8" id="hwa-bw-her"/>
                                                 <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="P2s-mi-l13" secondAttribute="trailing" constant="227" id="jBC-hQ-6Hr"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ckO-VW-Iuh" secondAttribute="trailing" constant="40" id="uNf-Re-Xum"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ckO-VW-Iuh" secondAttribute="trailing" constant="30" id="uNf-Re-Xum"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1574,7 +1579,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZU-EC-kz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2830.434782608696" y="3488.5044642857142"/>
+            <point key="canvasLocation" x="-4288.4057971014499" y="4081.8080357142853"/>
         </scene>
         <!--거래소-->
         <scene sceneID="S3V-0q-6Oy">
@@ -2329,14 +2334,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2344,14 +2349,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2359,7 +2364,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2825,14 +2830,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2840,14 +2845,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2855,7 +2860,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3321,14 +3326,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3336,14 +3341,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3351,7 +3356,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3817,14 +3822,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3832,14 +3837,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -3847,7 +3852,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -4313,14 +4318,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -4328,14 +4333,14 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -4343,7 +4348,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="smallSystem"/>
-                                                    <font key="NSOriginalFont" metaFont="toolTip"/>
+                                                    <font key="NSOriginalFont" usesAppearanceFont="YES"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
