@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DLRadioButton
 
 class FifthTapViewController: UIViewController {
     
@@ -26,4 +27,19 @@ class FifthTapViewController: UIViewController {
         }
     }
 
+}
+
+extension FifthTapViewController : UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyFirstCell
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
 }

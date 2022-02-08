@@ -45,6 +45,7 @@
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
 		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
 		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
+		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
 		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
+		45E5260B27B24CE000F75319 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				41E571D027AECBF600B76E37 /* SettingTableView.swift */,
+				45E5260B27B24CE000F75319 /* MyFirstCell.swift */,
 			);
 			path = FifthTapSupport;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				41D41177278B2378003F46EE /* FirstTapViewController.swift in Sources */,
 				41D4117D278B2530003F46EE /* FifthTapViewController.swift in Sources */,
 				41E571B627AEBB0E00B76E37 /* FreeCommentCell.swift in Sources */,
+				45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

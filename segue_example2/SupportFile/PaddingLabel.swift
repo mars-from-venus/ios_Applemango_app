@@ -8,6 +8,7 @@
 import UIKit
 
 class PaddingLabel: UILabel {
+    
     @IBInspectable var padding: UIEdgeInsets = UIEdgeInsets(top: 3, left: 8, bottom: 3, right: 8)
 
     override func drawText(in rect: CGRect) {

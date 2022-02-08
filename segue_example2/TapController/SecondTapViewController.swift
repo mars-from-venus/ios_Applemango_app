@@ -81,7 +81,7 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
      
     func addToView(_ withIdentifier:UIViewController.Type){
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "\(withIdentifier)")
-        print(vcName)
+        print(vcName!)
 //        self.myView.addSubview(vcName!.self.view)
 //        myView.layer.masksToBounds = true
     }
