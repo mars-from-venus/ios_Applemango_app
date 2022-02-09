@@ -34,3 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//키보드 사라지게 하기 //전체 적용하기 위해 AppDelegate에 선언
+extension UIViewController {
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}

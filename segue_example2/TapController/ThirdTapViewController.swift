@@ -7,10 +7,17 @@
 
 import UIKit
 
-class ThirdTapViewController: UIViewController {
-
+class ThirdTapViewController: UIViewController, yourCellDelegate8 {
+    func pressButton(tag: Int) {
+        print(123)
+    }
+    
+    @IBOutlet weak var myTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myTableView.dataSource = self
+        myTableView.delegate = self
         naviTitleChange()
     }
     func naviTitleChange(){
@@ -24,4 +31,39 @@ class ThirdTapViewController: UIViewController {
         }
     }
     
+    
+}
+
+extension ThirdTapViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MockData.tableTitle.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ThirdTapCell
+        cell.cellDelegate = self
+        cell.lblTitle.text = MockData.tableTitle[indexPath.row]
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.white
+        cell.clipsToBounds = true
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        let cellSpacingHeight: CGFloat = 15
+        return cellSpacingHeight
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+            footerView.backgroundColor = UIColor.clear
+            return footerView
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(item[indexPath.row])")
+    }
+
 }

@@ -12,6 +12,8 @@ class ReportPageDetail: UIViewController {
     var prepareLabel : String?
     
     @IBOutlet weak var lblTitle:UILabel!
+    @IBOutlet weak var myTextView:UITextView!
+    @IBOutlet weak var lblLimit:UILabel!
     
 
     override func viewDidLoad() {
@@ -19,6 +21,13 @@ class ReportPageDetail: UIViewController {
 
         // Do any additional setup after loading the view.
         lblTitle.text = prepareLabel!
+        textViewCustom()
+    }
+    
+    func textViewCustom(){
+        myTextView.layer.borderWidth = 1
+        myTextView.layer.borderColor = UIColor.appColor(.borderColor).cgColor
+        myTextView.layer.cornerRadius = 5
     }
     
 

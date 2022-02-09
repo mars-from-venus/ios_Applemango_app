@@ -48,6 +48,8 @@
 		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
 		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
 		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
+		45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260E27B380B400F75319 /* ThirdTapCell.swift */; };
+		45E5261127B3943700F75319 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5261027B3943700F75319 /* MockData.swift */; };
 		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
 		45E5260B27B24CE000F75319 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
+		45E5260E27B380B400F75319 /* ThirdTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTapCell.swift; sourceTree = "<group>"; };
+		45E5261027B3943700F75319 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +137,7 @@
 		411F6502275D9AF2002AFF9F /* segue_example2 */ = {
 			isa = PBXGroup;
 			children = (
+				45E5260D27B3808F00F75319 /* ThirdTapSupport */,
 				414E4E6A27B2C3A400919829 /* FourthTapSupport */,
 				41E571CF27AECA0C00B76E37 /* FifthTapSupport */,
 				411F6503275D9AF2002AFF9F /* AppDelegate.swift */,
@@ -307,6 +312,7 @@
 				41E571A627A0508300B76E37 /* UIColor.swift */,
 				45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */,
 				45E5260927B1188200F75319 /* BorderSelect.swift */,
+				45E5261027B3943700F75319 /* MockData.swift */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -329,6 +335,14 @@
 				41E571B227AEB88D00B76E37 /* FreeBoard */,
 			);
 			path = SecondTapSupport;
+			sourceTree = "<group>";
+		};
+		45E5260D27B3808F00F75319 /* ThirdTapSupport */ = {
+			isa = PBXGroup;
+			children = (
+				45E5260E27B380B400F75319 /* ThirdTapCell.swift */,
+			);
+			path = ThirdTapSupport;
 			sourceTree = "<group>";
 		};
 		582122561C0DC36600D86B0D /* Frameworks */ = {
@@ -467,6 +481,7 @@
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
 				45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetailView.swift in Sources */,
+				45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */,
 				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,
 				41E571AD27AC1A2F00B76E37 /* ReportPage2.swift in Sources */,
 				41E571BC27AEBDA000B76E37 /* QABoardDetailView.swift in Sources */,
@@ -479,6 +494,7 @@
 				411F6508275D9AF2002AFF9F /* SecondTapViewController.swift in Sources */,
 				41E5719F279862E600B76E37 /* FreeBoardDetailView.swift in Sources */,
 				41E571AF27AE594000B76E37 /* ReportPageCell.swift in Sources */,
+				45E5261127B3943700F75319 /* MockData.swift in Sources */,
 				41D41179278B250A003F46EE /* ThirdTapViewController.swift in Sources */,
 				41E571AB27AC175900B76E37 /* ReportPage.swift in Sources */,
 				4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */,
