@@ -69,7 +69,7 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
      
     func naviTitleChange(name:String){
          if let navigationBar = self.navigationController?.navigationBar {
-             let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.6, height: navigationBar.frame.height)
+             let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.65, height: navigationBar.frame.height)
              let firstLabel = UILabel(frame: firstFrame)
              firstLabel.text = "\(name)"
              firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
