@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HumorBoard: UIViewController,YourCellDelegate{
+class HumorBoard: UIViewController{
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: (tag)")
     }
@@ -42,14 +42,13 @@ class HumorBoard: UIViewController,YourCellDelegate{
 
 extension HumorBoard: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return item.count
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "freecell", for: indexPath) as! FreeBoardTableViewCell
-        cell.cellDelegate = self
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! HumorBoardCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
@@ -63,13 +62,13 @@ extension HumorBoard: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(item[indexPath.row])")
     }
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        let verticalPadding: CGFloat = 10
-        let maskLayer = CALayer()
-//        maskLayer.cornerRadius = 10    //if you want round edges
-        maskLayer.backgroundColor = UIColor.black.cgColor
-        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        cell.layer.mask = maskLayer
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        let cellSpacingHeight: CGFloat = 15
+        return cellSpacingHeight
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.appColor(.backGray)
+            return footerView
     }
 }

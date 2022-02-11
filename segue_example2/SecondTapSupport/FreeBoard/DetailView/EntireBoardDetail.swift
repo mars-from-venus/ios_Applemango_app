@@ -8,10 +8,7 @@
 import UIKit
 import DLRadioButton
 
-class EntireBoardDetail: UIViewController,YourCellDelegate3 {
-    func didPressButton(_ tag: Int) {
-        print("123")
-    }
+class EntireBoardDetail: UIViewController {
     
     @IBOutlet weak var boardView : UIView!
     @IBOutlet weak var mytable : UITableView!
@@ -113,8 +110,8 @@ extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
         return item.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! EnCommentCell
-        cell.cellDelegate = self
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! EntireDetailCell
+//        cell.cellDelegate = self
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true

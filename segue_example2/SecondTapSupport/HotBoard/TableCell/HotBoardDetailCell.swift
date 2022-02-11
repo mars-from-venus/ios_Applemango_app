@@ -1,19 +1,14 @@
 //
-//  HotCommentCell.swift
+//  HotBoardDetailCell.swift
 //  segue_example2
 //
-//  Created by mars on 2022/02/05.
+//  Created by mars on 2022/02/11.
 //
 
 import UIKit
 
-protocol YourCellDelegate6 : AnyObject {
-    func didPressButton(_ tag: Int)
-}
+class HotBoardDetailCell: UITableViewCell {
 
-class HotCommentCell: UITableViewCell {
-
-    var cellDelegate : YourCellDelegate6?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

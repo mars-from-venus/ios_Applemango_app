@@ -1,18 +1,15 @@
 //
-//  CommentCell.swift
+//  FreeCommentCell.swift
 //  segue_example2
 //
-//  Created by mars on 2022/02/03.
+//  Created by mars on 2022/02/05.
 //
 
 import UIKit
 
-protocol YourCellDelegate3 : AnyObject {
-    func didPressButton(_ tag: Int)
-}
+class FreeDetailCell: UITableViewCell {
+    
 
-class EnCommentCell: UITableViewCell {
-    var cellDelegate:YourCellDelegate3?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

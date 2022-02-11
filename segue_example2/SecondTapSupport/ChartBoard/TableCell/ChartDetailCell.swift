@@ -1,13 +1,13 @@
 //
-//  EntireDetailCell.swift
+//  ChartDetailCell.swift
 //  segue_example2
 //
-//  Created by mars on 2022/01/26.
+//  Created by mars on 2022/02/12.
 //
 
 import UIKit
 
-class EntireDetailCell: UITableViewCell {
+class ChartDetailCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,24 +1,21 @@
 //
-//  BoardDetailViewViewController.swift
+//  HumorDetailView.swift
 //  segue_example2
 //
-//  Created by mars on 2022/01/20.
+//  Created by mars on 2022/02/05.
 //
 
 import UIKit
 
-class FreeBoardDetailView: UIViewController, YourCellDelegate4 {
-    func didPressButton(_ tag: Int) {
-        print("123")
-    }
-    
-    @IBOutlet weak var myTableView : UITableView!
-    @IBOutlet weak var boardView : UIView!
-    @IBOutlet weak var shareBtn : UIButton!
-    @IBOutlet weak var commentBtn : UIButton!
-    @IBOutlet weak var dividerView : UIView!
-    
+class HumorBoardDetail: UIViewController {
 
+    @IBOutlet weak var boardView : UIView!
+    @IBOutlet weak var myTable : UITableView!
+    @IBOutlet weak var registBtn : UIButton!
+    @IBOutlet weak var recommendBtn : UIButton!
+    @IBOutlet weak var dividerView : UIView!
+    @IBOutlet weak var lblType: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         rightBarBtnGroup()
@@ -26,11 +23,15 @@ class FreeBoardDetailView: UIViewController, YourCellDelegate4 {
         self.boardView.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.dividerView.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.dividerView.layer.borderWidth = 1
-        self.myTableView.dataSource = self
-        self.myTableView.delegate = self
-        self.myTableView.rowHeight = 101
-        self.myTableView.layer.borderColor = UIColor.appColor(.backGray).cgColor
-        self.myTableView.layer.borderWidth = 1
+        self.myTable.dataSource = self
+        self.myTable.delegate = self
+        self.myTable.rowHeight = 101
+        self.myTable.layer.borderColor = UIColor.appColor(.backGray).cgColor
+        self.myTable.layer.borderWidth = 1
+        lblType.layer.borderWidth = 1
+        lblType.layer.borderColor = UIColor.appColor(.borderColor).cgColor
+        lblType.layer.cornerRadius = 5
+        recommendBtn.isSelected = true
     }
 
     func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
@@ -47,6 +48,10 @@ class FreeBoardDetailView: UIViewController, YourCellDelegate4 {
         let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
         let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
         self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+    }
+    
+    @IBAction func asd(_ sender: UIButton){
+        print(sender)
     }
     
     @IBAction func kebabBtn(_ sender:UIButton){
@@ -96,7 +101,7 @@ class FreeBoardDetailView: UIViewController, YourCellDelegate4 {
 
 }
 
-extension FreeBoardDetailView: UITableViewDelegate, UITableViewDataSource{
+extension HumorBoardDetail: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -104,8 +109,7 @@ extension FreeBoardDetailView: UITableViewDelegate, UITableViewDataSource{
         return item.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! FreeCommentCell
-        cell.cellDelegate = self
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! HumorDetailCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true

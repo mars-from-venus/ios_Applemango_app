@@ -11,8 +11,7 @@ import DropDown
 class FirstTapViewController: UIViewController {
 
     @IBOutlet weak var myTableView:UITableView!
-    
-    let controlHeaderView = UIView()
+    @IBOutlet weak var myView:UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +23,11 @@ class FirstTapViewController: UIViewController {
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        border()
+    }
+    
+    func border(){
+        myView.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 1)
     }
     
     func naviTitleChange(){

@@ -1,34 +1,29 @@
 //
-//  SecondTapTableViewCell.swift
+//  HotCommentCell.swift
 //  segue_example2
 //
-//  Created by mars on 2022/01/22.
+//  Created by mars on 2022/02/05.
 //
 
 import UIKit
 
-protocol YourCellDelegate2 : AnyObject {
-    func didPressButton(_ tag: Int)
-}
-
-class SecondTapTableViewCell: UITableViewCell {
+class HotBoardCell: UITableViewCell {
     
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var lblView : UIView!
     @IBOutlet weak var lblTitle : UILabel!
     @IBOutlet weak var lblContent: UILabel!
     @IBOutlet weak var lblFamous : UILabel!
-    @IBOutlet weak var lblFree : UILabel!
     @IBOutlet weak var lblNick: UILabel!
     @IBOutlet weak var lblTime : UILabel!
     @IBOutlet weak var lblShare : UILabel!
     @IBOutlet weak var lblComment : UILabel!
 
-    var cellDelegate:YourCellDelegate2?
+//    var cellDelegate : YourCellDelegate6?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        myView.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 1)
+        myView?.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 1)
         lblCustom()
         lblTextCustom()
         lblAutoLayout()
@@ -46,17 +41,13 @@ class SecondTapTableViewCell: UITableViewCell {
     }
     
     func lblCustom(){
-        lblFamous.layer.borderWidth = 1
+        lblFamous?.layer.borderWidth = 1
         lblFamous.layer.borderColor = UIColor.appColor(.mainColor).cgColor
         lblFamous.layer.cornerRadius = 5
         lblFamous.layer.backgroundColor = UIColor.appColor(.mainColor).cgColor
         lblFamous.textColor = .white
-        lblFree.layer.borderWidth = 1
-        lblFree.layer.borderColor = UIColor.appColor(.borderColor).cgColor
-        lblFree.layer.cornerRadius = 5
-        lblNick.textColor = UIColor.appColor(.grayTextColor)
-        lblTime.textColor = UIColor.appColor(.grayTextColor)
-        lblFree.sizeToFit()
+        lblNick?.textColor = UIColor.appColor(.grayTextColor)
+        lblTime?.textColor = UIColor.appColor(.grayTextColor)
     }
     
     func lblTextCustom(){
@@ -68,7 +59,8 @@ class SecondTapTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
         // Configure the view for the selected state
     }
-    
+
 }

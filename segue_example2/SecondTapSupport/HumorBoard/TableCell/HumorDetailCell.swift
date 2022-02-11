@@ -1,19 +1,14 @@
 //
-//  HumorCommentCell.swift
+//  HumorDetailCell.swift
 //  segue_example2
 //
-//  Created by mars on 2022/02/05.
+//  Created by mars on 2022/02/12.
 //
 
 import UIKit
 
-protocol YourCellDelegate5 : AnyObject {
-    func didPressButton(_ tag: Int)
-}
+class HumorDetailCell: UITableViewCell {
 
-class HumorCommentCell: UITableViewCell {
-
-    var cellDelegate : YourCellDelegate5?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

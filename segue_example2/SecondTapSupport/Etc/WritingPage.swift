@@ -8,7 +8,7 @@
 import UIKit
 import DropDown
 
-class WritingPageController: UITableViewController,UITextViewDelegate {
+class WritingPage: UITableViewController,UITextViewDelegate {
 
     @IBOutlet weak var drBtn : UIButton!
 //    @IBOutlet weak var myView : UIView!

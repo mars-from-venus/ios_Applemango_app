@@ -29,7 +29,7 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.backgroundColor = UIColor.appColor(.backGray)
-        self.myTableView.rowHeight = 240
+        myTableView.rowHeight = 240
 //        self.myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
     }
     
@@ -115,7 +115,7 @@ extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SecondTapTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SecondTapCell
         cell.cellDelegate = self
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
