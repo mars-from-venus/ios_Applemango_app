@@ -8,7 +8,7 @@
 import UIKit
 import JJFloatingActionButton
 
-class SecondTapViewController: UIViewController, YourCellDelegate2 {
+class CommunityTap: UIViewController, YourCellDelegate2 {
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: (tag)")
     }
@@ -107,7 +107,7 @@ class SecondTapViewController: UIViewController, YourCellDelegate2 {
      }
 }
 
-extension SecondTapViewController: UITableViewDelegate, UITableViewDataSource{
+extension CommunityTap: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return item.count
     }

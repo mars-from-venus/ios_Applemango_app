@@ -8,7 +8,7 @@
 import UIKit
 import DropDown
 
-class FirstTapViewController: UIViewController {
+class ExchangeTap: UIViewController {
 
     @IBOutlet weak var myTableView:UITableView!
     @IBOutlet weak var myView:UIView!
@@ -73,7 +73,7 @@ class FirstTapViewController: UIViewController {
     
 }
 
-extension FirstTapViewController:UITableViewDelegate,UITableViewDataSource{
+extension ExchangeTap:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

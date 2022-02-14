@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdTapViewController: UIViewController, yourCellDelegate8 {
+class NewsTap: UIViewController, yourCellDelegate8 {
     func pressButton(tag: Int) {
         print(123)
     }
@@ -34,7 +34,7 @@ class ThirdTapViewController: UIViewController, yourCellDelegate8 {
     
 }
 
-extension ThirdTapViewController: UITableViewDelegate, UITableViewDataSource{
+extension NewsTap: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second Tap View Controller-->
+        <!--Community Tap-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SecondTapViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommunityTap" id="BYZ-38-t0r" customClass="CommunityTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="moveToView3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dju-8S-Rau"/>
-                                                    <segue destination="3WX-Ws-rGj" kind="show" id="ajg-WD-FgI"/>
+                                                    <segue destination="3WX-Ws-rGj" kind="show" identifier="sgFree" id="ajg-WD-FgI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-1J-M0m">
@@ -54,7 +54,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="moveToView6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLC-bg-3DM"/>
-                                                    <segue destination="qTd-CP-Byw" kind="show" id="NGr-Pc-liv"/>
+                                                    <segue destination="qTd-CP-Byw" kind="show" identifier="sgQA" id="NGr-Pc-liv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="247" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qb-yG-yCp">
@@ -71,7 +71,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="moveToView5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESP-C6-Uqj"/>
-                                                    <segue destination="VBs-P2-ctU" kind="show" id="Yms-xy-fc0"/>
+                                                    <segue destination="5Fs-6B-AUg" kind="show" identifier="sgChart" id="6b3-ag-kuT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-OK-SC8">
@@ -88,7 +88,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="moveToView2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8B-aH-Two"/>
-                                                    <segue destination="6et-nb-ZR7" kind="show" id="y9s-8Q-w04"/>
+                                                    <segue destination="6et-nb-ZR7" kind="show" identifier="sgHot" id="y9s-8Q-w04"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Ue-qb5">
@@ -105,7 +105,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="moveToView4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="By9-iG-yn3"/>
-                                                    <segue destination="SL1-8m-IDu" kind="show" id="lUg-Tp-fYI"/>
+                                                    <segue destination="SL1-8m-IDu" kind="show" identifier="sgHumor" id="lUg-Tp-fYI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -525,9 +525,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paW-Mh-Sb6" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="bGz-eA-qyc"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="bGz-eA-qyc"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -542,13 +542,16 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iconStrokeWidth">
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -557,9 +560,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-gm-S8X" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="eBw-YZ-Are"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="eBw-YZ-Are"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -567,16 +570,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -828,6 +831,8 @@
                     <navigationItem key="navigationItem" id="abc-Av-xT7"/>
                     <connections>
                         <outlet property="boardView" destination="SsX-eE-O5b" id="BLz-oj-PrP"/>
+                        <outlet property="commentField" destination="EbH-cQ-vpb" id="xh2-MC-Jv4"/>
+                        <outlet property="commentView" destination="h0u-ak-8Rb" id="Mew-lK-UoB"/>
                         <outlet property="dividerView" destination="0GV-Hx-xTg" id="JjX-2a-LP3"/>
                         <outlet property="lblType" destination="0bU-bs-FbK" id="bK3-mS-7NI"/>
                         <outlet property="mytable" destination="eoe-2u-uJP" id="bPb-jy-teG"/>
@@ -1033,7 +1038,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="10" indentationWidth="10" reuseIdentifier="myCell" rowHeight="60" id="XhD-je-VKf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="10" indentationWidth="10" reuseIdentifier="myCell" rowHeight="60" id="XhD-je-VKf" customClass="WritingPageCell" customModule="segue_example2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="78" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XhD-je-VKf" id="ZIc-fd-OTb">
@@ -1044,15 +1049,30 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="100" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="100" maxY="0.0"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="게시판 선택"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="게시판 선택" titleAlignment="leading"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrowIcon" imagePlacement="trailing" imagePadding="270" buttonSize="mini" titleAlignment="leading">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="게시판 선택">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="9" name="AppleSDGothicNeo-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </buttonConfiguration>
                                                     <connections>
-                                                        <action selector="dropBtn:" destination="K68-rO-cMk" eventType="touchUpInside" id="mxz-xd-dAu"/>
+                                                        <action selector="dropDownBtn:" destination="XhD-je-VKf" eventType="touchUpInside" id="0uI-f1-mbQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="drBtn" destination="T0M-g1-sWe" id="sgU-Rm-MKY"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="624" id="vhU-J9-USx">
                                         <rect key="frame" x="0.0" y="138" width="414" height="624"/>
@@ -1100,19 +1120,18 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="drBtn" destination="T0M-g1-sWe" id="xTU-wk-Zxl"/>
                         <outlet property="myTableView" destination="axp-nZ-fO1" id="kZ0-Jh-lYi"/>
                         <outlet property="myTextView" destination="VXl-AC-5Je" id="LoR-0d-DJt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2b-1x-2Ps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4338" y="978"/>
+            <point key="canvasLocation" x="-4339.130434782609" y="977.67857142857133"/>
         </scene>
-        <!--First Tap View Controller-->
+        <!--Exchange Tap-->
         <scene sceneID="FpY-pq-gHh">
             <objects>
-                <viewController id="7yY-OX-ZGu" customClass="FirstTapViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExchangeTap" id="7yY-OX-ZGu" customClass="ExchangeTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mud-Rb-Elm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1338,10 +1357,10 @@
             </objects>
             <point key="canvasLocation" x="-4351" y="-1130"/>
         </scene>
-        <!--Fourth Tap View Controller-->
+        <!--Chat Tap-->
         <scene sceneID="0wb-mC-Rcn">
             <objects>
-                <viewController id="RAg-Df-bxV" customClass="FourthTapViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatTap" id="RAg-Df-bxV" customClass="ChatTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bWF-q5-Do8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1493,10 +1512,10 @@
             </objects>
             <point key="canvasLocation" x="-5049" y="3410"/>
         </scene>
-        <!--Fifth Tap View Controller-->
+        <!--My Tap-->
         <scene sceneID="CAv-z2-J3f">
             <objects>
-                <viewController id="Ll6-PQ-cpP" customClass="FifthTapViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyTap" id="Ll6-PQ-cpP" customClass="MyTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olR-TA-Vnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1673,7 +1692,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZU-EC-kz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4288.4057971014499" y="4081.8080357142853"/>
+            <point key="canvasLocation" x="-4291" y="4056"/>
         </scene>
         <!--거래소-->
         <scene sceneID="S3V-0q-6Oy">
@@ -1745,10 +1764,10 @@
             </objects>
             <point key="canvasLocation" x="-3536" y="-1807"/>
         </scene>
-        <!--Third Tap View Controller-->
+        <!--News Tap-->
         <scene sceneID="a2a-Dj-tYg">
             <objects>
-                <viewController id="ncS-9J-j6v" customClass="ThirdTapViewController" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsTap" id="ncS-9J-j6v" customClass="NewsTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3G-Ox-zTJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2145,9 +2164,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-GH-U56" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="6xN-OO-txv"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="6xN-OO-txv"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -2162,13 +2181,13 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -2177,9 +2196,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbR-wR-Ech" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="C33-64-Mah"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="C33-64-Mah"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -2187,16 +2206,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -2459,7 +2478,7 @@
             </objects>
             <point key="canvasLocation" x="-5049" y="258"/>
         </scene>
-        <!--Hot Board-->
+        <!--인기게시물-->
         <scene sceneID="gdt-dR-jRc">
             <objects>
                 <viewController storyboardIdentifier="HotBoard" id="6et-nb-ZR7" customClass="HotBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
@@ -2615,7 +2634,7 @@
                             <constraint firstItem="lrG-9W-nhU" firstAttribute="bottom" secondItem="0rn-eE-X7b" secondAttribute="bottom" id="gN5-HL-x82"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="X1E-7T-IIo"/>
+                    <navigationItem key="navigationItem" title="인기게시물" id="X1E-7T-IIo"/>
                     <connections>
                         <outlet property="myTableView" destination="lrG-9W-nhU" id="cih-Pf-rVD"/>
                     </connections>
@@ -2834,9 +2853,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kus-91-kOr" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="dGR-5A-z7i"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="dGR-5A-z7i"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -2851,13 +2870,13 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -2866,9 +2885,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqU-g4-D1s" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="0MV-95-doW"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="0MV-95-doW"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -2876,16 +2895,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -3358,9 +3377,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFh-8C-VVb" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="tU8-NQ-A0D"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="tU8-NQ-A0D"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -3375,13 +3394,13 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -3390,9 +3409,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMh-r3-lDT" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="0yO-PB-3DM"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="0yO-PB-3DM"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -3400,16 +3419,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -3882,9 +3901,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-8H-nJG" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="rZc-7O-PO0"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="rZc-7O-PO0"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -3899,13 +3918,13 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -3914,9 +3933,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-Q5-87u" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="eLZ-07-s80"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="eLZ-07-s80"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -3924,16 +3943,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -4406,9 +4425,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlB-SZ-kDL" customClass="DLRadioButton">
-                                            <rect key="frame" x="10" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="10" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="hqR-uz-Yo0"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="hqR-uz-Yo0"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -4423,13 +4442,13 @@
                                                     <color key="value" name="buttonColor"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="8"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
@@ -4438,9 +4457,9 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-Z0-79w" customClass="DLRadioButton">
-                                            <rect key="frame" x="72" y="18" width="60" height="18"/>
+                                            <rect key="frame" x="67" y="18" width="55" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="jwX-7Z-gzE"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="jwX-7Z-gzE"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="최신순">
@@ -4448,16 +4467,16 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                    <real key="value" value="4"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                    <real key="value" value="2"/>
+                                                    <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
                                                     <color key="value" name="buttonColor"/>
@@ -4720,7 +4739,7 @@
             </objects>
             <point key="canvasLocation" x="-2197" y="258"/>
         </scene>
-        <!--Free Board-->
+        <!--자유게시판-->
         <scene sceneID="fGZ-JN-VKf">
             <objects>
                 <viewController storyboardIdentifier="FreeBoard" id="3WX-Ws-rGj" customClass="FreeBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
@@ -4890,7 +4909,7 @@
                             <constraint firstItem="XSS-Fl-qiF" firstAttribute="trailing" secondItem="KOb-Cx-Y8v" secondAttribute="trailing" id="vJi-6L-osl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="etL-al-Il0"/>
+                    <navigationItem key="navigationItem" title="자유게시판" id="etL-al-Il0"/>
                     <connections>
                         <outlet property="myTableView" destination="XSS-Fl-qiF" id="04C-Bs-aaK"/>
                     </connections>
@@ -4899,7 +4918,7 @@
             </objects>
             <point key="canvasLocation" x="-4339.130434782609" y="-407.14285714285711"/>
         </scene>
-        <!--Humor Board-->
+        <!--유머게시판-->
         <scene sceneID="SMf-7R-MnP">
             <objects>
                 <viewController storyboardIdentifier="HumorBoard" id="SL1-8m-IDu" customClass="HumorBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
@@ -5069,7 +5088,7 @@
                             <constraint firstItem="8cb-Ni-wfl" firstAttribute="trailing" secondItem="3Eb-3O-Jzu" secondAttribute="trailing" id="s4b-v8-0Et"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Dlg-Mi-apK"/>
+                    <navigationItem key="navigationItem" title="유머게시판" id="Dlg-Mi-apK"/>
                     <connections>
                         <outlet property="myTableView" destination="8cb-Ni-wfl" id="RFs-op-g9r"/>
                     </connections>
@@ -5078,7 +5097,7 @@
             </objects>
             <point key="canvasLocation" x="-3639" y="-407"/>
         </scene>
-        <!--Board-->
+        <!--질문/답변-->
         <scene sceneID="aiU-XZ-Yoa">
             <objects>
                 <viewController storyboardIdentifier="QABoard" id="qTd-CP-Byw" customClass="QABoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
@@ -5248,7 +5267,7 @@
                             <constraint firstItem="SPJ-hB-vaK" firstAttribute="bottom" secondItem="ZIc-le-lsM" secondAttribute="bottom" id="qdi-VG-05t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="B4b-kw-OFK"/>
+                    <navigationItem key="navigationItem" title="질문/답변" id="B4b-kw-OFK"/>
                     <connections>
                         <outlet property="myTableView" destination="SPJ-hB-vaK" id="UZ7-tA-WCr"/>
                     </connections>
@@ -5257,31 +5276,31 @@
             </objects>
             <point key="canvasLocation" x="-2917" y="-407"/>
         </scene>
-        <!--Chart Board-->
-        <scene sceneID="Zmz-xE-4db">
+        <!--차트분석-->
+        <scene sceneID="UGL-qw-FfH">
             <objects>
-                <viewController storyboardIdentifier="ChartBoard" id="VBs-P2-ctU" customClass="ChartBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eUm-fq-Yt8">
+                <viewController storyboardIdentifier="ChartBoard" id="5Fs-6B-AUg" customClass="ChartBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCh-t8-Y75">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Zd-Q0-VQZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FIb-EC-9r8">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="Uxo-ue-vOY" customClass="ChartBoardCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="eN7-3A-e4N" customClass="ChartBoardCell" customModule="segue_example2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uxo-ue-vOY" id="zPm-UO-UMO">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eN7-3A-e4N" id="kzv-11-b4y">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleAspectFit" id="qax-0u-1CB">
+                                                <view contentMode="scaleAspectFit" id="WID-6z-owg">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIu-dK-iKB">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHM-UD-Stt">
                                                             <rect key="frame" x="15" y="69" width="384" height="104.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="글 내용">
@@ -5294,28 +5313,28 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="유저닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-Ub-d6m">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="유저닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-Qk-z1O">
                                                             <rect key="frame" x="15" y="176.5" width="52.5" height="13.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="10분전" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-LI-MjE">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="10분전" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e58-Ua-c3J">
                                                             <rect key="frame" x="367.5" y="176.5" width="31.5" height="13.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRR-HK-UpN">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1W-Hb-rRt">
                                                             <rect key="frame" x="15" y="18" width="119" height="20"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="차트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-5c-aVZ" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="차트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwx-zC-Una" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
                                                                     <rect key="frame" x="2" y="2" width="22.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rb4-YC-tYz" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-qD-BAW" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
                                                                     <rect key="frame" x="29.5" y="2" width="49.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5324,19 +5343,19 @@
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstItem="rb4-YC-tYz" firstAttribute="leading" secondItem="3Pp-5c-aVZ" secondAttribute="trailing" constant="5" id="EgH-nd-GU1"/>
-                                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="rb4-YC-tYz" secondAttribute="trailing" constant="40" id="F9b-3w-geQ"/>
-                                                                <constraint firstItem="3Pp-5c-aVZ" firstAttribute="top" secondItem="lRR-HK-UpN" secondAttribute="top" constant="2" id="Lbv-Nx-OBl"/>
-                                                                <constraint firstItem="rb4-YC-tYz" firstAttribute="top" secondItem="lRR-HK-UpN" secondAttribute="top" constant="2" id="Upb-U3-rDE"/>
-                                                                <constraint firstAttribute="bottom" secondItem="3Pp-5c-aVZ" secondAttribute="bottom" constant="2" id="ig9-Ud-CSG"/>
-                                                                <constraint firstItem="3Pp-5c-aVZ" firstAttribute="leading" secondItem="lRR-HK-UpN" secondAttribute="leading" constant="2" id="ld7-vt-k6f"/>
-                                                                <constraint firstAttribute="bottom" secondItem="rb4-YC-tYz" secondAttribute="bottom" constant="2" id="sXn-gW-Usx"/>
+                                                                <constraint firstItem="2pq-qD-BAW" firstAttribute="leading" secondItem="Wwx-zC-Una" secondAttribute="trailing" constant="5" id="DYL-5X-jV4"/>
+                                                                <constraint firstAttribute="bottom" secondItem="2pq-qD-BAW" secondAttribute="bottom" constant="2" id="Ise-u3-gGr"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Wwx-zC-Una" secondAttribute="bottom" constant="2" id="WGD-el-yo3"/>
+                                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="2pq-qD-BAW" secondAttribute="trailing" constant="40" id="aHD-2a-ATe"/>
+                                                                <constraint firstItem="Wwx-zC-Una" firstAttribute="leading" secondItem="B1W-Hb-rRt" secondAttribute="leading" constant="2" id="vxN-vC-drd"/>
+                                                                <constraint firstItem="Wwx-zC-Una" firstAttribute="top" secondItem="B1W-Hb-rRt" secondAttribute="top" constant="2" id="wVm-wV-cWc"/>
+                                                                <constraint firstItem="2pq-qD-BAW" firstAttribute="top" secondItem="B1W-Hb-rRt" secondAttribute="top" constant="2" id="xve-v1-UOx"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="제목" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZL-8F-okq">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="제목" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS3-jd-dWI">
                                                             <rect key="frame" x="20" y="45" width="374" height="16"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="16" id="XWe-LX-ygY"/>
+                                                                <constraint firstAttribute="height" constant="16" id="0XJ-nI-BRt"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
@@ -5345,36 +5364,36 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="QZL-8F-okq" secondAttribute="trailing" constant="20" id="5gq-0X-ved"/>
-                                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="wOb-LI-MjE" secondAttribute="trailing" constant="15" id="9wd-CF-hmZ"/>
-                                                        <constraint firstItem="QZL-8F-okq" firstAttribute="top" secondItem="lRR-HK-UpN" secondAttribute="bottom" constant="7" id="B2R-8W-dv5"/>
-                                                        <constraint firstAttribute="trailing" secondItem="lRR-HK-UpN" secondAttribute="trailing" constant="280" id="Eqs-d1-QMX"/>
-                                                        <constraint firstItem="gBx-Ub-d6m" firstAttribute="leading" secondItem="qax-0u-1CB" secondAttribute="leading" constant="15" id="F7x-O8-53U"/>
-                                                        <constraint firstItem="lRR-HK-UpN" firstAttribute="leading" secondItem="qax-0u-1CB" secondAttribute="leading" constant="15" id="Fwx-fC-QAe"/>
-                                                        <constraint firstItem="ZIu-dK-iKB" firstAttribute="top" secondItem="QZL-8F-okq" secondAttribute="bottom" constant="8" symbolic="YES" id="KZm-bZ-8KR"/>
-                                                        <constraint firstItem="wOb-LI-MjE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gBx-Ub-d6m" secondAttribute="trailing" constant="300" id="OtT-jy-eZl"/>
-                                                        <constraint firstItem="ZIu-dK-iKB" firstAttribute="leading" secondItem="qax-0u-1CB" secondAttribute="leading" constant="15" id="YPt-dA-89S"/>
-                                                        <constraint firstItem="gBx-Ub-d6m" firstAttribute="top" secondItem="ZIu-dK-iKB" secondAttribute="bottom" constant="3" id="bdl-oA-YvN"/>
-                                                        <constraint firstAttribute="bottom" secondItem="gBx-Ub-d6m" secondAttribute="bottom" constant="10" id="cXR-cV-eHA"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ZIu-dK-iKB" secondAttribute="trailing" constant="15" id="kAv-bY-SPs"/>
-                                                        <constraint firstItem="lRR-HK-UpN" firstAttribute="top" relation="lessThanOrEqual" secondItem="qax-0u-1CB" secondAttribute="top" constant="18" id="tZA-co-RW3"/>
-                                                        <constraint firstAttribute="bottom" secondItem="wOb-LI-MjE" secondAttribute="bottom" constant="10" id="ygU-1u-Voq"/>
-                                                        <constraint firstItem="QZL-8F-okq" firstAttribute="leading" secondItem="qax-0u-1CB" secondAttribute="leading" constant="20" id="zDG-uw-3Q4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="e58-Ua-c3J" secondAttribute="bottom" constant="10" id="J8y-ZP-481"/>
+                                                        <constraint firstItem="e58-Ua-c3J" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Tvk-Qk-z1O" secondAttribute="trailing" constant="300" id="NgD-Bk-Nan"/>
+                                                        <constraint firstItem="Tvk-Qk-z1O" firstAttribute="leading" secondItem="WID-6z-owg" secondAttribute="leading" constant="15" id="PrX-RW-1oM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vHM-UD-Stt" secondAttribute="trailing" constant="15" id="Q5o-bq-evk"/>
+                                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="e58-Ua-c3J" secondAttribute="trailing" constant="15" id="UBg-01-znM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="B1W-Hb-rRt" secondAttribute="trailing" constant="280" id="aKV-GJ-3yg"/>
+                                                        <constraint firstItem="B1W-Hb-rRt" firstAttribute="top" relation="lessThanOrEqual" secondItem="WID-6z-owg" secondAttribute="top" constant="18" id="f6b-eG-P1s"/>
+                                                        <constraint firstAttribute="trailing" secondItem="CS3-jd-dWI" secondAttribute="trailing" constant="20" id="fnL-FC-Yco"/>
+                                                        <constraint firstItem="vHM-UD-Stt" firstAttribute="leading" secondItem="WID-6z-owg" secondAttribute="leading" constant="15" id="lbM-nU-hCW"/>
+                                                        <constraint firstItem="vHM-UD-Stt" firstAttribute="top" secondItem="CS3-jd-dWI" secondAttribute="bottom" constant="8" symbolic="YES" id="naH-Co-fN4"/>
+                                                        <constraint firstItem="Tvk-Qk-z1O" firstAttribute="top" secondItem="vHM-UD-Stt" secondAttribute="bottom" constant="3" id="nz6-EB-D1D"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Tvk-Qk-z1O" secondAttribute="bottom" constant="10" id="pbb-Ub-plC"/>
+                                                        <constraint firstItem="B1W-Hb-rRt" firstAttribute="leading" secondItem="WID-6z-owg" secondAttribute="leading" constant="15" id="qBi-H6-31k"/>
+                                                        <constraint firstItem="CS3-jd-dWI" firstAttribute="leading" secondItem="WID-6z-owg" secondAttribute="leading" constant="20" id="scu-nx-c8e"/>
+                                                        <constraint firstItem="CS3-jd-dWI" firstAttribute="top" secondItem="B1W-Hb-rRt" secondAttribute="bottom" constant="7" id="yqd-Fg-AtU"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="공감하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-I4-3ru">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="공감하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJL-Kc-6pz">
                                                     <rect key="frame" x="40" y="213" width="38.5" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sRQ-eG-7iF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cqF-rl-n3j">
                                                     <rect key="frame" x="18" y="213" width="15" height="14"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="frg-57-6iI">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-c1-29j">
                                                     <rect key="frame" x="98" y="213" width="16" height="14"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="댓글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9L-sx-kMt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="댓글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-rw-8PT">
                                                     <rect key="frame" x="121" y="213" width="19.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -5382,63 +5401,64 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sRQ-eG-7iF" firstAttribute="top" secondItem="qax-0u-1CB" secondAttribute="bottom" constant="13" id="1Mq-oO-2qg"/>
-                                                <constraint firstItem="sRQ-eG-7iF" firstAttribute="leading" secondItem="zPm-UO-UMO" secondAttribute="leading" constant="18" id="4jR-fG-JVD"/>
-                                                <constraint firstItem="y3L-I4-3ru" firstAttribute="top" secondItem="qax-0u-1CB" secondAttribute="bottom" constant="13" id="98P-i4-q8j"/>
-                                                <constraint firstItem="frg-57-6iI" firstAttribute="leading" secondItem="y3L-I4-3ru" secondAttribute="trailing" constant="19.5" id="EEE-BG-ap8"/>
-                                                <constraint firstItem="D9L-sx-kMt" firstAttribute="top" secondItem="qax-0u-1CB" secondAttribute="bottom" constant="13" id="Tse-9v-2Mj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="y3L-I4-3ru" secondAttribute="bottom" constant="2" id="azP-85-f8d"/>
-                                                <constraint firstItem="y3L-I4-3ru" firstAttribute="leading" secondItem="sRQ-eG-7iF" secondAttribute="trailing" constant="7" id="jJb-8D-SlP"/>
-                                                <constraint firstAttribute="bottom" secondItem="sRQ-eG-7iF" secondAttribute="bottom" constant="13" id="ohg-h0-DWX"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="D9L-sx-kMt" secondAttribute="bottom" constant="2.5" id="rot-oI-Elb"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D9L-sx-kMt" secondAttribute="trailing" constant="20" symbolic="YES" id="rqR-9v-WU3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="frg-57-6iI" secondAttribute="bottom" constant="2" id="vbb-wJ-VFH"/>
-                                                <constraint firstItem="frg-57-6iI" firstAttribute="top" secondItem="qax-0u-1CB" secondAttribute="bottom" constant="13" id="w1C-xf-2x1"/>
-                                                <constraint firstItem="D9L-sx-kMt" firstAttribute="leading" secondItem="frg-57-6iI" secondAttribute="trailing" constant="7" id="wRC-JK-uBH"/>
+                                                <constraint firstItem="ldE-rw-8PT" firstAttribute="top" secondItem="WID-6z-owg" secondAttribute="bottom" constant="13" id="13w-3B-vnQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ldE-rw-8PT" secondAttribute="bottom" constant="2.5" id="1f0-4g-Qww"/>
+                                                <constraint firstItem="ldE-rw-8PT" firstAttribute="leading" secondItem="XLf-c1-29j" secondAttribute="trailing" constant="7" id="7Yj-A2-dEc"/>
+                                                <constraint firstItem="jJL-Kc-6pz" firstAttribute="leading" secondItem="cqF-rl-n3j" secondAttribute="trailing" constant="7" id="9uo-9R-CSM"/>
+                                                <constraint firstItem="XLf-c1-29j" firstAttribute="leading" secondItem="jJL-Kc-6pz" secondAttribute="trailing" constant="19.5" id="Jhc-PJ-llT"/>
+                                                <constraint firstItem="cqF-rl-n3j" firstAttribute="leading" secondItem="kzv-11-b4y" secondAttribute="leading" constant="18" id="SGG-ug-GvH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jJL-Kc-6pz" secondAttribute="bottom" constant="2" id="TjC-5t-vrP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ldE-rw-8PT" secondAttribute="trailing" constant="20" symbolic="YES" id="UhT-E0-k5n"/>
+                                                <constraint firstItem="jJL-Kc-6pz" firstAttribute="top" secondItem="WID-6z-owg" secondAttribute="bottom" constant="13" id="YRG-Hc-94t"/>
+                                                <constraint firstItem="cqF-rl-n3j" firstAttribute="top" secondItem="WID-6z-owg" secondAttribute="bottom" constant="13" id="Z1p-Z9-TTT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XLf-c1-29j" secondAttribute="bottom" constant="2" id="dav-I2-zVo"/>
+                                                <constraint firstItem="XLf-c1-29j" firstAttribute="top" secondItem="WID-6z-owg" secondAttribute="bottom" constant="13" id="vug-KE-fqr"/>
+                                                <constraint firstAttribute="bottom" secondItem="cqF-rl-n3j" secondAttribute="bottom" constant="13" id="yPm-XT-F1f"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblComment" destination="D9L-sx-kMt" id="VnA-Ij-bm0"/>
-                                            <outlet property="lblContent" destination="ZIu-dK-iKB" id="3av-zh-EDG"/>
-                                            <outlet property="lblFamous" destination="rb4-YC-tYz" id="bmc-5a-Teb"/>
-                                            <outlet property="lblFree" destination="3Pp-5c-aVZ" id="wBe-Tm-eWJ"/>
-                                            <outlet property="lblNick" destination="gBx-Ub-d6m" id="hva-3W-bha"/>
-                                            <outlet property="lblShare" destination="y3L-I4-3ru" id="U2R-z9-bux"/>
-                                            <outlet property="lblTime" destination="wOb-LI-MjE" id="4d9-LQ-R6C"/>
-                                            <outlet property="lblTitle" destination="QZL-8F-okq" id="Cqg-Oi-K56"/>
-                                            <outlet property="lblView" destination="lRR-HK-UpN" id="vQ4-3E-fOA"/>
-                                            <outlet property="myView" destination="qax-0u-1CB" id="XO4-yT-uat"/>
-                                            <segue destination="zVK-20-iwv" kind="show" id="2b9-p0-b4G"/>
+                                            <outlet property="lblComment" destination="ldE-rw-8PT" id="Uqy-6r-uqn"/>
+                                            <outlet property="lblContent" destination="vHM-UD-Stt" id="BTZ-eD-D5E"/>
+                                            <outlet property="lblFamous" destination="2pq-qD-BAW" id="kWt-Br-XQe"/>
+                                            <outlet property="lblFree" destination="Wwx-zC-Una" id="XSD-bI-DZM"/>
+                                            <outlet property="lblNick" destination="Tvk-Qk-z1O" id="afN-5R-khc"/>
+                                            <outlet property="lblShare" destination="jJL-Kc-6pz" id="UPz-B2-o7c"/>
+                                            <outlet property="lblTime" destination="e58-Ua-c3J" id="YKE-0Z-qjH"/>
+                                            <outlet property="lblTitle" destination="CS3-jd-dWI" id="810-Nz-QBw"/>
+                                            <outlet property="lblView" destination="B1W-Hb-rRt" id="pJz-VQ-8ve"/>
+                                            <outlet property="myView" destination="WID-6z-owg" id="zJ8-pc-Oda"/>
+                                            <segue destination="zVK-20-iwv" kind="show" id="S9N-Sw-ZCq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="0xN-Cr-ZTk"/>
+                        <viewLayoutGuide key="safeArea" id="9fR-rB-R8P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="bottom" secondItem="0xN-Cr-ZTk" secondAttribute="bottom" id="8vH-tj-ByH"/>
-                            <constraint firstAttribute="trailing" secondItem="3Zd-Q0-VQZ" secondAttribute="trailing" id="VZu-Ad-YaL"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="leading" secondItem="0xN-Cr-ZTk" secondAttribute="leading" id="Z6f-4V-lKu"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="trailing" secondItem="0xN-Cr-ZTk" secondAttribute="trailing" id="chS-Jx-TTZ"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="leading" secondItem="eUm-fq-Yt8" secondAttribute="leading" id="d2C-iW-enJ"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="top" secondItem="0xN-Cr-ZTk" secondAttribute="top" id="oyV-dQ-g0T"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="bottom" secondItem="0xN-Cr-ZTk" secondAttribute="bottom" id="slj-tt-pT0"/>
-                            <constraint firstItem="3Zd-Q0-VQZ" firstAttribute="trailing" secondItem="0xN-Cr-ZTk" secondAttribute="trailing" id="uQU-Mw-94j"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="leading" secondItem="xCh-t8-Y75" secondAttribute="leading" id="5UB-iX-NbK"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="bottom" secondItem="9fR-rB-R8P" secondAttribute="bottom" id="FBX-xy-EQY"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="top" secondItem="9fR-rB-R8P" secondAttribute="top" id="GRX-JS-S0M"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="bottom" secondItem="9fR-rB-R8P" secondAttribute="bottom" id="Jk1-Ed-9R5"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="trailing" secondItem="9fR-rB-R8P" secondAttribute="trailing" id="XcT-Kl-60g"/>
+                            <constraint firstAttribute="trailing" secondItem="FIb-EC-9r8" secondAttribute="trailing" id="Y2d-j8-Gzy"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="trailing" secondItem="9fR-rB-R8P" secondAttribute="trailing" id="cxj-cg-xJh"/>
+                            <constraint firstItem="FIb-EC-9r8" firstAttribute="leading" secondItem="9fR-rB-R8P" secondAttribute="leading" id="wUF-c5-MjA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TON-Sr-Al5"/>
+                    <navigationItem key="navigationItem" title="차트분석" id="wIG-ky-dtg"/>
                     <connections>
-                        <outlet property="myTableView" destination="3Zd-Q0-VQZ" id="rIT-p9-f97"/>
+                        <outlet property="myTableView" destination="FIb-EC-9r8" id="vLj-GB-Lwe"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NuI-Vy-esC" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4I-Rj-jby" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2213" y="-407"/>
+            <point key="canvasLocation" x="-2210" y="-407"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="arrowIcon" width="11.5" height="6.5"/>
         <image name="backIcon" width="17.5" height="18.5"/>
         <image name="emptyCircle" width="60" height="60"/>
         <image name="kebabIcon" width="3" height="15"/>

@@ -8,7 +8,7 @@
 import UIKit
 import DLRadioButton
 
-class EntireBoardDetail: UIViewController {
+class EntireBoardDetail: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var boardView : UIView!
     @IBOutlet weak var mytable : UITableView!
@@ -16,11 +16,15 @@ class EntireBoardDetail: UIViewController {
     @IBOutlet weak var recommendBtn : UIButton!
     @IBOutlet weak var dividerView : UIView!
     @IBOutlet weak var lblType: UILabel!
- 
+    @IBOutlet weak var commentView : UIView!
+    @IBOutlet weak var commentField : UITextField!
+
+    private var textHeight = CGFloat(0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         rightBarBtnGroup()
+        keyboardEvent()
         self.boardView.layer.borderWidth = 1
         self.boardView.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.dividerView.layer.borderColor = UIColor.appColor(.backGray).cgColor
@@ -30,10 +34,15 @@ class EntireBoardDetail: UIViewController {
         self.mytable.rowHeight = 101
         self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
         self.mytable.layer.borderWidth = 1
+        self.commentField.delegate = self
         lblType.layer.borderWidth = 1
         lblType.layer.borderColor = UIColor.appColor(.borderColor).cgColor
         lblType.layer.cornerRadius = 5
         recommendBtn.isSelected = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func asd(_ sender: UIButton){
@@ -54,6 +63,23 @@ class EntireBoardDetail: UIViewController {
         let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
         let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
         self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+    }
+    
+    func keyboardEvent(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWiiDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    @objc func keyboardWillAppear(_ notification: Notification){
+        //키보드 높이 가져오기
+        let userInfo:NSDictionary = notification.userInfo! as NSDictionary
+        let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        let keyboardHeight = keyboardRectangle.height
+        textHeight = keyboardHeight
+        self.view.frame.size.height -= keyboardHeight
+    }
+    @objc func keyboardWiiDisappear(_ notification: NSNotification){
+        self.view.frame.size.height += textHeight
     }
     
     @IBAction func kebabBtn(_ sender:UIButton){
@@ -123,3 +149,32 @@ extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
     }
 
 }
+
+//extension EntireBoardDetail {
+//    private func setupGestureRecognizer() {
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+//        self.view.addGestureRecognizer(tap)
+//
+//    }
+//    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+//        self.view.endEditing(true)
+//    }
+//    private func registerForKeyboardNotifications() {
+//        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+//    }
+//    private func unregisterForKeyboardNotifications() {
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+//    }
+//    @objc func keyboardWillShow(_ notificatoin: Notification) {
+//        let duration = notificatoin.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
+//        let curve = notificatoin.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt
+//        let keyboardSize = (notificatoin.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+//        let height = keyboardSize.height - view.safeAreaInsets.bottom /* 애니메이션 처리 */
+//    }
+//    @objc func keyboardWillHide(_ notificatoin: Notification) {
+//        let duration = notificatoin.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
+//        let curve = notificatoin.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt /* 애니메이션 처리 */
+//    }
+//}

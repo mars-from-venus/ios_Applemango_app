@@ -32,7 +32,6 @@ class ChartBoardCell: UITableViewCell {
     func lblAutoLayout(){
         myView.translatesAutoresizingMaskIntoConstraints = false
         lblContent.translatesAutoresizingMaskIntoConstraints = false
-        lblTime.translatesAutoresizingMaskIntoConstraints = false
         myView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 0).isActive = true
         myView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: 0).isActive = true
         myView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true

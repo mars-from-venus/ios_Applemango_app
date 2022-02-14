@@ -10,21 +10,11 @@ import DropDown
 
 class WritingPage: UITableViewController,UITextViewDelegate {
 
-    @IBOutlet weak var drBtn : UIButton!
-//    @IBOutlet weak var myView : UIView!
     @IBOutlet weak var myTextView : UITextView!
     @IBOutlet weak var myTableView : UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        //        myView.layer.borderWidth = 0.5
-        //        myView.layer.borderColor = UIColor.gray.cgColor
         placeholderSetting()
         textViewDidBeginEditing(myTextView)
         textViewDidEndEditing(myTextView)
@@ -50,28 +40,6 @@ class WritingPage: UITableViewController,UITextViewDelegate {
         }
     }
     
-    func makeDropDown(){
-        let dropDown = DropDown()
-        dropDown.dataSource = ["인기게시물","자유게시판","유머게시판","질문/답변","차트분석"]
-        dropDown.show()
-        dropDown.anchorView = drBtn
-        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
-        dropDown.textFont = UIFont.systemFont(ofSize: 15)
-        dropDown.cornerRadius = 15
-        dropDown.selectedTextColor = .white
-        dropDown.selectionBackgroundColor = UIColor.appColor(.mainColor)
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-//            guard let _ = self else { return }
-            drBtn.setTitle(item, for: .normal)
-//            print("인덱스 : \(index)")
-            //test apply
-        }
-    }
-    
-    @IBAction func dropBtn(_ sender:UIButton){
-        makeDropDown()
-//        self.dropDown.clearSelection()
-    }
     @IBAction func modalDismiss(_ sender:UIBarButtonItem){
         self.dismiss(animated: true)
     }

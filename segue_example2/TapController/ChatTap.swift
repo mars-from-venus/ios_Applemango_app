@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourthTapViewController: UIViewController, YourCellDelegate7 {
+class ChatTap: UIViewController, YourCellDelegate7 {
     func didPress(_ tag: Int) {
         print(tag)
     }
@@ -50,7 +50,7 @@ class FourthTapViewController: UIViewController, YourCellDelegate7 {
 
 }
 
-extension FourthTapViewController: UITableViewDelegate, UITableViewDataSource{
+extension ChatTap: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return item.count
     }

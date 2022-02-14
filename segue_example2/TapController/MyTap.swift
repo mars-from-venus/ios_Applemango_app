@@ -8,11 +8,10 @@
 import UIKit
 import DLRadioButton
 
-class FifthTapViewController: UIViewController {
+class MyTap: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        naviTitleChange()
     }
     
@@ -29,7 +28,7 @@ class FifthTapViewController: UIViewController {
 
 }
 
-extension FifthTapViewController : UITableViewDelegate,UITableViewDataSource{
+extension MyTap : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyFirstCell
         return cell
