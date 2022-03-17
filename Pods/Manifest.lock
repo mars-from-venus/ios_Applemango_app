@@ -2,23 +2,27 @@ PODS:
   - DLRadioButton (1.4.12)
   - DropDown (2.3.13)
   - JJFloatingActionButton (2.5.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - DLRadioButton (~> 1.4)
   - DropDown
   - JJFloatingActionButton
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - DLRadioButton
     - DropDown
     - JJFloatingActionButton
+    - SnapKit
 
 SPEC CHECKSUMS:
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   JJFloatingActionButton: fdc3aefb0f28f04d0f988fa25d5fac97028a9ea7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: df396c64ccb8e8d1d015a5a46b98ec08ba6ce0a8
+PODFILE CHECKSUM: 2b05f0933879825445126666d78e79c3cfdb8c2e
 
 COCOAPODS: 1.11.2

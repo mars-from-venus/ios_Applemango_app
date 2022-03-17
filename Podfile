@@ -9,5 +9,7 @@ target 'segue_example2' do
 pod 'JJFloatingActionButton'
 pod 'DropDown'
 pod 'DLRadioButton', '~> 1.4'
+pod 'SnapKit'
 
 end
+

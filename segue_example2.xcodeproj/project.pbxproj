@@ -52,6 +52,7 @@
 		41E571C827AEC3A400B76E37 /* HotBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C727AEC3A400B76E37 /* HotBoardCell.swift */; };
 		41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571D027AECBF600B76E37 /* SettingTableView.swift */; };
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
+		456F110227E30DA200AE02E3 /* MyTap22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F110127E30DA200AE02E3 /* MyTap22.swift */; };
 		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
 		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
 		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
@@ -109,6 +110,7 @@
 		41E571C727AEC3A400B76E37 /* HotBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardCell.swift; sourceTree = "<group>"; };
 		41E571D027AECBF600B76E37 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
+		456F110127E30DA200AE02E3 /* MyTap22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTap22.swift; sourceTree = "<group>"; };
 		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
 		45E5260B27B24CE000F75319 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				41D41178278B250A003F46EE /* NewsTap.swift */,
 				41D4117A278B251C003F46EE /* ChatTap.swift */,
 				41D4117C278B2530003F46EE /* MyTap.swift */,
+				456F110127E30DA200AE02E3 /* MyTap22.swift */,
 			);
 			path = TapController;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				41E571B127AE603F00B76E37 /* ReportPageDetail.swift in Sources */,
 				41E571C627AEBEF500B76E37 /* HumorBoardCell.swift in Sources */,
 				41D41177278B2378003F46EE /* ExchangeTap.swift in Sources */,
+				456F110227E30DA200AE02E3 /* MyTap22.swift in Sources */,
 				4194E21A27B6B28F000193C8 /* HumorDetailCell.swift in Sources */,
 				41D4117D278B2530003F46EE /* MyTap.swift in Sources */,
 				41E571B627AEBB0E00B76E37 /* FreeDetailCell.swift in Sources */,
