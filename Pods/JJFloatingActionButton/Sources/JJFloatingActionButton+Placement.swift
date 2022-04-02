@@ -96,7 +96,7 @@ import UIKit
     ///             Default is `0`.
     ///
     /// - Remark: On iOS prior to iOS 11 `safeAreaInset` is ignored.
-    @available(iOS 10.0,*)
+    ///
     func display(inViewController viewController: UIViewController,
                  bottomInset: CGFloat = 16,
                  trailingInset: CGFloat = 16,

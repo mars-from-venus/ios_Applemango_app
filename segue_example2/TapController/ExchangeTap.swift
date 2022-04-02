@@ -12,22 +12,32 @@ class ExchangeTap: UIViewController {
 
     @IBOutlet weak var myTableView:UITableView!
     @IBOutlet weak var myView:UIView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         naviTitleChange()
-        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
-        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
-        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
-        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
-        myTableView.dataSource = self
-        myTableView.delegate = self
-        myTableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        rightBarBtnGroup()
         border()
+        tableUtil()
+        DataManager.shared.loginTest()
     }
     
     func border(){
         myView.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 1)
+        self.tabBarController?.tabBar.layer.addBorder([.top], color: UIColor.appColor(.borderColor), width: 1)
+    }
+    
+    func rightBarBtnGroup(){
+        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+    }
+    
+    func tableUtil(){
+        myTableView.dataSource = self
+        myTableView.delegate = self
+        myTableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     }
     
     func naviTitleChange(){
@@ -58,17 +68,6 @@ class ExchangeTap: UIViewController {
             print("인덱스 : \(index)")
 //                test apply
         }
-    }
-    
-    func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
-        let image = UIImage(named: imageName)!
-        let btn: UIButton = UIButton(type: UIButton.ButtonType.custom)
-        btn.setImage(image, for: .normal)
-        //     btn.addTarget(self, action: action, for: .touchUpInside)
-        btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        let barBtn = UIBarButtonItem(customView: btn)
-        
-        return barBtn
     }
     
 }

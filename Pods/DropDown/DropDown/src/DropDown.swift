@@ -18,7 +18,7 @@ private typealias ComputeLayoutTuple = (x: CGFloat, y: CGFloat, width: CGFloat, 
 
 /// Can be `UIView` or `UIBarButtonItem`.
 @objc
-public protocol AnchorView: AnyObject {
+public protocol AnchorView: class {
 
 	var plainView: UIView { get }
 
@@ -1062,8 +1062,8 @@ extension DropDown: UITableViewDataSource, UITableViewDelegate {
 			cell.accessibilityIdentifier = localizationKeysDataSource[index]
 		}
 		
-		cell.optionLabel?.textColor = textColor
-		cell.optionLabel?.font = textFont
+		cell.optionLabel.textColor = textColor
+		cell.optionLabel.font = textFont
 		cell.selectedBackgroundColor = selectionBackgroundColor
         cell.highlightTextColor = selectedTextColor
         cell.normalTextColor = textColor

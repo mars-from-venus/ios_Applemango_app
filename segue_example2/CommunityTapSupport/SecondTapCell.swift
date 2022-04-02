@@ -23,6 +23,15 @@ class SecondTapCell: UITableViewCell {
     @IBOutlet weak var lblTime : UILabel!
     @IBOutlet weak var lblShare : UILabel!
     @IBOutlet weak var lblComment : UILabel!
+    @IBOutlet weak var divier : UIView!
+    
+    
+//    private let divider : UIView = {
+//        let view = UIView()
+//        view.backgroundColor = UIColor.appColor(.backGray)
+//
+//        return view
+//    }()
 
     var cellDelegate:YourCellDelegate2?
     override func awakeFromNib() {
@@ -33,7 +42,7 @@ class SecondTapCell: UITableViewCell {
         lblTextCustom()
         lblAutoLayout()
     }
-    
+
     func lblAutoLayout(){
         myView.translatesAutoresizingMaskIntoConstraints = false
         lblContent.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +66,7 @@ class SecondTapCell: UITableViewCell {
         lblNick.textColor = UIColor.appColor(.grayTextColor)
         lblTime.textColor = UIColor.appColor(.grayTextColor)
         lblFree.sizeToFit()
+        divier.layer.addBorder([.top,.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
     }
     
     func lblTextCustom(){
@@ -69,6 +79,11 @@ class SecondTapCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+       
     }
     
 }

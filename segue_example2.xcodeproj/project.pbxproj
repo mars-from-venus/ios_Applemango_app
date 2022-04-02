@@ -15,6 +15,8 @@
 		411F6510275D9AF4002AFF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411F650E275D9AF4002AFF9F /* LaunchScreen.storyboard */; };
 		411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6517275D9B20002AFF9F /* HotBoard.swift */; };
 		411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F6519275D9B2C002AFF9F /* FreeBoard.swift */; };
+		4126EFBD27F878E00027654F /* WritingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFBC27F878E00027654F /* WritingPage.swift */; };
+		4126EFBF27F8B0DC0027654F /* UIextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFBE27F8B0DC0027654F /* UIextension.swift */; };
 		414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6B27B2C3C500919829 /* FourthTapCell.swift */; };
 		414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6D27B2C78000919829 /* ChatPage.swift */; };
 		414E4E7127B64C6800919829 /* ExchageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E7027B64C6800919829 /* ExchageCell.swift */; };
@@ -25,15 +27,19 @@
 		4194E21F27B6B5ED000193C8 /* QADetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E21E27B6B5ED000193C8 /* QADetailCell.swift */; };
 		4194E22227B6B733000193C8 /* ChartBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E22127B6B733000193C8 /* ChartBoardCell.swift */; };
 		4194E22427B6B744000193C8 /* ChartDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E22327B6B744000193C8 /* ChartDetailCell.swift */; };
-		4194E22627B7FEBB000193C8 /* WritingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E22527B7FEBB000193C8 /* WritingPageCell.swift */; };
+		4194E22B27CE42C2000193C8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E22A27CE42C2000193C8 /* Config.swift */; };
+		4194E22D27CE466B000193C8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E22C27CE466B000193C8 /* DataModel.swift */; };
+		4194E22F27CE4AAE000193C8 /* uri.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4194E22E27CE4AAE000193C8 /* uri.plist */; };
+		4194E29027D4D93F000193C8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E28F27D4D93F000193C8 /* NetworkResult.swift */; };
+		4194E2B227E62FB5000193C8 /* preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E2B127E62FB5000193C8 /* preview.swift */; };
+		4194E2B427E63B0C000193C8 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E2B327E63B0B000193C8 /* AutoLayout.swift */; };
+		4194E2B627E64F87000193C8 /* MyTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E2B527E64F87000193C8 /* MyTabCell.swift */; };
 		4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC97277F6A9B00AC473B /* QABoard.swift */; };
 		4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC99277F6C9300AC473B /* ChartBoard.swift */; };
 		4194EC9E278175CA00AC473B /* FreeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC9D278175CA00AC473B /* FreeBoardCell.swift */; };
 		41D41177278B2378003F46EE /* ExchangeTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41176278B2378003F46EE /* ExchangeTap.swift */; };
 		41D41179278B250A003F46EE /* NewsTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41178278B250A003F46EE /* NewsTap.swift */; };
 		41D4117B278B251C003F46EE /* ChatTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117A278B251C003F46EE /* ChatTap.swift */; };
-		41D4117D278B2530003F46EE /* MyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117C278B2530003F46EE /* MyTap.swift */; };
-		41E5719D2798535800B76E37 /* WritingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719C2798535800B76E37 /* WritingPage.swift */; };
 		41E5719F279862E600B76E37 /* FreeBoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5719E279862E600B76E37 /* FreeBoardDetail.swift */; };
 		41E571A1279C026000B76E37 /* SecondTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A0279C026000B76E37 /* SecondTapCell.swift */; };
 		41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571A2279C053A00B76E37 /* EntireBoardDetail.swift */; };
@@ -52,7 +58,7 @@
 		41E571C827AEC3A400B76E37 /* HotBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571C727AEC3A400B76E37 /* HotBoardCell.swift */; };
 		41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E571D027AECBF600B76E37 /* SettingTableView.swift */; };
 		4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */; };
-		456F110227E30DA200AE02E3 /* MyTap22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F110127E30DA200AE02E3 /* MyTap22.swift */; };
+		456F110227E30DA200AE02E3 /* MyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F110127E30DA200AE02E3 /* MyTap.swift */; };
 		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
 		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
 		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
@@ -73,6 +79,8 @@
 		411F6511275D9AF4002AFF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411F6517275D9B20002AFF9F /* HotBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoard.swift; sourceTree = "<group>"; };
 		411F6519275D9B2C002AFF9F /* FreeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoard.swift; sourceTree = "<group>"; };
+		4126EFBC27F878E00027654F /* WritingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPage.swift; sourceTree = "<group>"; };
+		4126EFBE27F8B0DC0027654F /* UIextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIextension.swift; sourceTree = "<group>"; };
 		414E4E6B27B2C3C500919829 /* FourthTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTapCell.swift; sourceTree = "<group>"; };
 		414E4E6D27B2C78000919829 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		414E4E7027B64C6800919829 /* ExchageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchageCell.swift; sourceTree = "<group>"; };
@@ -83,15 +91,19 @@
 		4194E21E27B6B5ED000193C8 /* QADetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QADetailCell.swift; sourceTree = "<group>"; };
 		4194E22127B6B733000193C8 /* ChartBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBoardCell.swift; sourceTree = "<group>"; };
 		4194E22327B6B744000193C8 /* ChartDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDetailCell.swift; sourceTree = "<group>"; };
-		4194E22527B7FEBB000193C8 /* WritingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPageCell.swift; sourceTree = "<group>"; };
+		4194E22A27CE42C2000193C8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4194E22C27CE466B000193C8 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4194E22E27CE4AAE000193C8 /* uri.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = uri.plist; sourceTree = "<group>"; };
+		4194E28F27D4D93F000193C8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		4194E2B127E62FB5000193C8 /* preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preview.swift; sourceTree = "<group>"; };
+		4194E2B327E63B0B000193C8 /* AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
+		4194E2B527E64F87000193C8 /* MyTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabCell.swift; sourceTree = "<group>"; };
 		4194EC97277F6A9B00AC473B /* QABoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QABoard.swift; sourceTree = "<group>"; };
 		4194EC99277F6C9300AC473B /* ChartBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBoard.swift; sourceTree = "<group>"; };
 		4194EC9D278175CA00AC473B /* FreeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardCell.swift; sourceTree = "<group>"; };
 		41D41176278B2378003F46EE /* ExchangeTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTap.swift; sourceTree = "<group>"; };
 		41D41178278B250A003F46EE /* NewsTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTap.swift; sourceTree = "<group>"; };
 		41D4117A278B251C003F46EE /* ChatTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTap.swift; sourceTree = "<group>"; };
-		41D4117C278B2530003F46EE /* MyTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTap.swift; sourceTree = "<group>"; };
-		41E5719C2798535800B76E37 /* WritingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPage.swift; sourceTree = "<group>"; };
 		41E5719E279862E600B76E37 /* FreeBoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardDetail.swift; sourceTree = "<group>"; };
 		41E571A0279C026000B76E37 /* SecondTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTapCell.swift; sourceTree = "<group>"; };
 		41E571A2279C053A00B76E37 /* EntireBoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntireBoardDetail.swift; sourceTree = "<group>"; };
@@ -110,7 +122,7 @@
 		41E571C727AEC3A400B76E37 /* HotBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardCell.swift; sourceTree = "<group>"; };
 		41E571D027AECBF600B76E37 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
 		4532B97C279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf"; sourceTree = "<group>"; };
-		456F110127E30DA200AE02E3 /* MyTap22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTap22.swift; sourceTree = "<group>"; };
+		456F110127E30DA200AE02E3 /* MyTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTap.swift; sourceTree = "<group>"; };
 		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
 		45E5260B27B24CE000F75319 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
@@ -166,6 +178,8 @@
 				411F650C275D9AF4002AFF9F /* Assets.xcassets */,
 				411F650E275D9AF4002AFF9F /* LaunchScreen.storyboard */,
 				411F6511275D9AF4002AFF9F /* Info.plist */,
+				4194E22E27CE4AAE000193C8 /* uri.plist */,
+				4194E2B127E62FB5000193C8 /* preview.swift */,
 			);
 			path = segue_example2;
 			sourceTree = "<group>";
@@ -193,9 +207,8 @@
 				41E571AA27AC175900B76E37 /* ReportPage.swift */,
 				41E571B027AE603F00B76E37 /* ReportPageDetail.swift */,
 				41E571AE27AE594000B76E37 /* ReportPageCell.swift */,
-				41E5719C2798535800B76E37 /* WritingPage.swift */,
-				4194E22527B7FEBB000193C8 /* WritingPageCell.swift */,
 				41E571AC27AC1A2F00B76E37 /* ReportPage2.swift */,
+				4126EFBC27F878E00027654F /* WritingPage.swift */,
 			);
 			path = Etc;
 			sourceTree = "<group>";
@@ -233,7 +246,6 @@
 			children = (
 				41E571B527AEBB0E00B76E37 /* FreeDetailCell.swift */,
 				41E571A427A04DEC00B76E37 /* EntireDetailCell.swift */,
-				41E571A0279C026000B76E37 /* SecondTapCell.swift */,
 				4194EC9D278175CA00AC473B /* FreeBoardCell.swift */,
 			);
 			path = TableCell;
@@ -354,8 +366,8 @@
 				411F6507275D9AF2002AFF9F /* CommunityTap.swift */,
 				41D41178278B250A003F46EE /* NewsTap.swift */,
 				41D4117A278B251C003F46EE /* ChatTap.swift */,
-				41D4117C278B2530003F46EE /* MyTap.swift */,
-				456F110127E30DA200AE02E3 /* MyTap22.swift */,
+				4194E2B527E64F87000193C8 /* MyTabCell.swift */,
+				456F110127E30DA200AE02E3 /* MyTap.swift */,
 			);
 			path = TapController;
 			sourceTree = "<group>";
@@ -366,8 +378,13 @@
 				4532B980279A4CAC00D405B2 /* Font */,
 				41E571A627A0508300B76E37 /* UIColor.swift */,
 				45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */,
+				4194E2B327E63B0B000193C8 /* AutoLayout.swift */,
 				45E5260927B1188200F75319 /* BorderSelect.swift */,
 				45E5261027B3943700F75319 /* MockData.swift */,
+				4194E22C27CE466B000193C8 /* DataModel.swift */,
+				4194E28F27D4D93F000193C8 /* NetworkResult.swift */,
+				4194E22A27CE42C2000193C8 /* Config.swift */,
+				4126EFBE27F8B0DC0027654F /* UIextension.swift */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -383,6 +400,7 @@
 		4532B981279A4CDB00D405B2 /* CommunityTapSupport */ = {
 			isa = PBXGroup;
 			children = (
+				41E571A0279C026000B76E37 /* SecondTapCell.swift */,
 				4194E21827B6AD65000193C8 /* Etc */,
 				41E571C227AEBDD100B76E37 /* ChartBoard */,
 				41E571C127AEBDCB00B76E37 /* QABoard */,
@@ -480,6 +498,7 @@
 			files = (
 				411F6510275D9AF4002AFF9F /* LaunchScreen.storyboard in Resources */,
 				4532B97D279A4C2800D405B2 /* FontsFree-Net-Apple-SD-Gothic-Neo-Bold.ttf in Resources */,
+				4194E22F27CE4AAE000193C8 /* uri.plist in Resources */,
 				411F650D275D9AF4002AFF9F /* Assets.xcassets in Resources */,
 				411F650B275D9AF2002AFF9F /* Main.storyboard in Resources */,
 			);
@@ -536,8 +555,10 @@
 			files = (
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
 				45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */,
+				4194E22B27CE42C2000193C8 /* Config.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetail.swift in Sources */,
 				45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */,
+				4194E22D27CE466B000193C8 /* DataModel.swift in Sources */,
 				4194E21D27B6B5DE000193C8 /* QABoardCell.swift in Sources */,
 				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,
 				41E571AD27AC1A2F00B76E37 /* ReportPage2.swift in Sources */,
@@ -547,17 +568,20 @@
 				41E571A527A04DEC00B76E37 /* EntireDetailCell.swift in Sources */,
 				415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */,
 				414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */,
+				4126EFBF27F8B0DC0027654F /* UIextension.swift in Sources */,
 				4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */,
 				411F6508275D9AF2002AFF9F /* CommunityTap.swift in Sources */,
 				41E5719F279862E600B76E37 /* FreeBoardDetail.swift in Sources */,
+				4194E2B227E62FB5000193C8 /* preview.swift in Sources */,
 				41E571AF27AE594000B76E37 /* ReportPageCell.swift in Sources */,
 				45E5261127B3943700F75319 /* MockData.swift in Sources */,
+				4194E29027D4D93F000193C8 /* NetworkResult.swift in Sources */,
 				414E4E7127B64C6800919829 /* ExchageCell.swift in Sources */,
+				4194E2B627E64F87000193C8 /* MyTabCell.swift in Sources */,
 				41D41179278B250A003F46EE /* NewsTap.swift in Sources */,
 				41E571AB27AC175900B76E37 /* ReportPage.swift in Sources */,
 				4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */,
 				41E571A727A0508300B76E37 /* UIColor.swift in Sources */,
-				41E5719D2798535800B76E37 /* WritingPage.swift in Sources */,
 				411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */,
 				41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */,
 				411F6504275D9AF2002AFF9F /* AppDelegate.swift in Sources */,
@@ -565,9 +589,10 @@
 				41E571A1279C026000B76E37 /* SecondTapCell.swift in Sources */,
 				411F6506275D9AF2002AFF9F /* SceneDelegate.swift in Sources */,
 				4194E21F27B6B5ED000193C8 /* QADetailCell.swift in Sources */,
+				4126EFBD27F878E00027654F /* WritingPage.swift in Sources */,
 				4194E21727B6A94D000193C8 /* HotBoardDetailCell.swift in Sources */,
 				45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */,
-				4194E22627B7FEBB000193C8 /* WritingPageCell.swift in Sources */,
+				4194E2B427E63B0C000193C8 /* AutoLayout.swift in Sources */,
 				4194E22227B6B733000193C8 /* ChartBoardCell.swift in Sources */,
 				41E571C427AEBEB500B76E37 /* HumorBoardDetail.swift in Sources */,
 				41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */,
@@ -575,9 +600,8 @@
 				41E571B127AE603F00B76E37 /* ReportPageDetail.swift in Sources */,
 				41E571C627AEBEF500B76E37 /* HumorBoardCell.swift in Sources */,
 				41D41177278B2378003F46EE /* ExchangeTap.swift in Sources */,
-				456F110227E30DA200AE02E3 /* MyTap22.swift in Sources */,
+				456F110227E30DA200AE02E3 /* MyTap.swift in Sources */,
 				4194E21A27B6B28F000193C8 /* HumorDetailCell.swift in Sources */,
-				41D4117D278B2530003F46EE /* MyTap.swift in Sources */,
 				41E571B627AEBB0E00B76E37 /* FreeDetailCell.swift in Sources */,
 				45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */,
 				4194E22427B6B744000193C8 /* ChartDetailCell.swift in Sources */,

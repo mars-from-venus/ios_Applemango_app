@@ -15,10 +15,11 @@ class NewsTap: UIViewController, yourCellDelegate8 {
     @IBOutlet weak var myTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         myTableView.dataSource = self
         myTableView.delegate = self
         naviTitleChange()
+        rightBarBtnGroup()
+        self.navigationController?.navigationBar.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
     }
     func naviTitleChange(){
         if let navigationBar = self.navigationController?.navigationBar {
@@ -29,6 +30,12 @@ class NewsTap: UIViewController, yourCellDelegate8 {
             firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
             navigationBar.addSubview(firstLabel)
         }
+    }
+    func rightBarBtnGroup(){
+        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
     }
     
     

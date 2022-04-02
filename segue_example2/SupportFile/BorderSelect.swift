@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+//*주의 viewDidAppear 적용
 //layer에 .addBorder하여 사용
 extension CALayer {
     func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat) {
