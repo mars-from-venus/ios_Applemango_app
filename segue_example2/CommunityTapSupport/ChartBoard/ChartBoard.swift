@@ -42,6 +42,7 @@ class ChartBoard: UIViewController{
         myTableView.rowHeight = 240
         myTableView.refreshControl = UIRefreshControl()
         myTableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        myTableView.register(BoardTableCell.self, forCellReuseIdentifier: "myCell")
     }
     func rightBarBtnGroup(){
         let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
@@ -59,31 +60,23 @@ extension ChartBoard: UITableViewDelegate, UITableViewDataSource{
         return self.boardData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ChartBoardCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! BoardTableCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
-        cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor.lightGray.cgColor
         //셀 구분선 처음부터 끝까지
         cell.separatorInset = UIEdgeInsets.zero
         cell.lblTitle.text = boardData[indexPath.row].title
         cell.lblNick.text = boardData[indexPath.row].nickname
+        cell.lblBoard.text = "차트"
+        if boardData[indexPath.row].like <= 50 {
+            cell.lblHot.removeFromSuperview()
+        }
         
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(item[indexPath.row])")
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        let cellSpacingHeight: CGFloat = 15
-        return cellSpacingHeight
-    }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-        footerView.backgroundColor = UIColor.appColor(.backGray)
-            return footerView
     }
 }
 

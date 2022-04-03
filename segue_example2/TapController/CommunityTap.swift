@@ -50,7 +50,7 @@ class CommunityTap: UIViewController {
         myTableView.rowHeight = 240
         myTableView.refreshControl = UIRefreshControl()
         myTableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
-        myTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0); // 레이아웃 마진
+        myTableView.register(BoardTableCell.self, forCellReuseIdentifier: "myCell")
     }
     
     func rightBarBtnGroup(){
@@ -106,28 +106,24 @@ extension CommunityTap: UITableViewDelegate, UITableViewDataSource{
         return boardData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SecondTapCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! BoardTableCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
         cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         cell.lblTitle.text = boardData[indexPath.row].title
         cell.lblNick.text = boardData[indexPath.row].nickname
+        if boardData[indexPath.row].like <= 50 {
+            cell.lblHot.removeFromSuperview()
+        }
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        let cellSpacingHeight: CGFloat = 15
-        return cellSpacingHeight
-    }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-            footerView.backgroundColor = UIColor.clear
-            return footerView
-    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(item[indexPath.row])")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EntireBoardDetail") as? EntireBoardDetail
+        vc?.boardInfo = boardData[indexPath.row]
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 
 }

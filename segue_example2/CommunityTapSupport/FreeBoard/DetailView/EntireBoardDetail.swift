@@ -8,113 +8,109 @@
 import UIKit
 import DLRadioButton
 
+
 class EntireBoardDetail: UIViewController, UITextFieldDelegate {
-    
-    @IBOutlet weak var boardView : UIView!
-    @IBOutlet weak var mytable : UITableView!
-    @IBOutlet weak var registBtn : UIButton!
-    @IBOutlet weak var recommendBtn : UIButton!
-    @IBOutlet weak var dividerView : UIView!
-    @IBOutlet weak var lblType: UILabel!
-    @IBOutlet weak var commentView : UIView!
-    @IBOutlet weak var commentField : UITextField!
-
+ 
     private var textHeight = CGFloat(0)
-
+    
+    var boardInfo : BoardInfo?
+    let detailView = BoardDetailView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        rightBarBtnGroup()
-        keyboardEvent()
-        self.boardView.layer.borderWidth = 1
-        self.boardView.layer.borderColor = UIColor.appColor(.backGray).cgColor
-        self.dividerView.layer.borderColor = UIColor.appColor(.backGray).cgColor
-        self.dividerView.layer.borderWidth = 1
-        self.mytable.dataSource = self
-        self.mytable.delegate = self
-        self.mytable.rowHeight = 101
-        self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
-        self.mytable.layer.borderWidth = 1
-        self.commentField.delegate = self
-        lblType.layer.borderWidth = 1
-        lblType.layer.borderColor = UIColor.appColor(.borderColor).cgColor
-        lblType.layer.cornerRadius = 5
-        recommendBtn.isSelected = true
+//        rightBarBtnGroup()
+//        keyboardEvent()
+//        self.mytable.dataSource = self
+//        self.mytable.delegate = self
+//        self.mytable.rowHeight = 101
+//        self.mytable.layer.borderColor = UIColor.appColor(.backGray).cgColor
+//        self.mytable.layer.borderWidth = 1
+//        self.commentField.delegate = self
+//        recommendBtn.isSelected = true
+        addSubView()
+        setConstraints()
+        setDetailView()
     }
+    private func addSubView(){
+        self.view.addSubview(detailView)
+    }
+    private func setConstraints(){
+        detailView.snp.makeConstraints { make in
+            make.top.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+        }
+    }
+    private func setDetailView(){
+        let date = DateFormatter()
+        date.dateFormat = "yy-MM-dd HH:mm"
+        detailView.lblNick.text = boardInfo?.nickname
+        detailView.lblCnt.text = "View \(String(describing: boardInfo!.view))"
+        detailView.lblTime.text =  boardInfo!.createdDt
+    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
+//
+//    @IBAction func asd(_ sender: UIButton){
+//        print(sender)
+//    }
+//
+//    func rightBarBtnGroup(){
+//        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
+//        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
+//        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
+//        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+//    }
+//
+//    func keyboardEvent(){
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWiiDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+//    }
+//    @objc func keyboardWillAppear(_ notification: Notification){
+//        //키보드 높이 가져오기
+//        let userInfo:NSDictionary = notification.userInfo! as NSDictionary
+//        let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
+//        let keyboardRectangle = keyboardFrame.cgRectValue
+//        let keyboardHeight = keyboardRectangle.height
+//        textHeight = keyboardHeight
+//        self.view.frame.size.height -= keyboardHeight
+//    }
+//    @objc func keyboardWiiDisappear(_ notification: NSNotification){
+//        self.view.frame.size.height += textHeight
+//    }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    @IBAction func asd(_ sender: UIButton){
-        print(sender)
-    }
-    
-    func makeCustomNavigationButton(imageName: String) -> UIBarButtonItem{
-        let image = UIImage(named: imageName)!
-        let btn: UIButton = UIButton(type: UIButton.ButtonType.custom)
-        btn.setImage(image, for: .normal)     //     btn.addTarget(self, action: action, for: .touchUpInside)
-        btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        let barBtn = UIBarButtonItem(customView: btn)
-        return barBtn
-    }
-    
-    func rightBarBtnGroup(){
-        let rightBarButton1 = self.makeCustomNavigationButton(imageName: "그룹 6")
-        let rightBarButton2 = self.makeCustomNavigationButton(imageName: "그룹 5")
-        let rightBarButton3 = self.makeCustomNavigationButton(imageName: "그룹 8")
-        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
-    }
-    
-    func keyboardEvent(){
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWiiDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-    @objc func keyboardWillAppear(_ notification: Notification){
-        //키보드 높이 가져오기
-        let userInfo:NSDictionary = notification.userInfo! as NSDictionary
-        let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
-        let keyboardRectangle = keyboardFrame.cgRectValue
-        let keyboardHeight = keyboardRectangle.height
-        textHeight = keyboardHeight
-        self.view.frame.size.height -= keyboardHeight
-    }
-    @objc func keyboardWiiDisappear(_ notification: NSNotification){
-        self.view.frame.size.height += textHeight
-    }
-    
-    @IBAction func kebabBtn(_ sender:UIButton){
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
-        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
-        let banBtn = UIAlertAction(title: "게시물 신고", style: .destructive, handler: {(_) in
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage")
-            vc?.modalPresentationStyle = .fullScreen
-            self.present(vc!, animated: true)
-        })
-        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
-        alert.addAction(friendBtn)
-        alert.addAction(chatBtn)
-        alert.addAction(banBtn)
-        alert.addAction(cancelBtn)
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    @IBAction func kebabBtn2(_ sender:UIButton){
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
-        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
-        let banBtn = UIAlertAction(title: "댓글 신고", style: .destructive, handler: {(_) in
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage2")
-            vc?.modalPresentationStyle = .fullScreen
-            self.present(vc!, animated: true)
-        })
-        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
-        alert.addAction(friendBtn)
-        alert.addAction(chatBtn)
-        alert.addAction(banBtn)
-        alert.addAction(cancelBtn)
-        self.present(alert, animated: true, completion: nil)
-    }
+//    @IBAction func kebabBtn(_ sender:UIButton){
+//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+//        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
+//        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
+//        let banBtn = UIAlertAction(title: "게시물 신고", style: .destructive, handler: {(_) in
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage")
+//            vc?.modalPresentationStyle = .fullScreen
+//            self.present(vc!, animated: true)
+//        })
+//        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
+//        alert.addAction(friendBtn)
+//        alert.addAction(chatBtn)
+//        alert.addAction(banBtn)
+//        alert.addAction(cancelBtn)
+//        self.present(alert, animated: true, completion: nil)
+//    }
+//
+//    @IBAction func kebabBtn2(_ sender:UIButton){
+//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+//        let friendBtn = UIAlertAction(title: "친구 신청", style: .default)
+//        let chatBtn = UIAlertAction(title: "채팅 보내기", style: .default)
+//        let banBtn = UIAlertAction(title: "댓글 신고", style: .destructive, handler: {(_) in
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReportPage2")
+//            vc?.modalPresentationStyle = .fullScreen
+//            self.present(vc!, animated: true)
+//        })
+//        let cancelBtn = UIAlertAction(title: "닫기", style: .cancel)
+//        alert.addAction(friendBtn)
+//        alert.addAction(chatBtn)
+//        alert.addAction(banBtn)
+//        alert.addAction(cancelBtn)
+//        self.present(alert, animated: true, completion: nil)
+//    }
     
     /*
     // MARK: - Navigation
@@ -128,27 +124,27 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
 
 }
 
-extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return item.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! EntireDetailCell
-//        cell.cellDelegate = self
-        cell.selectionStyle = .none
-        cell.backgroundColor = UIColor.white
-        cell.clipsToBounds = true
-        
-        return cell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(item[indexPath.row])")
-    }
-
-}
+//extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return item.count
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! EntireDetailCell
+////        cell.cellDelegate = self
+//        cell.selectionStyle = .none
+//        cell.backgroundColor = UIColor.white
+//        cell.clipsToBounds = true
+//
+//        return cell
+//    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("\(item[indexPath.row])")
+//    }
+//
+//}
 
 //extension EntireBoardDetail {
 //    private func setupGestureRecognizer() {

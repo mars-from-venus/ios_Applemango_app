@@ -43,6 +43,7 @@ class FreeBoard: UIViewController{
         myTableView.rowHeight = 240
         myTableView.refreshControl = UIRefreshControl()
         myTableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        myTableView.register(BoardTableCell.self, forCellReuseIdentifier: "myCell")
     }
 
     func rightBarBtnGroup(){
@@ -61,16 +62,17 @@ extension FreeBoard: UITableViewDelegate, UITableViewDataSource{
         return self.boardData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! FreeBoardCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! BoardTableCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
-        cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        //셀 구분선 처음부터 끝까지
-        cell.separatorInset = UIEdgeInsets.zero
+        cell.lblBoard.text = "자유"
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         cell.lblTitle.text = boardData[indexPath.row].title
         cell.lblNick.text = boardData[indexPath.row].nickname
+        if boardData[indexPath.row].like <= 50 {
+            cell.lblHot.removeFromSuperview()
+        }
         
         return cell
     }

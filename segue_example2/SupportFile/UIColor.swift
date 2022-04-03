@@ -12,6 +12,7 @@ enum Colors {
     case mainColor
     case grayTextColor
     case borderColor
+    case shareGrayColor
 }
 
 extension UIColor {
@@ -25,6 +26,9 @@ extension UIColor {
             return #colorLiteral(red: 0.6392156863, green: 0.6392156863, blue: 0.6392156863, alpha: 1)
         case .borderColor:
             return #colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.8156862745, alpha: 1)
+        case .shareGrayColor:
+            return #colorLiteral(red: 0.3921568627, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
         }
     }
+    
 }
