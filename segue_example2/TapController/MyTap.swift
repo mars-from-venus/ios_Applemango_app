@@ -169,7 +169,6 @@ extension MyTap : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyTabCell", for: indexPath) as? MyTabCell else { return UITableViewCell() }
-        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         cell.selectionStyle = .none
 //        cell.layer.addBorder([.top], color: UIColor.appColor(.borderColor), width: 0.5)
         cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

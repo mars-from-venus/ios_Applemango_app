@@ -19,6 +19,7 @@
 		4126EFBF27F8B0DC0027654F /* UIextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFBE27F8B0DC0027654F /* UIextension.swift */; };
 		4126EFC127F944B30027654F /* BoardTabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFC027F944B30027654F /* BoardTabelCell.swift */; };
 		4126EFCA27F9B7510027654F /* BoardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFC927F9B7510027654F /* BoardDetailView.swift */; };
+		4126EFCF27FB48CC0027654F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126EFCE27FB48CC0027654F /* CommentCell.swift */; };
 		414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6B27B2C3C500919829 /* FourthTapCell.swift */; };
 		414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6D27B2C78000919829 /* ChatPage.swift */; };
 		414E4E7127B64C6800919829 /* ExchageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E7027B64C6800919829 /* ExchageCell.swift */; };
@@ -79,6 +80,7 @@
 		4126EFBE27F8B0DC0027654F /* UIextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIextension.swift; sourceTree = "<group>"; };
 		4126EFC027F944B30027654F /* BoardTabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTabelCell.swift; sourceTree = "<group>"; };
 		4126EFC927F9B7510027654F /* BoardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailView.swift; sourceTree = "<group>"; };
+		4126EFCE27FB48CC0027654F /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		414E4E6B27B2C3C500919829 /* FourthTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTapCell.swift; sourceTree = "<group>"; };
 		414E4E6D27B2C78000919829 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		414E4E7027B64C6800919829 /* ExchageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchageCell.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				4126EFC027F944B30027654F /* BoardTabelCell.swift */,
 				4194E2B527E64F87000193C8 /* MyTabCell.swift */,
+				4126EFCE27FB48CC0027654F /* CommentCell.swift */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				4194E22B27CE42C2000193C8 /* Config.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetail.swift in Sources */,
 				45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */,
+				4126EFCF27FB48CC0027654F /* CommentCell.swift in Sources */,
 				4194E22D27CE466B000193C8 /* DataModel.swift in Sources */,
 				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,
 				41E571AD27AC1A2F00B76E37 /* ReportPage2.swift in Sources */,

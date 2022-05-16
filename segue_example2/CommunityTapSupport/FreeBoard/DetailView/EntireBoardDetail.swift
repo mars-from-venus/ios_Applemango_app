@@ -7,18 +7,56 @@
 
 import UIKit
 import DLRadioButton
-
+import SnapKit
 
 class EntireBoardDetail: UIViewController, UITextFieldDelegate {
- 
+
     private var textHeight = CGFloat(0)
     
     var boardInfo : BoardInfo?
     let detailView = BoardDetailView()
+    private lazy var myTableView : UITableView = {
+        let table = UITableView()
+        
+        return table
+    }()
+    private lazy var divider : UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.appColor(.borderColor)
+        
+        return view
+    }()
+    private lazy var inputBox : UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    private lazy var fileImage : UIView = {
+        let view = UIImageView()
+        let image = #imageLiteral(resourceName: "picA")
+        view.image = image
+        
+        return view
+    }()
+    private lazy var txtField : UITextField = {
+        let field = UITextField()
+        field.backgroundColor = UIColor.appColor(.backGray)
+        field.layer.cornerRadius = 10
+        
+        return field
+    }()
+    private lazy var registButton : UIButton = {
+        let btn = UIButton()
+        btn.setTitle("등록", for: .normal)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        btn.setTitleColor(UIColor.appColor(.shareGrayColor), for: .normal)
+        
+        return btn
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        rightBarBtnGroup()
+        rightBarBtnGroup()
 //        keyboardEvent()
 //        self.mytable.dataSource = self
 //        self.mytable.delegate = self
@@ -28,15 +66,65 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
 //        self.commentField.delegate = self
 //        recommendBtn.isSelected = true
         addSubView()
+        tableUtil()
         setConstraints()
         setDetailView()
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    private func tableUtil(){
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
+        self.myTableView.rowHeight = UITableView.automaticDimension
+        self.myTableView.separatorStyle = .none
+        self.myTableView.register(CommentCell.self, forCellReuseIdentifier: "CommentCell")
     }
     private func addSubView(){
         self.view.addSubview(detailView)
+        self.view.addSubview(myTableView)
+        self.view.addSubview(inputBox)
+        self.view.addSubview(divider)
+        inputBox.addSubview(fileImage)
+        inputBox.addSubview(txtField)
+        inputBox.addSubview(registButton)
     }
     private func setConstraints(){
         detailView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+        }
+        myTableView.snp.makeConstraints { make in
+            make.top.equalTo(detailView.snp.bottom)
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalTo(inputBox.snp.top)
+            make.width.equalToSuperview()
+        }
+        divider.snp.makeConstraints { make in
+            make.bottom.equalTo(inputBox.snp.top)
+            make.width.equalTo(inputBox)
+            make.height.equalTo(1)
+        }
+        inputBox.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.height.equalTo(70)
+        }
+        fileImage.snp.makeConstraints { make in
+            make.leading.top.equalTo(inputBox).offset(15)
+            make.width.equalTo(20)
+        }
+        txtField.snp.makeConstraints { make in
+            make.top.equalTo(inputBox).offset(10)
+            make.leading.equalTo(fileImage.snp.trailing).offset(10)
+            make.height.equalTo(30)
+        }
+        registButton.snp.makeConstraints { make in
+            make.width.equalTo(30)
+            make.height.equalTo(25)
+            make.leading.equalTo(txtField.snp.trailing).offset(5)
+            make.top.equalTo(inputBox).offset(12)
+            make.trailing.equalTo(inputBox).offset(-10)
         }
     }
     private func setDetailView(){
@@ -54,12 +142,12 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
 //        print(sender)
 //    }
 //
-//    func rightBarBtnGroup(){
-//        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
-//        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
-//        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
-//        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
-//    }
+    func rightBarBtnGroup(){
+        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
+    }
 //
 //    func keyboardEvent(){
 //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -124,27 +212,26 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
 
 }
 
-//extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return item.count
-//    }
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! EntireDetailCell
-////        cell.cellDelegate = self
-//        cell.selectionStyle = .none
-//        cell.backgroundColor = UIColor.white
-//        cell.clipsToBounds = true
-//
-//        return cell
-//    }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("\(item[indexPath.row])")
-//    }
-//
-//}
+extension EntireBoardDetail: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell", for: indexPath) as! CommentCell
+        cell.selectionStyle = .none
+        cell.clipsToBounds = true
+        
+
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(item[indexPath.row])")
+    }
+
+}
 
 //extension EntireBoardDetail {
 //    private func setupGestureRecognizer() {
