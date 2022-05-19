@@ -80,7 +80,7 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
     
     @objc private func registComment(){
         config.postComment(boardId: 0, postId: boardInfo!.id, contentHtml: txtField.text!)
-        print("Comment Regist Success")
+        print("Comment Regist Success::")
     }
     private func tableUtil(){
         self.myTableView.dataSource = self
