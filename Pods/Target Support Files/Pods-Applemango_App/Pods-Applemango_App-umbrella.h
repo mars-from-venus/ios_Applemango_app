@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_segue_example2VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_segue_example2VersionString[];
+FOUNDATION_EXPORT double Pods_Applemango_AppVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Applemango_AppVersionString[];
 
