@@ -13,6 +13,10 @@ struct BoardDataModel : Codable {
     let contentHtml : String
 }
 
+struct BoardCommentModel : Codable {
+    let contentHtml : String
+}
+
 struct LoginInfo : Codable {
     let userId : Int
     let kakaoId : Int
@@ -45,5 +49,4 @@ struct BoardInfo : Decodable {
     let seqNo : Int
     let title : String
     let view : Int
-    
 }

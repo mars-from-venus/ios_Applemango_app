@@ -26,8 +26,8 @@ struct DataManager{
         }
     }
     
-    func postWriting(boardType:Int,contentHtml:String, title:String){
-        let url = Api.baseUrl + "/api/board/\(boardType)/post"
+    func postWriting(boardId:Int,contentHtml:String, title:String){
+        let url = Api.baseUrl + "/api/board/\(boardId)/post"
         let param : Parameters = [
             "contentHtml": contentHtml,
             "title": title,
@@ -43,6 +43,24 @@ struct DataManager{
              }
          }
     }
+    
+    func postComment(boardId:Int,postId:Int,contentHtml:String){
+        let url = Api.baseUrl + "/api/board/\(boardId)/post/\(postId)"
+        let param : Parameters = [
+            "contentHtml": contentHtml,
+        ]
+         let header : HTTPHeaders = ["Content-Type": "application/json"]
+         let dataRequest = AF.request(url, method: .post, parameters: param ,encoding: JSONEncoding.default, headers: header)
+        dataRequest.responseDecodable(of:BoardCommentModel.self){ response in
+             switch response.result {
+             case .success :
+                 print("SUCCESS")
+             case .failure :
+                 print("ERROR")
+             }
+         }
+    }
+    
 //
 //    private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
 //

@@ -12,6 +12,7 @@ import SnapKit
 class EntireBoardDetail: UIViewController, UITextFieldDelegate {
 
     private var textHeight = CGFloat(0)
+    private var config: DataManager = DataManager.shared
     
     var boardInfo : BoardInfo?
     let detailView = BoardDetailView()
@@ -42,6 +43,7 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
         let field = UITextField()
         field.backgroundColor = UIColor.appColor(.backGray)
         field.layer.cornerRadius = 10
+        field.placeholder = "댓글을 입력해보세요"
         
         return field
     }()
@@ -50,6 +52,7 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
         btn.setTitle("등록", for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         btn.setTitleColor(UIColor.appColor(.shareGrayColor), for: .normal)
+        btn.addTarget(self, action: #selector(registComment), for: .touchUpInside)
         
         return btn
     }()
@@ -73,6 +76,11 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    @objc private func registComment(){
+        config.postComment(boardId: 0, postId: boardInfo!.id, contentHtml: txtField.text!)
+        print("Comment Regist Success")
     }
     private func tableUtil(){
         self.myTableView.dataSource = self

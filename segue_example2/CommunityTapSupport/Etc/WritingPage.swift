@@ -103,7 +103,7 @@ class WritingPage: UIViewController,UITextViewDelegate {
     }
     
     @objc func handlePosting(){
-        DataManager.shared.postWriting(boardType:self.boardId,contentHtml: contentField.text!, title: titleText.text!)
+        DataManager.shared.postWriting(boardId:self.boardId,contentHtml: contentField.text!, title: titleText.text!)
         self.dismiss(animated: true)
     }
     
