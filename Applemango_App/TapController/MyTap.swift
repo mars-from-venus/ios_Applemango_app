@@ -78,14 +78,14 @@ class MyTap : UIViewController{
     }()
     private let assetImage1 : UIImageView = {
         let imageView = UIImageView()
-        let image = #imageLiteral(resourceName: "그룹 640")
+        let image = #imageLiteral(resourceName: "levelIcon")
         imageView.image = image
 
         return imageView
     }()
     private let assetImage2 : UIImageView = {
         let imageView = UIImageView()
-        let image = #imageLiteral(resourceName: "그룹 640")
+        let image = #imageLiteral(resourceName: "levelIcon")
         imageView.image = image
 
         return imageView
