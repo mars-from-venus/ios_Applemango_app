@@ -61,12 +61,12 @@
 		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
 		45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260E27B380B400F75319 /* ThirdTapCell.swift */; };
 		45E5261127B3943700F75319 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5261027B3943700F75319 /* MockData.swift */; };
-		DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */; };
+		9C9AF351F62D593981C4248B /* Pods_Applemango_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DFFDDCA14810F0F6965B7 /* Pods_Applemango_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_segue_example2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		411F6500275D9AF2002AFF9F /* segue_example2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = segue_example2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		124783A173BCFA4D19A64F19 /* Pods-Applemango_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applemango_App.release.xcconfig"; path = "Target Support Files/Pods-Applemango_App/Pods-Applemango_App.release.xcconfig"; sourceTree = "<group>"; };
+		411F6500275D9AF2002AFF9F /* Applemango_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applemango_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411F6503275D9AF2002AFF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		411F6505275D9AF2002AFF9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		411F6507275D9AF2002AFF9F /* CommunityTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTap.swift; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		45E5261027B3943700F75319 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
+		D729CD3B7CD44ED95F0A782B /* Pods-Applemango_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applemango_App.debug.xcconfig"; path = "Target Support Files/Pods-Applemango_App/Pods-Applemango_App.debug.xcconfig"; sourceTree = "<group>"; };
+		F22DFFDDCA14810F0F6965B7 /* Pods_Applemango_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Applemango_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4B28C61931F811AB27246C /* Pods_segue_example2.framework in Frameworks */,
+				9C9AF351F62D593981C4248B /* Pods_Applemango_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +143,7 @@
 		411F64F7275D9AF2002AFF9F = {
 			isa = PBXGroup;
 			children = (
-				411F6502275D9AF2002AFF9F /* segue_example2 */,
+				411F6502275D9AF2002AFF9F /* Applemango_App */,
 				411F6501275D9AF2002AFF9F /* Products */,
 				D988E85B7AD8AAE12ED2D44B /* Pods */,
 				582122561C0DC36600D86B0D /* Frameworks */,
@@ -151,12 +153,12 @@
 		411F6501275D9AF2002AFF9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				411F6500275D9AF2002AFF9F /* segue_example2.app */,
+				411F6500275D9AF2002AFF9F /* Applemango_App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		411F6502275D9AF2002AFF9F /* segue_example2 */ = {
+		411F6502275D9AF2002AFF9F /* Applemango_App */ = {
 			isa = PBXGroup;
 			children = (
 				4126EFCB27F9D7960027654F /* UIView */,
@@ -177,7 +179,7 @@
 				4194E22E27CE4AAE000193C8 /* uri.plist */,
 				4194E2B127E62FB5000193C8 /* preview.swift */,
 			);
-			path = segue_example2;
+			path = Applemango_App;
 			sourceTree = "<group>";
 		};
 		4126EFC627F9B6B70027654F /* TableCell */ = {
@@ -429,7 +431,7 @@
 		582122561C0DC36600D86B0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38052D168147EA37B6EFDC36 /* Pods_segue_example2.framework */,
+				F22DFFDDCA14810F0F6965B7 /* Pods_Applemango_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -439,6 +441,8 @@
 			children = (
 				A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */,
 				8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */,
+				D729CD3B7CD44ED95F0A782B /* Pods-Applemango_App.debug.xcconfig */,
+				124783A173BCFA4D19A64F19 /* Pods-Applemango_App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -446,9 +450,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		411F64FF275D9AF2002AFF9F /* segue_example2 */ = {
+		411F64FF275D9AF2002AFF9F /* Applemango_App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 411F6514275D9AF4002AFF9F /* Build configuration list for PBXNativeTarget "segue_example2" */;
+			buildConfigurationList = 411F6514275D9AF4002AFF9F /* Build configuration list for PBXNativeTarget "Applemango_App" */;
 			buildPhases = (
 				39B72B5B7C2143C9D12A1652 /* [CP] Check Pods Manifest.lock */,
 				411F64FC275D9AF2002AFF9F /* Sources */,
@@ -460,9 +464,9 @@
 			);
 			dependencies = (
 			);
-			name = segue_example2;
+			name = Applemango_App;
 			productName = segue_example2;
-			productReference = 411F6500275D9AF2002AFF9F /* segue_example2.app */;
+			productReference = 411F6500275D9AF2002AFF9F /* Applemango_App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -480,7 +484,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 411F64FB275D9AF2002AFF9F /* Build configuration list for PBXProject "segue_example2" */;
+			buildConfigurationList = 411F64FB275D9AF2002AFF9F /* Build configuration list for PBXProject "Applemango_App" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -493,7 +497,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				411F64FF275D9AF2002AFF9F /* segue_example2 */,
+				411F64FF275D9AF2002AFF9F /* Applemango_App */,
 			);
 		};
 /* End PBXProject section */
@@ -529,7 +533,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-segue_example2-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Applemango_App-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -542,15 +546,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-segue_example2/Pods-segue_example2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Applemango_App/Pods-Applemango_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-segue_example2/Pods-segue_example2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Applemango_App/Pods-Applemango_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-segue_example2/Pods-segue_example2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Applemango_App/Pods-Applemango_App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -752,7 +756,7 @@
 		};
 		411F6515275D9AF4002AFF9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */;
+			baseConfigurationReference = D729CD3B7CD44ED95F0A782B /* Pods-Applemango_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -760,7 +764,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C23Z6FC8YS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = segue_example2/Info.plist;
+				INFOPLIST_FILE = Applemango_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -771,7 +775,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.segue-example2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Applemango_App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -781,7 +785,7 @@
 		};
 		411F6516275D9AF4002AFF9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */;
+			baseConfigurationReference = 124783A173BCFA4D19A64F19 /* Pods-Applemango_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,7 +793,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C23Z6FC8YS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = segue_example2/Info.plist;
+				INFOPLIST_FILE = Applemango_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -800,7 +804,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.segue-example2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Applemango_App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -811,7 +815,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		411F64FB275D9AF2002AFF9F /* Build configuration list for PBXProject "segue_example2" */ = {
+		411F64FB275D9AF2002AFF9F /* Build configuration list for PBXProject "Applemango_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				411F6512275D9AF4002AFF9F /* Debug */,
@@ -820,7 +824,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		411F6514275D9AF4002AFF9F /* Build configuration list for PBXNativeTarget "segue_example2" */ = {
+		411F6514275D9AF4002AFF9F /* Build configuration list for PBXNativeTarget "Applemango_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				411F6515275D9AF4002AFF9F /* Debug */,

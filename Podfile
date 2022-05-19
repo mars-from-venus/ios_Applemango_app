@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios
+platform :ios,'11.0'
 
-target 'segue_example2' do
+target 'Applemango_App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for segue_example2
+  # Pods for Applemango_App
 
 pod 'JJFloatingActionButton'
 pod 'DropDown'
