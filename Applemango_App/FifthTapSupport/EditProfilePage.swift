@@ -11,7 +11,7 @@ class EditProfilePage: UIViewController {
     
     lazy var leftButton: UIBarButtonItem = {
         let button = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissModal))
-        button.tag = 1
+    
         return button
     }()
 
