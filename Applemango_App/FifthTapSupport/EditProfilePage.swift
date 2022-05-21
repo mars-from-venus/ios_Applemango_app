@@ -10,7 +10,7 @@ import UIKit
 class EditProfilePage: UIViewController {
     
     lazy var leftButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissModal))
+        let button = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissModal))
     
         return button
     }()
