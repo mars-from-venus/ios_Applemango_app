@@ -58,9 +58,11 @@ class MyTap : UIViewController{
         return button
     }()
     @objc func editProfile(_ sender: Any){
-         let vc = EditProfilePage()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+//         let vc = EditProfilePage()
+//        vc.modalPresentationStyle = .automatic
+//        self.present(vc, animated: true)
+        let vc = EditProfilePage()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private let levelLabel : UILabel = {
@@ -154,12 +156,13 @@ class MyTap : UIViewController{
     
     func naviTitleChange(){
         if let navigationBar = self.navigationController?.navigationBar {
-            let firstFrame = CGRect(x: 30, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+            let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.2, height: navigationBar.frame.height)
             let firstLabel = UILabel(frame: firstFrame)
             firstLabel.text = "MY"
             firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
             firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
-            navigationBar.addSubview(firstLabel)
+            self.navigationItem.titleView = firstLabel
+//            navigationBar.addSubview(firstLabel)
         }
     }
 }

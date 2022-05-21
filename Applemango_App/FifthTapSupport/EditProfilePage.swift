@@ -9,22 +9,36 @@ import UIKit
 
 class EditProfilePage: UIViewController {
     
-    lazy var leftButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissModal))
+    lazy var ad: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "123123"
+        return lbl
+    }()
     
+    lazy var leftBarbutton : UIBarButtonItem = {
+        let button = UIBarButtonItem(image: #imageLiteral(resourceName: "backIcon"), style: .plain, target: self, action: #selector(popNavi))
         return button
     }()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "프로필 수정"
         self.view.backgroundColor = .white
-        self.navigationItem.leftBarButtonItem = self.leftButton
-        print("AAAA")
-        // Do any additional setup after loading the view.
+        self.navigationItem.leftBarButtonItem = leftBarbutton
+        self.tabBarController?.tabBar.isHidden = true
+        lblAuto()
     }
-    @objc func dismissModal(){
-        self.dismissModal()
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    @objc func popNavi(){
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func lblAuto(){
+        ad.translatesAutoresizingMaskIntoConstraints = false
+//        self.view.addSubview(ad)
     }
 
     /*
