@@ -53,11 +53,14 @@ class MyTap : UIViewController{
         button.layer.borderColor = UIColor.appColor(.borderColor).cgColor
         button.layer.cornerRadius = 10
         
-        button.addTarget(self, action: #selector(btnTap), for: .touchUpInside)
+        button.addTarget(self, action: #selector(editProfile), for: .touchUpInside)
         
         return button
     }()
-    @objc func btnTap(_ sender: Any){
+    @objc func editProfile(_ sender: Any){
+         let vc = EditProfilePage()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
     private let levelLabel : UILabel = {
