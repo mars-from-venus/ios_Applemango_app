@@ -32,6 +32,10 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
         
         return view
     }()
+    lazy var leftBarbutton : UIBarButtonItem = {
+        let button = UIBarButtonItem(image: #imageLiteral(resourceName: "backIcon"), style: .plain, target: self, action: #selector(popNavi))
+        return button
+    }()
     private lazy var fileImage : UIView = {
         let view = UIImageView()
         let image = #imageLiteral(resourceName: "picA")
@@ -73,9 +77,14 @@ class EntireBoardDetail: UIViewController, UITextFieldDelegate {
         setConstraints()
         setDetailView()
         self.tabBarController?.tabBar.isHidden = true
+        navigationItem.leftBarButtonItem = leftBarbutton
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    @objc func popNavi(){
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc private func registComment(){
