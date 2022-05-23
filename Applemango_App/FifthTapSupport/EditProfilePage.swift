@@ -82,12 +82,10 @@ class EditProfilePage: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
     }
-    @objc func popNavi(){
+    @objc private func popNavi(){
         self.navigationController?.popViewController(animated: true)
     }
     
-
-
     /*
     // MARK: - Navigation
 

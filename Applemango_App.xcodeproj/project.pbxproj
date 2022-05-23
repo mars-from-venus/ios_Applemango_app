@@ -25,6 +25,7 @@
 		414E4E7127B64C6800919829 /* ExchageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E7027B64C6800919829 /* ExchageCell.swift */; };
 		415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C5275DE78B004A9632 /* HumorBoard.swift */; };
 		41714AA22839170D00E995CA /* EditProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41714AA12839170D00E995CA /* EditProfilePage.swift */; };
+		41714AA4283BC3CA00E995CA /* InterestedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41714AA3283BC3CA00E995CA /* InterestedPost.swift */; };
 		4194E21727B6A94D000193C8 /* HotBoardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E21627B6A94D000193C8 /* HotBoardDetailCell.swift */; };
 		4194E21A27B6B28F000193C8 /* HumorDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E21927B6B28F000193C8 /* HumorDetailCell.swift */; };
 		4194E21F27B6B5ED000193C8 /* QADetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E21E27B6B5ED000193C8 /* QADetailCell.swift */; };
@@ -87,6 +88,7 @@
 		414E4E7027B64C6800919829 /* ExchageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchageCell.swift; sourceTree = "<group>"; };
 		415B62C5275DE78B004A9632 /* HumorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorBoard.swift; sourceTree = "<group>"; };
 		41714AA12839170D00E995CA /* EditProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePage.swift; sourceTree = "<group>"; };
+		41714AA3283BC3CA00E995CA /* InterestedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedPost.swift; sourceTree = "<group>"; };
 		4194E21627B6A94D000193C8 /* HotBoardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardDetailCell.swift; sourceTree = "<group>"; };
 		4194E21927B6B28F000193C8 /* HumorDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorDetailCell.swift; sourceTree = "<group>"; };
 		4194E21E27B6B5ED000193C8 /* QADetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QADetailCell.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				41E571D027AECBF600B76E37 /* SettingTableView.swift */,
 				45E5260B27B24CE000F75319 /* MyFirstCell.swift */,
 				41714AA12839170D00E995CA /* EditProfilePage.swift */,
+				41714AA3283BC3CA00E995CA /* InterestedPost.swift */,
 			);
 			path = FifthTapSupport;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				4194E22B27CE42C2000193C8 /* Config.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetail.swift in Sources */,
 				45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */,
+				41714AA4283BC3CA00E995CA /* InterestedPost.swift in Sources */,
 				4126EFCF27FB48CC0027654F /* CommentCell.swift in Sources */,
 				4194E22D27CE466B000193C8 /* DataModel.swift in Sources */,
 				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,

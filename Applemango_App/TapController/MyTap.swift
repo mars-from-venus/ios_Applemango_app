@@ -58,9 +58,6 @@ class MyTap : UIViewController{
         return button
     }()
     @objc func editProfile(_ sender: Any){
-//         let vc = EditProfilePage()
-//        vc.modalPresentationStyle = .automatic
-//        self.present(vc, animated: true)
         let vc = EditProfilePage()
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -181,6 +178,13 @@ extension MyTap : UITableViewDelegate, UITableViewDataSource {
         cell.label.text = MockData.myList[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.row == 2){
+            let vc = InterestedPost()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 //Autolayout
