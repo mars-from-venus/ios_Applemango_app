@@ -13,3 +13,51 @@ struct MockData {
     static let exchagePrice:Array<Int> = [60560000,60360000,60200000,60130000,60180000,60412000]
     static let myList:Array<String> = ["게시물 내역","댓글 내역","관심 게시물","친구 목록"]
 }
+
+
+struct MockButtonModel {
+    private var buttonTitle: String?
+    
+    init(_ title: String) {
+        self.buttonTitle = title
+    }
+    
+    var title: String {
+        return buttonTitle!
+    }
+}
+
+enum NewsButtonType: String {
+    case one = "코인 뉴스"
+    case two = "개발/채굴"
+    case three = "코인정보"
+    case four = "꿀팁"
+}
+
+enum CommunityButtonType: String {
+    case one = "인기게시물"
+    case two = "자유게시판"
+    case three = "유머게시판"
+    case four = "질문/답변"
+    case five = "차트분석"
+}
+
+struct MockButton {
+    static func getDataSource() -> [MockButtonModel] {
+        return [MockButtonModel(NewsButtonType.one.rawValue),
+                MockButtonModel(NewsButtonType.two.rawValue),
+                MockButtonModel(NewsButtonType.three.rawValue),
+                MockButtonModel(NewsButtonType.four.rawValue),
+        ]
+    }
+    static func getCoDataSource() -> [MockButtonModel] {
+        return [MockButtonModel(CommunityButtonType.one.rawValue),
+                MockButtonModel(CommunityButtonType.two.rawValue),
+                MockButtonModel(CommunityButtonType.three.rawValue),
+                MockButtonModel(CommunityButtonType.four.rawValue),
+                MockButtonModel(CommunityButtonType.five.rawValue)
+        ]
+    }
+}
+
+

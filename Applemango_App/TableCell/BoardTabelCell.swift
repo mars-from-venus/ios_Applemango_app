@@ -10,6 +10,8 @@ import SnapKit
 
 class BoardTableCell: UITableViewCell {
     
+    static let identifier = "boardCell"
+    
     lazy var container : UIView = {
         let view = UIView()
         

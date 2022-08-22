@@ -23,6 +23,12 @@
 		414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6B27B2C3C500919829 /* FourthTapCell.swift */; };
 		414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E6D27B2C78000919829 /* ChatPage.swift */; };
 		414E4E7127B64C6800919829 /* ExchageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E4E7027B64C6800919829 /* ExchageCell.swift */; };
+		4156CEF828AA1CAC0007D4F2 /* ATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CEF728AA1CAC0007D4F2 /* ATabBarController.swift */; };
+		4156CEFA28AA1D7E0007D4F2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CEF928AA1D7E0007D4F2 /* Constant.swift */; };
+		4156CEFD28AA24FF0007D4F2 /* Chaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CEFC28AA24FF0007D4F2 /* Chaining.swift */; };
+		4156CEFF28AA25AC0007D4F2 /* SnapKitChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CEFE28AA25AC0007D4F2 /* SnapKitChain.swift */; };
+		4156CF0128AA28050007D4F2 /* ViewChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CF0028AA28050007D4F2 /* ViewChain.swift */; };
+		4156CF0528AA9AEB0007D4F2 /* ButtonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156CF0428AA9AEB0007D4F2 /* ButtonScrollView.swift */; };
 		415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B62C5275DE78B004A9632 /* HumorBoard.swift */; };
 		41714AA22839170D00E995CA /* EditProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41714AA12839170D00E995CA /* EditProfilePage.swift */; };
 		41714AA4283BC3CA00E995CA /* InterestedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41714AA3283BC3CA00E995CA /* InterestedPost.swift */; };
@@ -39,6 +45,7 @@
 		4194E2B627E64F87000193C8 /* MyTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194E2B527E64F87000193C8 /* MyTabCell.swift */; };
 		4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC97277F6A9B00AC473B /* QABoard.swift */; };
 		4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EC99277F6C9300AC473B /* ChartBoard.swift */; };
+		41C21B30283D2B82006FB275 /* MyCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C21B2F283D2B82006FB275 /* MyCommentList.swift */; };
 		41D41177278B2378003F46EE /* ExchangeTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41176278B2378003F46EE /* ExchangeTap.swift */; };
 		41D41179278B250A003F46EE /* NewsTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D41178278B250A003F46EE /* NewsTap.swift */; };
 		41D4117B278B251C003F46EE /* ChatTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D4117A278B251C003F46EE /* ChatTap.swift */; };
@@ -61,7 +68,7 @@
 		45DBF63927B0B7CB00778AC4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */; };
 		45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260927B1188200F75319 /* BorderSelect.swift */; };
 		45E5260C27B24CE000F75319 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260B27B24CE000F75319 /* MyFirstCell.swift */; };
-		45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260E27B380B400F75319 /* ThirdTapCell.swift */; };
+		45E5260F27B380B400F75319 /* NewsTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5260E27B380B400F75319 /* NewsTapCell.swift */; };
 		45E5261127B3943700F75319 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5261027B3943700F75319 /* MockData.swift */; };
 		9C9AF351F62D593981C4248B /* Pods_Applemango_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DFFDDCA14810F0F6965B7 /* Pods_Applemango_App.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +93,12 @@
 		414E4E6B27B2C3C500919829 /* FourthTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTapCell.swift; sourceTree = "<group>"; };
 		414E4E6D27B2C78000919829 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		414E4E7027B64C6800919829 /* ExchageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchageCell.swift; sourceTree = "<group>"; };
+		4156CEF728AA1CAC0007D4F2 /* ATabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATabBarController.swift; sourceTree = "<group>"; };
+		4156CEF928AA1D7E0007D4F2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4156CEFC28AA24FF0007D4F2 /* Chaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chaining.swift; sourceTree = "<group>"; };
+		4156CEFE28AA25AC0007D4F2 /* SnapKitChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitChain.swift; sourceTree = "<group>"; };
+		4156CF0028AA28050007D4F2 /* ViewChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChain.swift; sourceTree = "<group>"; };
+		4156CF0428AA9AEB0007D4F2 /* ButtonScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonScrollView.swift; sourceTree = "<group>"; };
 		415B62C5275DE78B004A9632 /* HumorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorBoard.swift; sourceTree = "<group>"; };
 		41714AA12839170D00E995CA /* EditProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePage.swift; sourceTree = "<group>"; };
 		41714AA3283BC3CA00E995CA /* InterestedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedPost.swift; sourceTree = "<group>"; };
@@ -102,6 +115,7 @@
 		4194E2B527E64F87000193C8 /* MyTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabCell.swift; sourceTree = "<group>"; };
 		4194EC97277F6A9B00AC473B /* QABoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QABoard.swift; sourceTree = "<group>"; };
 		4194EC99277F6C9300AC473B /* ChartBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBoard.swift; sourceTree = "<group>"; };
+		41C21B2F283D2B82006FB275 /* MyCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommentList.swift; sourceTree = "<group>"; };
 		41D41176278B2378003F46EE /* ExchangeTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTap.swift; sourceTree = "<group>"; };
 		41D41178278B250A003F46EE /* NewsTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTap.swift; sourceTree = "<group>"; };
 		41D4117A278B251C003F46EE /* ChatTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTap.swift; sourceTree = "<group>"; };
@@ -124,7 +138,7 @@
 		45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		45E5260927B1188200F75319 /* BorderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSelect.swift; sourceTree = "<group>"; };
 		45E5260B27B24CE000F75319 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
-		45E5260E27B380B400F75319 /* ThirdTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTapCell.swift; sourceTree = "<group>"; };
+		45E5260E27B380B400F75319 /* NewsTapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTapCell.swift; sourceTree = "<group>"; };
 		45E5261027B3943700F75319 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8F7AEA65718E8BFD69CE0EB9 /* Pods-segue_example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.release.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.release.xcconfig"; sourceTree = "<group>"; };
 		A63AFE28B893D90EF2505370 /* Pods-segue_example2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segue_example2.debug.xcconfig"; path = "Target Support Files/Pods-segue_example2/Pods-segue_example2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +179,8 @@
 		411F6502275D9AF2002AFF9F /* Applemango_App */ = {
 			isa = PBXGroup;
 			children = (
-				4126EFCB27F9D7960027654F /* UIView */,
+				4156CEF628AA1C840007D4F2 /* TabBar */,
+				4156CEF528AA1C260007D4F2 /* Views */,
 				4126EFC627F9B6B70027654F /* TableCell */,
 				414E4E6F27B64C4900919829 /* FirstTapSupport */,
 				45E5260D27B3808F00F75319 /* ThirdTapSupport */,
@@ -196,14 +211,6 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
-		4126EFCB27F9D7960027654F /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				4126EFC927F9B7510027654F /* BoardDetailView.swift */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
 		414E4E6A27B2C3A400919829 /* FourthTapSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +226,33 @@
 				414E4E7027B64C6800919829 /* ExchageCell.swift */,
 			);
 			path = FirstTapSupport;
+			sourceTree = "<group>";
+		};
+		4156CEF528AA1C260007D4F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4126EFC927F9B7510027654F /* BoardDetailView.swift */,
+				4156CF0428AA9AEB0007D4F2 /* ButtonScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4156CEF628AA1C840007D4F2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4156CEF728AA1CAC0007D4F2 /* ATabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4156CEFB28AA24DD0007D4F2 /* Chaining */ = {
+			isa = PBXGroup;
+			children = (
+				4156CEFC28AA24FF0007D4F2 /* Chaining.swift */,
+				4156CEFE28AA25AC0007D4F2 /* SnapKitChain.swift */,
+				4156CF0028AA28050007D4F2 /* ViewChain.swift */,
+			);
+			path = Chaining;
 			sourceTree = "<group>";
 		};
 		4194E21827B6AD65000193C8 /* Etc */ = {
@@ -372,6 +406,7 @@
 				45E5260B27B24CE000F75319 /* MyFirstCell.swift */,
 				41714AA12839170D00E995CA /* EditProfilePage.swift */,
 				41714AA3283BC3CA00E995CA /* InterestedPost.swift */,
+				41C21B2F283D2B82006FB275 /* MyCommentList.swift */,
 			);
 			path = FifthTapSupport;
 			sourceTree = "<group>";
@@ -391,6 +426,7 @@
 		4532B97F279A4CA100D405B2 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				4156CEFB28AA24DD0007D4F2 /* Chaining */,
 				4532B980279A4CAC00D405B2 /* Font */,
 				41E571A627A0508300B76E37 /* UIColor.swift */,
 				45DBF63827B0B7CB00778AC4 /* PaddingLabel.swift */,
@@ -401,6 +437,7 @@
 				4194E28F27D4D93F000193C8 /* NetworkResult.swift */,
 				4194E22A27CE42C2000193C8 /* Config.swift */,
 				4126EFBE27F8B0DC0027654F /* UIextension.swift */,
+				4156CEF928AA1D7E0007D4F2 /* Constant.swift */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -429,7 +466,7 @@
 		45E5260D27B3808F00F75319 /* ThirdTapSupport */ = {
 			isa = PBXGroup;
 			children = (
-				45E5260E27B380B400F75319 /* ThirdTapCell.swift */,
+				45E5260E27B380B400F75319 /* NewsTapCell.swift */,
 			);
 			path = ThirdTapSupport;
 			sourceTree = "<group>";
@@ -571,12 +608,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				41714AA22839170D00E995CA /* EditProfilePage.swift in Sources */,
+				4156CEF828AA1CAC0007D4F2 /* ATabBarController.swift in Sources */,
 				411F651A275D9B2C002AFF9F /* FreeBoard.swift in Sources */,
+				4156CEFD28AA24FF0007D4F2 /* Chaining.swift in Sources */,
 				45E5260A27B1188200F75319 /* BorderSelect.swift in Sources */,
 				4194E22B27CE42C2000193C8 /* Config.swift in Sources */,
 				41E571BE27AEBDB300B76E37 /* ChartBoardDetail.swift in Sources */,
-				45E5260F27B380B400F75319 /* ThirdTapCell.swift in Sources */,
+				45E5260F27B380B400F75319 /* NewsTapCell.swift in Sources */,
 				41714AA4283BC3CA00E995CA /* InterestedPost.swift in Sources */,
+				41C21B30283D2B82006FB275 /* MyCommentList.swift in Sources */,
 				4126EFCF27FB48CC0027654F /* CommentCell.swift in Sources */,
 				4194E22D27CE466B000193C8 /* DataModel.swift in Sources */,
 				414E4E6C27B2C3C500919829 /* FourthTapCell.swift in Sources */,
@@ -586,6 +626,7 @@
 				41E571A527A04DEC00B76E37 /* EntireDetailCell.swift in Sources */,
 				415B62C6275DE78B004A9632 /* HumorBoard.swift in Sources */,
 				414E4E6E27B2C78000919829 /* ChatPage.swift in Sources */,
+				4156CF0128AA28050007D4F2 /* ViewChain.swift in Sources */,
 				4126EFBF27F8B0DC0027654F /* UIextension.swift in Sources */,
 				4194EC9A277F6C9300AC473B /* ChartBoard.swift in Sources */,
 				411F6508275D9AF2002AFF9F /* CommunityTap.swift in Sources */,
@@ -601,9 +642,11 @@
 				41D41179278B250A003F46EE /* NewsTap.swift in Sources */,
 				41E571AB27AC175900B76E37 /* ReportPage.swift in Sources */,
 				4194EC98277F6A9B00AC473B /* QABoard.swift in Sources */,
+				4156CEFF28AA25AC0007D4F2 /* SnapKitChain.swift in Sources */,
 				41E571A727A0508300B76E37 /* UIColor.swift in Sources */,
 				411F6518275D9B20002AFF9F /* HotBoard.swift in Sources */,
 				41E571D127AECBF600B76E37 /* SettingTableView.swift in Sources */,
+				4156CF0528AA9AEB0007D4F2 /* ButtonScrollView.swift in Sources */,
 				411F6504275D9AF2002AFF9F /* AppDelegate.swift in Sources */,
 				41D4117B278B251C003F46EE /* ChatTap.swift in Sources */,
 				411F6506275D9AF2002AFF9F /* SceneDelegate.swift in Sources */,
@@ -615,6 +658,7 @@
 				41E571C427AEBEB500B76E37 /* HumorBoardDetail.swift in Sources */,
 				41E571A3279C053A00B76E37 /* EntireBoardDetail.swift in Sources */,
 				41E571B127AE603F00B76E37 /* ReportPageDetail.swift in Sources */,
+				4156CEFA28AA1D7E0007D4F2 /* Constant.swift in Sources */,
 				41D41177278B2378003F46EE /* ExchangeTap.swift in Sources */,
 				456F110227E30DA200AE02E3 /* MyTap.swift in Sources */,
 				4194E21A27B6B28F000193C8 /* HumorDetailCell.swift in Sources */,
@@ -783,7 +827,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Applemango_App;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Applemango-Apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -812,7 +856,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Applemango_App;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Applemango-Apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

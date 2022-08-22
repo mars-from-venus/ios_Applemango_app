@@ -131,11 +131,11 @@ class MyTap : UIViewController{
         super.viewDidLoad()
         addSubView()
         autoLayout()
-        naviTitleChange()
         tableViewUtil()
     }
-    
+        
     override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.naviTitleChange(self, "마이")
         profileView.layer.addBorder([.top,.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
         self.navigationController?.navigationBar.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
     }
@@ -149,18 +149,6 @@ class MyTap : UIViewController{
         tableView.isScrollEnabled = true
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .none
-    }
-    
-    func naviTitleChange(){
-        if let navigationBar = self.navigationController?.navigationBar {
-            let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.2, height: navigationBar.frame.height)
-            let firstLabel = UILabel(frame: firstFrame)
-            firstLabel.text = "MY"
-            firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
-            firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
-            self.navigationItem.titleView = firstLabel
-//            navigationBar.addSubview(firstLabel)
-        }
     }
 }
 
@@ -181,7 +169,10 @@ extension MyTap : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row == 2){
+        if(indexPath.row == 1){
+            let vc = MyCommentList()
+            navigationController?.pushViewController(vc, animated: true)
+        }else if(indexPath.row == 2){
             let vc = InterestedPost()
             navigationController?.pushViewController(vc, animated: true)
         }

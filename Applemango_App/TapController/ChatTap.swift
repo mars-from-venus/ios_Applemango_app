@@ -12,27 +12,23 @@ class ChatTap: UIViewController, YourCellDelegate7 {
         print(tag)
     }
     
-    @IBOutlet weak var myTableView : UITableView!
+//    @IBOutlet weak var myTableView : UITableView!
+    
+    private lazy var myTableView: UITableView = {
+        let view = UITableView()
+        view.dataSource = self
+        view.delegate = self
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        naviTitleChange(name:"채팅")
         rightBarBtnGroup()
-        myTableView.dataSource = self
-        myTableView.delegate = self
+        self.navigationController?.navigationBar.naviTitleChange(self, "채팅")
         self.navigationController?.navigationBar.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
     }
-    func naviTitleChange(name:String){
-         if let navigationBar = self.navigationController?.navigationBar {
-             let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.65, height: navigationBar.frame.height)
-             let firstLabel = UILabel(frame: firstFrame)
-             firstLabel.text = "\(name)"
-             firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
-             firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
-             //이 페이지만 적용할땐 navigationItem 사용, 전체 네비에 적용할땐 navigationBar 사용
-             self.navigationItem.titleView = firstLabel
-         }
-     }
+
     func rightBarBtnGroup(){
         let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
         let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
