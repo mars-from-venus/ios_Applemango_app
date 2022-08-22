@@ -27,6 +27,7 @@ class InterestedPost: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        self.tabBarController?.tabBar.isHidden = true
         self.title = "관심 게시물"
         self.view.addSubview(tableView)
         self.navigationItem.leftBarButtonItem = leftBarbutton
@@ -34,9 +35,14 @@ class InterestedPost: UIViewController {
         tableLayout()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     private func tableUtil(){
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.isScrollEnabled = true
         tableView.register(BoardTableCell.self, forCellReuseIdentifier: "MyCell")
     }
     
@@ -55,11 +61,13 @@ class InterestedPost: UIViewController {
 extension InterestedPost : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! BoardTableCell
+        cell.selectionStyle = .none
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 6
     }
 }

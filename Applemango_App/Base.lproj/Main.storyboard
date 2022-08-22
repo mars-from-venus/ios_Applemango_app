@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deZ-1Y-G2C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deZ-1Y-G2C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Community Tap-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CommunityTap" id="BYZ-38-t0r" customClass="CommunityTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommunityTap" id="BYZ-38-t0r" customClass="CommunityTap" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +144,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="252" id="bWx-LD-rSw" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="252" id="bWx-LD-rSw" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bWx-LD-rSw" id="XnF-Tl-k9G">
@@ -189,7 +189,7 @@
         <!--Entire Board Detail-->
         <scene sceneID="1Yy-sE-waX">
             <objects>
-                <viewController storyboardIdentifier="EntireBoardDetail" id="xYW-6K-IIO" customClass="EntireBoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EntireBoardDetail" id="xYW-6K-IIO" customClass="EntireBoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFg-MC-WB0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--게시물 신고-->
         <scene sceneID="tT8-6Z-RbM">
             <objects>
-                <viewController id="fJd-e0-u7M" customClass="ReportPage" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fJd-e0-u7M" customClass="ReportPage" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZIf-qL-9eh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
                                     <constraint firstAttribute="width" constant="414" id="7VN-h8-teQ"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="5" reuseIdentifier="myCell" id="IRa-eH-nEf" customClass="ReportPageCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="5" reuseIdentifier="myCell" id="IRa-eH-nEf" customClass="ReportPageCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRa-eH-nEf" id="Iwd-Ey-s3H">
@@ -281,7 +281,7 @@
         <!--Report Page Detail-->
         <scene sceneID="IEW-xa-GX9">
             <objects>
-                <viewController storyboardIdentifier="ReportPageDetail" id="ut4-C8-vrp" customClass="ReportPageDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportPageDetail" id="ut4-C8-vrp" customClass="ReportPageDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f8E-Fl-2Nv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +364,7 @@
         <!--Writing Page-->
         <scene sceneID="S4Y-gW-xrF">
             <objects>
-                <viewController storyboardIdentifier="WritingPage" id="hOz-W2-qAM" customClass="WritingPage" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WritingPage" id="hOz-W2-qAM" customClass="WritingPage" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T9i-rm-7Et">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="-4339" y="978"/>
         </scene>
-        <!--Exchange Tap-->
+        <!--View Controller-->
         <scene sceneID="FpY-pq-gHh">
             <objects>
-                <viewController storyboardIdentifier="ExchangeTap" id="7yY-OX-ZGu" customClass="ExchangeTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExchangeTap" id="7yY-OX-ZGu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mud-Rb-Elm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -448,7 +448,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="80" id="7Ts-7p-64p" customClass="ExchageCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="80" id="7Ts-7p-64p" customClass="ExchageCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88.5" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Ts-7p-64p" id="K4F-ua-8oo">
@@ -597,7 +597,6 @@
                     <connections>
                         <segue destination="ZFr-MN-pjE" kind="relationship" relationship="viewControllers" id="Fea-Uc-dpf"/>
                         <segue destination="13R-lr-ZSG" kind="relationship" relationship="viewControllers" id="cn2-54-3fy"/>
-                        <segue destination="FSv-hY-fwq" kind="relationship" relationship="viewControllers" id="tGM-XO-CzW"/>
                         <segue destination="fL3-po-IAl" kind="relationship" relationship="viewControllers" id="Nqm-FI-Aqb"/>
                         <segue destination="wX0-wZ-DDP" kind="relationship" relationship="viewControllers" id="Nas-lb-dlC"/>
                     </connections>
@@ -609,7 +608,7 @@
         <!--Chat Tap-->
         <scene sceneID="0wb-mC-Rcn">
             <objects>
-                <viewController storyboardIdentifier="ChatTap" id="RAg-Df-bxV" customClass="ChatTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatTap" id="RAg-Df-bxV" customClass="ChatTap" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bWF-q5-Do8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -619,7 +618,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="80" id="D8Y-QY-hEM" customClass="FourthTapCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="80" id="D8Y-QY-hEM" customClass="FourthTapCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D8Y-QY-hEM" id="LNd-M5-JOK">
@@ -704,25 +703,6 @@
             </objects>
             <point key="canvasLocation" x="-3455" y="2728"/>
         </scene>
-        <!--블록체인-->
-        <scene sceneID="GPW-gq-ENH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FSv-hY-fwq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="블록체인" image="그룹 1" id="7hc-J8-Dxe"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KVj-Fn-x0K">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ncS-9J-j6v" kind="relationship" relationship="rootViewController" id="IEd-nX-S3g"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NeD-fJ-Fgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5049" y="1993"/>
-        </scene>
         <!--채팅-->
         <scene sceneID="B7s-Lt-CVw">
             <objects>
@@ -764,7 +744,7 @@
         <!--My Tap-->
         <scene sceneID="o61-TX-Irz">
             <objects>
-                <viewController storyboardIdentifier="MyTap" id="Vay-Vb-jBi" customClass="MyTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyTap" id="Vay-Vb-jBi" customClass="MyTap" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9g-ip-0o1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -817,7 +797,7 @@
         <!--Report Page2-->
         <scene sceneID="FJe-sR-QSi">
             <objects>
-                <viewController storyboardIdentifier="ReportPage2" id="QBj-4a-IHy" customClass="ReportPage2" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportPage2" id="QBj-4a-IHy" customClass="ReportPage2" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYt-RY-GeR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -847,200 +827,10 @@
             </objects>
             <point key="canvasLocation" x="-3536" y="-1807"/>
         </scene>
-        <!--News Tap-->
-        <scene sceneID="a2a-Dj-tYg">
-            <objects>
-                <viewController storyboardIdentifier="NewsTap" id="ncS-9J-j6v" customClass="NewsTap" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="D3G-Ox-zTJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-KN-fCx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8x-k7-eOm" userLabel="Button View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-j9-UoU">
-                                                <rect key="frame" x="109" y="12" width="66" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Xbk-jc-Dpn"/>
-                                                    <constraint firstAttribute="height" constant="32" id="lPa-GU-JKO"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="개발/채굴">
-                                                    <backgroundConfiguration key="background"/>
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
-                                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP8-WW-KIu">
-                                                <rect key="frame" x="284" y="12" width="62" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="CSG-Rg-Yui"/>
-                                                    <constraint firstAttribute="height" constant="32" id="tKQ-jk-Lns"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="꿀팁">
-                                                    <backgroundConfiguration key="background"/>
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
-                                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-d2-O6w">
-                                                <rect key="frame" x="22" y="12" width="65" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="jAV-mw-ajF"/>
-                                                    <constraint firstAttribute="height" constant="32" id="teQ-F3-cfP"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="코인 뉴스">
-                                                    <backgroundConfiguration key="background"/>
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
-                                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llP-zz-u0F">
-                                                <rect key="frame" x="197" y="12" width="65" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Kn5-GV-QOJ"/>
-                                                    <constraint firstAttribute="height" constant="32" id="X05-Se-Ix1"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="코인 정보">
-                                                    <backgroundConfiguration key="background"/>
-                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
-                                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="QZ7-j9-UoU" firstAttribute="top" secondItem="Q8x-k7-eOm" secondAttribute="top" constant="12" id="8Kv-a4-KE8"/>
-                                            <constraint firstItem="lwa-d2-O6w" firstAttribute="leading" secondItem="Q8x-k7-eOm" secondAttribute="leading" constant="22" id="DnN-lh-Y7A"/>
-                                            <constraint firstItem="llP-zz-u0F" firstAttribute="leading" secondItem="QZ7-j9-UoU" secondAttribute="trailing" constant="22" id="ED1-kq-tjo"/>
-                                            <constraint firstItem="yP8-WW-KIu" firstAttribute="top" secondItem="Q8x-k7-eOm" secondAttribute="top" constant="12" id="F8Y-Op-VyS"/>
-                                            <constraint firstAttribute="bottom" secondItem="lwa-d2-O6w" secondAttribute="bottom" constant="12" id="GA0-LV-JoM"/>
-                                            <constraint firstItem="QZ7-j9-UoU" firstAttribute="leading" secondItem="lwa-d2-O6w" secondAttribute="trailing" constant="22" id="INb-qT-F5s"/>
-                                            <constraint firstItem="llP-zz-u0F" firstAttribute="top" secondItem="Q8x-k7-eOm" secondAttribute="top" constant="12" id="NWV-UT-4Lw"/>
-                                            <constraint firstAttribute="bottom" secondItem="QZ7-j9-UoU" secondAttribute="bottom" constant="12" id="SOF-nb-hlw"/>
-                                            <constraint firstItem="yP8-WW-KIu" firstAttribute="leading" secondItem="llP-zz-u0F" secondAttribute="trailing" constant="22" id="myN-e3-Evr"/>
-                                            <constraint firstItem="lwa-d2-O6w" firstAttribute="top" secondItem="Q8x-k7-eOm" secondAttribute="top" constant="12" id="ohY-ta-6aj"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yP8-WW-KIu" secondAttribute="trailing" constant="28" id="z4Z-gS-kLr"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Q8x-k7-eOm" secondAttribute="trailing" id="DyH-J5-aar"/>
-                                    <constraint firstItem="Q8x-k7-eOm" firstAttribute="leading" secondItem="bgt-YV-XSO" secondAttribute="leading" id="TC6-Oe-W6S"/>
-                                    <constraint firstItem="Q8x-k7-eOm" firstAttribute="top" secondItem="bgt-YV-XSO" secondAttribute="top" id="Tdu-mr-vQ7"/>
-                                    <constraint firstItem="Q8x-k7-eOm" firstAttribute="bottom" secondItem="KMt-Kf-VOP" secondAttribute="bottom" id="hSJ-nd-j3T"/>
-                                    <constraint firstItem="Q8x-k7-eOm" firstAttribute="bottom" secondItem="bgt-YV-XSO" secondAttribute="bottom" id="mYA-Am-awb"/>
-                                    <constraint firstItem="Q8x-k7-eOm" firstAttribute="centerX" secondItem="bcx-KN-fCx" secondAttribute="centerX" id="xfl-G6-5VS"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="bgt-YV-XSO"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="KMt-Kf-VOP"/>
-                            </scrollView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hy9-2m-gLb">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="69" id="oGJ-8e-iyQ" customClass="ThirdTapCell" customModule="segue_example2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="69"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oGJ-8e-iyQ" id="b7F-Gd-Yv2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fp-jp-Ri1" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="13" width="22.5" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHZ-aN-4of">
-                                                    <rect key="frame" x="58.5" y="11" width="336.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7a-sc-VRR">
-                                                    <rect key="frame" x="24" y="41.5" width="29.5" height="13.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조회 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dG-6m-f58">
-                                                    <rect key="frame" x="71.5" y="41" width="29.5" height="14"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2022.02.09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8s-8b-3fg">
-                                                    <rect key="frame" x="119" y="41" width="155" height="14"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="j7a-sc-VRR" secondAttribute="bottom" constant="3" id="2Ke-fv-1Sp"/>
-                                                <constraint firstItem="5dG-6m-f58" firstAttribute="leading" secondItem="j7a-sc-VRR" secondAttribute="trailing" constant="18" id="7Z4-pd-6g8"/>
-                                                <constraint firstItem="6Fp-jp-Ri1" firstAttribute="top" secondItem="b7F-Gd-Yv2" secondAttribute="topMargin" constant="2" id="8Ru-AW-Pjq"/>
-                                                <constraint firstItem="6Fp-jp-Ri1" firstAttribute="leading" secondItem="b7F-Gd-Yv2" secondAttribute="leadingMargin" id="HWg-PK-7k4"/>
-                                                <constraint firstItem="j7a-sc-VRR" firstAttribute="leading" secondItem="b7F-Gd-Yv2" secondAttribute="leadingMargin" constant="4" id="PEg-Le-uOz"/>
-                                                <constraint firstItem="LHZ-aN-4of" firstAttribute="top" secondItem="b7F-Gd-Yv2" secondAttribute="topMargin" id="SYH-BX-hIt"/>
-                                                <constraint firstItem="G8s-8b-3fg" firstAttribute="leading" secondItem="5dG-6m-f58" secondAttribute="trailing" constant="18" id="cuE-iO-f9F"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="5dG-6m-f58" secondAttribute="bottom" constant="3" id="h2D-WC-G4x"/>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="G8s-8b-3fg" secondAttribute="trailing" constant="140" id="jd8-9k-zbx"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="LHZ-aN-4of" secondAttribute="trailing" constant="-1" id="k4X-2E-eaL"/>
-                                                <constraint firstItem="G8s-8b-3fg" firstAttribute="top" secondItem="LHZ-aN-4of" secondAttribute="bottom" constant="9" id="lBe-UJ-HOj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="G8s-8b-3fg" secondAttribute="bottom" constant="3" id="mtl-4D-zy9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LHZ-aN-4of" secondAttribute="bottom" constant="26" id="ncR-IL-MKN"/>
-                                                <constraint firstItem="5dG-6m-f58" firstAttribute="top" secondItem="LHZ-aN-4of" secondAttribute="bottom" constant="9" id="rha-Q7-TXn"/>
-                                                <constraint firstItem="j7a-sc-VRR" firstAttribute="top" secondItem="6Fp-jp-Ri1" secondAttribute="bottom" constant="12.5" id="uYh-V7-OZy"/>
-                                                <constraint firstItem="LHZ-aN-4of" firstAttribute="leading" secondItem="6Fp-jp-Ri1" secondAttribute="trailing" constant="16" id="ydC-aV-Mle"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblComment" destination="j7a-sc-VRR" id="ibM-cZ-RKj"/>
-                                            <outlet property="lblNotice" destination="6Fp-jp-Ri1" id="VEZ-6m-PSw"/>
-                                            <outlet property="lblReviews" destination="5dG-6m-f58" id="Ds2-IQ-kGk"/>
-                                            <outlet property="lblTime" destination="G8s-8b-3fg" id="8Lh-Cu-G9Q"/>
-                                            <outlet property="lblTitle" destination="LHZ-aN-4of" id="Xpl-eL-Rce"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="WIU-ds-wFV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hy9-2m-gLb" firstAttribute="leading" secondItem="D3G-Ox-zTJ" secondAttribute="leading" id="3w9-F3-6Ei"/>
-                            <constraint firstItem="bcx-KN-fCx" firstAttribute="leading" secondItem="WIU-ds-wFV" secondAttribute="leading" id="7CF-Ej-eoR"/>
-                            <constraint firstItem="bcx-KN-fCx" firstAttribute="trailing" secondItem="WIU-ds-wFV" secondAttribute="trailing" id="7P1-C8-nQC"/>
-                            <constraint firstItem="hy9-2m-gLb" firstAttribute="top" secondItem="bcx-KN-fCx" secondAttribute="bottom" id="DMz-aR-wPF"/>
-                            <constraint firstItem="hy9-2m-gLb" firstAttribute="trailing" secondItem="WIU-ds-wFV" secondAttribute="trailing" id="JFz-rc-yFj"/>
-                            <constraint firstItem="bcx-KN-fCx" firstAttribute="top" secondItem="WIU-ds-wFV" secondAttribute="top" id="JmH-na-JVV"/>
-                            <constraint firstItem="hy9-2m-gLb" firstAttribute="bottom" secondItem="WIU-ds-wFV" secondAttribute="bottom" id="Vt5-7e-TqF"/>
-                            <constraint firstAttribute="trailing" secondItem="hy9-2m-gLb" secondAttribute="trailing" id="WCw-u3-bsd"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="aJY-gp-Kic"/>
-                    <connections>
-                        <outlet property="myTableView" destination="hy9-2m-gLb" id="By3-ms-7je"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yxB-gQ-Gws" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4223.188405797102" y="1992.8571428571427"/>
-        </scene>
         <!--Hot Board Detail-->
         <scene sceneID="pmP-gT-NL2">
             <objects>
-                <viewController storyboardIdentifier="HotBoardDetail" id="ZK9-hg-miT" customClass="HotBoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HotBoardDetail" id="ZK9-hg-miT" customClass="HotBoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EIg-yp-7zU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1062,7 +852,7 @@
                                             <constraint firstAttribute="width" constant="36" id="T4P-7s-OLT"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-Ww-2B7" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-Ww-2B7" customClass="PaddingLabel" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="7" width="22" height="13.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="인기">
@@ -1318,7 +1108,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="DrZ-9V-CAH" customClass="HotBoardDetailCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="DrZ-9V-CAH" customClass="HotBoardDetailCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DrZ-9V-CAH" id="8DP-JP-vkt">
@@ -1564,7 +1354,7 @@
         <!--인기게시물-->
         <scene sceneID="gdt-dR-jRc">
             <objects>
-                <viewController storyboardIdentifier="HotBoard" id="6et-nb-ZR7" customClass="HotBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HotBoard" id="6et-nb-ZR7" customClass="HotBoard" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MF2-6B-Cfl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1574,7 +1364,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="252" id="KbM-Ge-qsP" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="252" id="KbM-Ge-qsP" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KbM-Ge-qsP" id="V4R-Bx-c2P">
@@ -1609,7 +1399,7 @@
         <!--Free Board Detail-->
         <scene sceneID="yVV-hD-Paa">
             <objects>
-                <viewController storyboardIdentifier="FreeBoardDetail" id="x7U-jH-VYR" customClass="FreeBoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreeBoardDetail" id="x7U-jH-VYR" customClass="FreeBoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVm-tN-dvF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1631,7 +1421,7 @@
                                             <constraint firstAttribute="height" constant="33" id="uFO-bD-jPF"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugb-6V-MtV" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugb-6V-MtV" customClass="PaddingLabel" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="7" width="22" height="13.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="자유">
@@ -1887,7 +1677,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="H3w-kK-0pz" customClass="FreeDetailCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="H3w-kK-0pz" customClass="FreeDetailCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3w-kK-0pz" id="A9u-Ji-dc9">
@@ -2133,7 +1923,7 @@
         <!--Humor Board Detail-->
         <scene sceneID="ZvC-g2-rvu">
             <objects>
-                <viewController storyboardIdentifier="HumorBoardDetail" id="yWh-eZ-grC" customClass="HumorBoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HumorBoardDetail" id="yWh-eZ-grC" customClass="HumorBoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ORE-aI-1Ik">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2155,7 +1945,7 @@
                                             <constraint firstAttribute="height" constant="33" id="roT-h7-nPZ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5u-wJ-V3M" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5u-wJ-V3M" customClass="PaddingLabel" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="7" width="22" height="13.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="유머">
@@ -2411,7 +2201,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="vew-v5-uqy" customClass="HumorDetailCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="vew-v5-uqy" customClass="HumorDetailCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vew-v5-uqy" id="ZlQ-Yo-ZV1">
@@ -2657,7 +2447,7 @@
         <!--Board Detail-->
         <scene sceneID="Qga-pF-55t">
             <objects>
-                <viewController storyboardIdentifier="QABoardDetail" id="HKh-zn-CSw" customClass="QABoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QABoardDetail" id="HKh-zn-CSw" customClass="QABoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRn-4i-Sjo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2679,7 +2469,7 @@
                                             <constraint firstAttribute="width" constant="36" id="Yh9-M8-Gfb"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-LH-tgT" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-LH-tgT" customClass="PaddingLabel" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="7" width="22" height="13.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="QA">
@@ -2935,7 +2725,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="b1F-Ub-yVS" customClass="QADetailCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="b1F-Ub-yVS" customClass="QADetailCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1F-Ub-yVS" id="FuH-5x-EEq">
@@ -3181,7 +2971,7 @@
         <!--Chart Board Detail-->
         <scene sceneID="2fv-9U-aac">
             <objects>
-                <viewController storyboardIdentifier="ChartBoardDetail" id="zVK-20-iwv" customClass="ChartBoardDetail" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartBoardDetail" id="zVK-20-iwv" customClass="ChartBoardDetail" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CJd-Fq-M9M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3203,7 +2993,7 @@
                                             <constraint firstAttribute="height" constant="33" id="Nvl-Hi-0lK"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-uN-QB3" customClass="PaddingLabel" customModule="segue_example2" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-uN-QB3" customClass="PaddingLabel" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="7" width="22" height="13.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="차트">
@@ -3459,7 +3249,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="WSJ-xt-maN" customClass="ChartDetailCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="101" id="WSJ-xt-maN" customClass="ChartDetailCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WSJ-xt-maN" id="DOM-Kr-Cck">
@@ -3705,7 +3495,7 @@
         <!--자유게시판-->
         <scene sceneID="fGZ-JN-VKf">
             <objects>
-                <viewController storyboardIdentifier="FreeBoard" id="3WX-Ws-rGj" customClass="FreeBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreeBoard" id="3WX-Ws-rGj" customClass="FreeBoard" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vKK-GF-WGI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3715,7 +3505,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="VM6-Rx-GK3" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="VM6-Rx-GK3" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VM6-Rx-GK3" id="yXy-Xv-fK7">
@@ -3750,7 +3540,7 @@
         <!--유머게시판-->
         <scene sceneID="SMf-7R-MnP">
             <objects>
-                <viewController storyboardIdentifier="HumorBoard" id="SL1-8m-IDu" customClass="HumorBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HumorBoard" id="SL1-8m-IDu" customClass="HumorBoard" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d2i-Nx-Evq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3760,7 +3550,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="yMs-Rv-Mhy" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="yMs-Rv-Mhy" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yMs-Rv-Mhy" id="eNJ-ey-jRO">
@@ -3799,8 +3589,7 @@
         <!--질문/답변-->
         <scene sceneID="aiU-XZ-Yoa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eRS-XQ-Te9" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="QABoard" id="qTd-CP-Byw" customClass="QABoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QABoard" id="qTd-CP-Byw" customClass="QABoard" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOR-aa-VBh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3810,7 +3599,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="RZU-xQ-2Sn" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="RZU-xQ-2Sn" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RZU-xQ-2Sn" id="7T2-zu-6vi">
@@ -3842,13 +3631,14 @@
                         <outlet property="myTableView" destination="SPJ-hB-vaK" id="UZ7-tA-WCr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRS-XQ-Te9" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2917" y="-407"/>
         </scene>
         <!--차트분석-->
         <scene sceneID="UGL-qw-FfH">
             <objects>
-                <viewController storyboardIdentifier="ChartBoard" id="5Fs-6B-AUg" customClass="ChartBoard" customModule="segue_example2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartBoard" id="5Fs-6B-AUg" customClass="ChartBoard" customModule="Applemango_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xCh-t8-Y75">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3858,7 +3648,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="eN7-3A-e4N" customClass="BoardTableCell" customModule="segue_example2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="240" id="eN7-3A-e4N" customClass="BoardTableCell" customModule="Applemango_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eN7-3A-e4N" id="kzv-11-b4y">
@@ -3904,7 +3694,6 @@
         <image name="sirenIcon" width="12" height="12"/>
         <image name="smileIcon" width="15" height="15"/>
         <image name="talkIcon" width="16" height="15"/>
-        <image name="그룹 1" width="20" height="20"/>
         <image name="그룹 549" width="22" height="22"/>
         <image name="그룹 550" width="18.5" height="22"/>
         <image name="그룹 551" width="21.5" height="19"/>

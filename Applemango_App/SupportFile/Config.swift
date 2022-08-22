@@ -12,21 +12,21 @@ struct Api {
     static let baseUrl = "http://13.124.24.182:8080"
 }
 
-struct DataManager{
+struct DataManager {
     
     static let shared = DataManager()
 
     func getBoardList(boardId : Int, completion: @escaping((BoardList) -> Void)){
         let url = Api.baseUrl + "/api/board/\(boardId)"
         let network = AF.request(url)
-        network.responseDecodable(of:BoardList.self){
+        network.responseDecodable(of: BoardList.self){
             response in
             guard let board = response.value else { return print("BOARD ERROR") }
             completion(board)
         }
     }
     
-    func postWriting(boardId:Int,contentHtml:String, title:String){
+    func postWriting(boardId:Int,contentHtml:String, title:String) {
         let url = Api.baseUrl + "/api/board/\(boardId)/post"
         let param : Parameters = [
             "contentHtml": contentHtml,
@@ -44,7 +44,7 @@ struct DataManager{
          }
     }
     
-    func postComment(boardId:Int,postId:Int,contentHtml:String){
+    func postComment(boardId:Int,postId:Int,contentHtml:String) {
         let url = Api.baseUrl + "/api/board/\(boardId)/post/\(postId)"
         let param : Parameters = [
             "contentHtml": contentHtml,

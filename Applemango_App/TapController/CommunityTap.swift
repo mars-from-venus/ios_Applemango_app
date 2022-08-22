@@ -9,29 +9,38 @@ import UIKit
 import JJFloatingActionButton
 
 class CommunityTap: UIViewController {
+
+    private let actionButton = JJFloatingActionButton()
     
-    @IBOutlet var buttonView: UIView!
-    @IBOutlet var myTableView: UITableView!
-    @IBOutlet var button1 : UIButton!
-    @IBOutlet var button2 : UIButton!
-    @IBOutlet var button3 : UIButton!
-    @IBOutlet var button4 : UIButton!
-    @IBOutlet var button5 : UIButton!
+    private static let buttonData: [MockButtonModel] = MockButton.getCoDataSource()
+    
+    private let buttonScrollView: ButtonScrollView = ButtonScrollView(data: buttonData)
+    
+    private lazy var myTableView: UITableView = {
+        let view = UITableView()
+        view.delegate = self
+        view.dataSource = self
+        view.backgroundColor = UIColor.appColor(.backGray)
+        
+        return view
+    }()
     
     private var boardData : [BoardInfo] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        addView()
         floatingBtn()
-        naviTitleChange(name: "커뮤니티")
         rightBarBtnGroup()
         DataManager.shared.loginTest()
-        tableUtil()
+        layoutFunc()
+        tableSetUp()
+        naviSetUp()
+        scrollviewSetUp()
         DataManager.shared.getBoardList(boardId: 1){ response in
             self.boardData.append(contentsOf: response.posts!)
             self.myTableView.reloadData()
         }
-        self.navigationController?.navigationBar.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
     }
     
     @objc func pullToRefresh(_ sender: Any){
@@ -43,59 +52,8 @@ class CommunityTap: UIViewController {
             }
         }
     }
-    func tableUtil(){
-        myTableView.delegate = self
-        myTableView.dataSource = self
-        myTableView.backgroundColor = UIColor.appColor(.backGray)
-        myTableView.rowHeight = 240
-        myTableView.refreshControl = UIRefreshControl()
-        myTableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
-        myTableView.register(BoardTableCell.self, forCellReuseIdentifier: "myCell")
-    }
     
-    func rightBarBtnGroup(){
-        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
-        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
-        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
-        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
-    }
-     
-    func naviTitleChange(name:String){
-         if let navigationBar = self.navigationController?.navigationBar {
-             let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width / 1.65, height: navigationBar.frame.height)
-             let firstLabel = UILabel(frame: firstFrame)
-             firstLabel.text = "\(name)"
-             firstLabel.font = UIFont(name:"Apple SD Gothic Neo", size: 20)
-             firstLabel.font = UIFont.boldSystemFont(ofSize: 20)
-             //이 페이지만 적용할땐 navigationItem 사용, 전체 네비에 적용할땐 navigationBar 사용
-             self.navigationItem.titleView = firstLabel
-         }
-     }
-     
-    func addToView(_ withIdentifier:UIViewController.Type){
-        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "\(withIdentifier)")
-        print(vcName!)
-    }
-     
-     @IBAction func moveToView2(_ sender: UIButton){
-         addToView(HotBoard.self)
-     }
-     
-     @IBAction func moveToView3(_ sender: UIButton){
-         addToView(FreeBoard.self)
-     }
-     
-     @IBAction func moveToView4(_ sender: UIButton){
-         addToView(HumorBoard.self)
-     }
-     
-     @IBAction func moveToView5(_ sender:UIButton){
-         addToView(QABoard.self)
-     }
-     
-     @IBAction func moveToView6(_ sender:UIButton){
-         addToView(ChartBoard.self)
-     }
+
 }
 
 extension CommunityTap: UITableViewDelegate, UITableViewDataSource{
@@ -106,7 +64,7 @@ extension CommunityTap: UITableViewDelegate, UITableViewDataSource{
         return boardData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! BoardTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: BoardTableCell.identifier, for: indexPath) as! BoardTableCell
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.white
         cell.clipsToBounds = true
@@ -119,20 +77,19 @@ extension CommunityTap: UITableViewDelegate, UITableViewDataSource{
         
         return cell
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "EntireBoardDetail") as? EntireBoardDetail
         vc?.boardInfo = boardData[indexPath.row]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
-
 }
+
 //Floating Button
 extension CommunityTap {
-    func floatingBtn(){
-        let actionButton = JJFloatingActionButton()
+    private func floatingBtn(){
         actionButton.buttonImage = UIImage(named: "pencileImage")
         actionButton.buttonImageSize = CGSize(width: 75, height: 75)
+        actionButton.handleSingleActionDirectly = true
         actionButton.isHighlighted = true
         actionButton.addItem(title: "write", image: UIImage(named: "writeImage")?.withRenderingMode(.alwaysTemplate)) { item in
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WritingPageController")
@@ -140,10 +97,46 @@ extension CommunityTap {
             self.present(vc!, animated: true)
             DataManager.shared.loginTest()
         }
-        actionButton.handleSingleActionDirectly = true
+    }
+}
+
+extension CommunityTap {
+    private func addView() {
+        self.view.addSubview(buttonScrollView)
+        self.view.addSubview(myTableView)
         self.view.addSubview(actionButton)
-        actionButton.translatesAutoresizingMaskIntoConstraints = false
-        actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
+    }
+    private func tableSetUp() {
+        myTableView.register(BoardTableCell.self, forCellReuseIdentifier: BoardTableCell.identifier)
+        myTableView.rowHeight = UITableView.automaticDimension
+        myTableView.refreshControl = UIRefreshControl()
+        myTableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+    }
+    private func naviSetUp() {
+        self.navigationController?.navigationBar.naviTitleChange(self, "커뮤니티")
+        self.navigationController?.navigationBar.layer.addBorder([.bottom], color: UIColor.appColor(.borderColor), width: 0.5)
+    }
+    private func scrollviewSetUp() {
+        buttonScrollView.backgroundColor = UIColor.appColor(.backGray)
+    }
+    private func layoutFunc() {
+        buttonScrollView.snp.makeConstraints {
+            $0.leading.trailing.equalTo(self.view)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            $0.height.equalTo(50)
+        }
+        myTableView.snp.makeConstraints {
+            $0.leading.bottom.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            $0.top.equalTo(buttonScrollView.snp.bottom)
+        }
+        actionButton.snp.makeConstraints {
+            $0.trailing.bottom.equalTo(view.safeAreaLayoutGuide).offset(-16)
+        }
+    }
+    private func rightBarBtnGroup(){
+        let rightBarButton1 = navigationItem.makeCustomNavigationButton(imageName: "그룹 6")
+        let rightBarButton2 = navigationItem.makeCustomNavigationButton(imageName: "그룹 5")
+        let rightBarButton3 = navigationItem.makeCustomNavigationButton(imageName: "그룹 8")
+        self.navigationItem.rightBarButtonItems = [rightBarButton1, rightBarButton2, rightBarButton3]
     }
 }
